@@ -1,0 +1,9 @@
+.home{
+    width: 100rem;
+    height: 100vh;
+    background-image: url('../../assets/homeBg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.6;
+
+}
