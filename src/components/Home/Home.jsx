@@ -13,12 +13,15 @@ const Home = () => {
         // Cleanup function to clear the interval when the component unmounts
         return () => clearInterval(interval);
     }, []); // Empty dependency array ensures this effect runs only once on mount
-    return (
-    <div className={`home ${isAnimating? 'animate' : '' }`}  >
+    return (<>    <div className={`home ${isAnimating? 'animate' : '' }`}  >
 
 
-
+            
     </div>
+
+    <h1>Hello</h1>
+    </>
+
   )
 }
 

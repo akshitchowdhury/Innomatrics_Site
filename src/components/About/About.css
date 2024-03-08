@@ -1,0 +1,12 @@
+
+.about{
+
+    width: 100rem;
+    height: 100vh;
+
+    background-image: url('../../assets/aboutdoodle.jpg');
+
+    background-size: cover;
+
+    background-attachment: fixed;
+}
