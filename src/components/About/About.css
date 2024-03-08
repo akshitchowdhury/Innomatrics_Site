@@ -10,3 +10,28 @@
 
     background-attachment: fixed;
 }
+
+.aboutText {
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-top: -40%;
+    color: white;
+    animation: effect 5s linear infinite; /* Increased duration */
+}
+
+/* @keyframes effect {
+    0% {
+        background: linear-gradient(#ecdd0d, #00FF00);
+        -webkit-background-clip: text;
+    }
+
+    50% { 
+        background: linear-gradient(#f89604, #ff0000);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(#3CE7D7, #000FFF);
+        -webkit-background-clip: text;
+    }
+} */
