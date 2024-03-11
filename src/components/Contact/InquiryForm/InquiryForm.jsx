@@ -72,7 +72,7 @@ const InquiryForm = () => {
 const InquiryAndMapComponent = () => {
   
   return (
-    <div style={{ display: 'flex' }}>
+    <div className='contactBlock' style={{ display: 'flex' }}>
       <Card style={{ flex: 1, marginRight: '1rem', maxHeight: '500px', boxShadow: '0 4px 6px rgba(255, 0, 0, 0.6)' }}> {/* Adjust the max-height as per your requirement */}
         <h2 className='text-center text-black text-xl mb-6'>Inquiry Form</h2>
         <InquiryForm />
