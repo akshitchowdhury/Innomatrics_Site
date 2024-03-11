@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Card, Form, Input, Button } from 'antd'; // Assuming you're using Ant Design components
-import MapLeaflet from '../Map/MapLeaflet'; // Import your MapLeaflet component
+import MapLeaflet from '../MapLeaflet/MapLeaflet'; // Import your MapLeaflet component
 import './InquiryForm.css'
-const InquiryForm = () => {
+const InquiryForm = () => { 
   const onFinish = (values) => {
     console.log('Received values:', values);
   };
