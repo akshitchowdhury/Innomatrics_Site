@@ -18,8 +18,6 @@ const Home = () => {
 
             
     </div>
-
-    <h1>Hello</h1>
     </>
 
   )
