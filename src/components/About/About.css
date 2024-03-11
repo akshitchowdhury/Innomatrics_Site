@@ -1,4 +1,4 @@
-
+/* 
 .about{
 
     width: 100rem;
@@ -17,7 +17,7 @@
     margin-top: -40%;
     color: white;
     animation: effect 5s linear infinite; /* Increased duration */
-}
+
 
 /* @keyframes effect {
     0% {
@@ -35,3 +35,7 @@
         -webkit-background-clip: text;
     }
 } */
+
+.about-section {
+    height: 100vh; /* Adjust height as needed */
+}
