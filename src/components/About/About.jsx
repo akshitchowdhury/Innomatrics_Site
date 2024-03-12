@@ -5,7 +5,7 @@ import about from '../../assets/about.jpg'
 const About = () => {
     return (
         <>
-        <section className="about-section bg-cover bg-center" >
+        <section className=" about-section bg-cover bg-center" >
             <div className="container mx-auto px-4 py-20 md:py-40">
                 <div className="flex flex-col items-center justify-center gap-4">
                     <h1 className="text-4xl font-bold text-white md:text-5xl">Your Name - Tech Consultant</h1>
@@ -19,9 +19,9 @@ const About = () => {
                 </div>
             </div>
         </section>
-        <div className="flex flex-col lg:flex-row">
+        <div className=" flex flex-col lg:flex-row">
   
-  <div className="w-full lg:w-1/2 px-4 py-6 bg-gray-100 rounded-lg shadow-md">
+  <div className="aboutText w-full lg:w-1/2  bg-gray-100 rounded-lg shadow-md">
     <p className="text-xl text-gray-800 font-semibold mb-4">
       Welcome to Innomatrics Technologies, where innovation meets excellence in the realm of digital solutions.
     </p>
@@ -39,10 +39,34 @@ const About = () => {
     </p>
   </div>
 
-  <div className="aboutMe bg-gray-100 w-full lg:w-1/2">
+  <div className="p-3 aboutMe bg-gray-100 w-full lg:w-1/2">
     <img src={aboutMe} alt="aboutMe" className="w-full" />
   </div>
 </div>
+
+<div className="text-center py-8 lg:py-12">
+  <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">ALLIANCES & PARTNERS</h2>
+  <p className="text-base lg:text-lg text-gray-700 mb-8">Bringing our clients the best through the power of partnerships</p>
+  <p className="text-base lg:text-lg text-gray-700 mb-8">
+    Digital transformation is not a plug and play strategy. It requires providing the best technology and innovation the market has to offer.
+    <br />
+    Infinite understands the importance of bringing this domain and technical expertise to our clients, and has established a robust alliance and partner ecosystem to make it happen. 
+    <br />
+    We are proud to have developed deep partnerships with some of today’s leading digital technology companies.
+  </p>
+
+  <h4 className="text-left text-2xl lg:text-2xl font-bold text-gray-800 mb-4">OUR CLIENTS</h4>
+
+  <div className='clientCard'>
+
+
+  </div>
+
+
+
+</div>
+
+
 
 
 
