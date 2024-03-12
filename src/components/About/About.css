@@ -2,7 +2,7 @@
 .about{
 
     width: 100rem;
-    height: 100vh;
+    height: 50vh;
 
     background-image: url('../../assets/aboutdoodle.jpg');
 
@@ -37,5 +37,17 @@
 } */
 
 .about-section {
-    height: 100vh; /* Adjust height as needed */
+    height: 70vh; /* Adjust height as needed */
+    background-image: url('../../assets/about.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutMe{
+    /* border: 3pt solid blue; */
+    margin-top: -3%;
+}
+
+.aboutMe img{
+    height: 70%;
 }

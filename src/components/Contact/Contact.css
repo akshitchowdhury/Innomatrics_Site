@@ -1,4 +1,6 @@
-
+.contact{
+    background-image: url('../../assets/contact2.jpg');
+}
 
   .background h3 {
     display: flex;
