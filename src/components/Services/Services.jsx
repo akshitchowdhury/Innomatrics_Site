@@ -94,7 +94,7 @@ const Services = () => {
 
   
         <div className="carosuelBox object-contain w-full h- h-56 sm:h-64 xl:h-80 2xl:h-96">
-  <Carousel className="w-full h-full">
+  <Carousel className="w-full h-full" >
     <img src={c1} alt="..." className="object-contain w-full h-full" />
     <img src={c2} alt="..." className="object-contain w-full h-full" />
     <img src={c3} alt="..." className="object-contain w-full h-full" />
