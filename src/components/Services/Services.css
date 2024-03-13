@@ -1,0 +1,12 @@
+.service-section {
+    height: 70vh; /* Adjust height as needed */
+    background-image: url('../../assets/serviceBg.jpg');
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+}
+
+.carosuelBox{
+    margin-bottom: 10%;
+    margin-top: 3%;
+}
