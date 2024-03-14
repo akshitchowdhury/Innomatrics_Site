@@ -96,13 +96,13 @@ const CareerComponent = forwardRef((props, ref) => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    emailjs.init("iI4KONZqTCCU8bCTw");
+    emailjs.init("yYVBr5BddZiFletl9");
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const serviceId = "service_gr4bljk";
-    const templateId = "template_tv63f2y";
+    const serviceId = "service_hz6vh9l";
+    const templateId = "template_15xt8ef";
     try {
       setLoading(true);
       await emailjs.send(serviceId, templateId, {
