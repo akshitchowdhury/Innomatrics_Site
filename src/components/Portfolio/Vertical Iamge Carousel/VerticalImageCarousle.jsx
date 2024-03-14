@@ -86,7 +86,7 @@ const VerticalImageCarousel = () => {
             >
               <img
                 src={data}
-                className="bg-contain bg-no-repeat w-full h-full object-contain lg:max-h-[700px] sm:max-h-[500px] max-h-[400px]"
+                className="carousleImage bg-contain bg-no-repeat w-full h-full object-contain lg:max-h-[700px] sm:max-h-[500px] max-h-[400px]"
                 alt="Carousel images for make scroll on verticle direction"
               />
             </section>

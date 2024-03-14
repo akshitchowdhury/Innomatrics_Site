@@ -47,8 +47,8 @@ const Portfolio = () => {
 
   return (
     <>
-   
-   <div className="container mx-auto flex flex-col md:flex-row items-center justify-center py-8">
+   <div className='bg-gray-200'>
+   <div className="container  mx-auto flex flex-col md:flex-row items-center justify-center py-8">
       <div className="md:w-1/2 md:pr-8 mb-4 md:mb-0">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Welcome to Our Portfolio</h2>
         <p className="text-lg md:text-xl mb-4">
@@ -70,6 +70,7 @@ const Portfolio = () => {
     
     </div>
 
+    </div>
 
     <div className="block2">
     <div className="mb-8 flex justify-center">
