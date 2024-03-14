@@ -5,6 +5,8 @@ import v2 from '../../assets/video/v2.mp4';
 import p1 from '../../assets/p1.png';
 import p2 from '../../assets/p2.jpg';
 import './Portfolio.css'
+import VerticalImageCarousel from './Vertical Iamge Carousel/VerticalImageCarousle';
+
 const Portfolio = () => {
   const [videoUrl, setVideoUrl] = useState('');
   const [isPlaying, setIsPlaying] = useState(false);
@@ -45,33 +47,28 @@ const Portfolio = () => {
 
   return (
     <>
-    {/* <div className="container ">
-      <div className="mb-8 flex justify-center">
-        <video
-          src={videoUrl}
-          controls={isPlaying}
-          autoPlay={isPlaying}
-          loop
-          width="600"
-          height="400"
-          className="rounded-lg shadow-md"
-        />
+   
+   <div className="container mx-auto flex flex-col md:flex-row items-center justify-center py-8">
+      <div className="md:w-1/2 md:pr-8 mb-4 md:mb-0">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Welcome to Our Portfolio</h2>
+        <p className="text-lg md:text-xl mb-4">
+          At Innomatrics Technologies, we take pride in delivering top-notch software consultancy services to businesses of all sizes. Our team of experienced professionals specializes in a wide range of technologies and domains, ensuring that we can cater to your specific needs with precision and expertise.
+        </p>
+        <p className="text-lg md:text-xl mb-4">
+          With a proven track record of successful projects and satisfied clients, we offer comprehensive consultancy services that cover the entire software development lifecycle. From initial planning and strategy to development, testing, deployment, and ongoing support, we're here to guide you every step of the way.
+        </p>
+        <p className="text-lg md:text-xl mb-4">
+          Our portfolio showcases a diverse array of projects we've undertaken, each highlighting our commitment to excellence, innovation, and customer satisfaction. Whether you're looking to streamline your business processes, develop a custom software solution, or harness the power of emerging technologies, we have the expertise and dedication to turn your vision into reality.
+        </p>
+       
       </div>
-      <div className="flex flex-wrap justify-center">
-        {imageCardsData.map((card, index) => (
-          <div
-            key={index}
-            onClick={() => handleCardClick(card.videoUrl)}
-            onMouseEnter={() => handleCardHover(card.videoUrl)}
-            onMouseLeave={() => {setVideoUrl(''); }}
-            className="flex flex-col items-center justify-center w-64 h-64 md:w-72 md:h-72 bg-gray-200 rounded-lg shadow-md mx-4 mb-4 cursor-pointer transition duration-300 ease-in-out transform hover:scale-105"
-          >
-            <img src={card.image} alt={card.text} className="w-full h-auto rounded-t-lg" />
-            <p className="text-lg font-semibold mt-2">{card.text}</p>
-          </div>
-        ))}
-      </div>
-    </div> */}
+      {/* <div className="md:w-1/2">
+        <img src={p1} alt="Consultancy Service" className="w-full h-auto rounded-lg shadow-md" />
+      </div> */}
+    
+      <VerticalImageCarousel/>
+    
+    </div>
 
 
     <div className="block2">
