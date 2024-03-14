@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import c1 from '../../../assets/AppDev.jpg'
-import c2 from '../../../assets/webDesign.jpg'
-import c3 from '../../../assets/webDevelopment.jpg'
-import c4 from '../../../assets/digitalMarkt.webp'
-import c5 from '../../../assets/brandDesign.jpg'
-import c6 from '../../../assets/socialMedia.jpg'
+
 
 
 

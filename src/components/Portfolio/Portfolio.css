@@ -1,0 +1,13 @@
+.container{
+
+    padding: 3%;
+    background-image: url('../../assets/portfolioBg.webp');
+    background-size: contain;
+       
+}
+
+.block2{
+    
+    padding: 3%;
+    background-image: url('../../assets/portfolioBg.webp');
+}

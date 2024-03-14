@@ -7,6 +7,7 @@ import c5 from '../../assets/brandDesign.jpg'
 import c6 from '../../assets/socialMedia.jpg'
 import './Services.css'
 import { Carousel } from 'flowbite-react';
+import ImageCardContainer from './Carousel/ImageCardContainer';
 
 
 
@@ -57,14 +58,14 @@ const Services = () => {
   return (
     <>   
 
-    <div> 
+    <div className='Services'> 
     <section className=" service-section bg-cover bg-center" >
             <div className="container mx-auto px-4 py-20 md:py-40">
                 <div className="serviceText flex flex-col items-center justify-center gap-4">
-                    <h1 className="text-4xl font-bold text-white md:text-5xl">Services We Provide</h1>
-                    <p className="text-xl text-gray-300 md:text-2xl">Helping businesses thrive with digital and tech solutions.</p>
+                    <h1 className="text-4xl font-bold text-black md:text-5xl">Services We Provide</h1>
+                    <p className="text-xl text-gray-800 md:text-2xl">Helping businesses thrive with digital and tech solutions.</p>
                     <ul className="flex flex-wrap justify-center items-center gap-4">
-                        <li className="text-gray-300 hover:text-white">App Development</li>
+                        <li className="text-black hover:text-white">App Development</li>
                         <li className="text-gray-300 hover:text-white">Website Design & Development</li>
                         <li className="text-gray-300 hover:text-white">SEO</li>
                         {/* Add more services as needed */}
@@ -92,9 +93,12 @@ const Services = () => {
     </div>
         </div>
 
-  
-        <div className="carosuelBox object-contain w-full h- h-56 sm:h-64 xl:h-80 2xl:h-96">
-  <Carousel className="w-full h-full" >
+        {/* <h4 className="text-2xl sm:text-4xl md:text-2xl lg:text-2xl xl:text-3xl text-start font-bold text-orange-500">Services We Offer</h4> */}
+
+
+        <div className="carosuelBox object-cover w-full h- h-56 sm:h-64 xl:h-80 2xl:h-96">
+        
+  <Carousel className="carosuel w-full h-full" >
     <img src={c1} alt="..." className="object-contain w-full h-full" />
     <img src={c2} alt="..." className="object-contain w-full h-full" />
     <img src={c3} alt="..." className="object-contain w-full h-full" />
@@ -104,6 +108,7 @@ const Services = () => {
   </Carousel>
 </div>
 
+<ImageCardContainer/>
 
   
 
