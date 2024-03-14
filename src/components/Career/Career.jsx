@@ -91,7 +91,8 @@ import careerImage from '../../assets/career.jpg'; // Import your career image
 const CareerComponent = forwardRef((props, ref) => {
   const emailRef = useRef();
   const nameRef = useRef();
-  const messageRef = useRef();
+  // const messageRef = useRef();
+  const experienceRef = useRef();
   const phoneRef = useRef();
   const [loading, setLoading] = useState(false);
 
@@ -108,11 +109,11 @@ const CareerComponent = forwardRef((props, ref) => {
       await emailjs.send(serviceId, templateId, {
         name: nameRef.current.value,
         recipient: emailRef.current.value,
-        message: messageRef.current.value,
+        experience: experienceRef.current.value,
         phone: phoneRef.current.value,
         email: emailRef.current.value
       });
-      alert("Email successfully sent. Please check your inbox.\n\nName: " + nameRef.current.value + "\nEmail: " + emailRef.current.value + "\nMessage: " + messageRef.current.value + "\nPhone: " + phoneRef.current.value);
+      alert("Email successfully sent. Please check your inbox.\n\nName: " + nameRef.current.value + "\nEmail: " + emailRef.current.value + "\nExperience: " + experienceRef.current.value + "\nPhone: " + phoneRef.current.value);
     } catch (error) {
       console.error("Error sending email:", error);
     } finally {
@@ -142,13 +143,13 @@ const CareerComponent = forwardRef((props, ref) => {
                 <label htmlFor="phone" className="form-label">Phone</label>
                 <input type="tel" ref={phoneRef} id="phone" name="phone" className="form-input" placeholder="Enter your phone no" />
               </div>
-              <div className="form-group">
+              {/* <div className="form-group">
                 <label htmlFor="message" className="form-label">Message</label>
                 <textarea id="message" ref={messageRef} name="message" rows="4" className="form-input" placeholder="Enter your message"></textarea>
-              </div>
+              </div> */}
               <div className="form-group">
                 <label htmlFor="experience" className="form-label">Years of Experience</label>
-                <input type="number" id="experience" name="experience" className="form-input" placeholder="Years of experience" />
+                <input type="number" ref={experienceRef} id="experience" name="experience" className="form-input" placeholder="Years of experience" />
               </div>
               <button type="submit" className="form-button">Submit</button>
             </form>
