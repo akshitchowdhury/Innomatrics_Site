@@ -86,7 +86,7 @@
 import React, { forwardRef, useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Caree.css';
-import careerImage from '../../assets/AppDev.jpg'; // Import your career image
+import careerImage from '../../assets/career.jpg'; // Import your career image
 
 const CareerComponent = forwardRef((props, ref) => {
   const emailRef = useRef();
