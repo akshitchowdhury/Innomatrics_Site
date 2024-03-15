@@ -32,14 +32,13 @@ export default function AppDev() {
               We focus on providing the right tool for product innovation and digital communication
             </div>
             <div className="mt-2 text-sm md:text-base text-zinc-800">
-              <p>Web Design and App Development</p>
-              <p>Mobile Apps</p>
-              <p>UI/UX Design</p>
-              <p>Logistics</p>
-              <p>Technology Consulting</p>
-              <p>Cybersecurity</p>
-              <p>Technical Support</p>
-              <p>CRM</p>
+              <p>
+Innomatrics Technologies offers cutting-edge app development services, where innovation meets precision. Our team harnesses the latest technologies to craft sleek and intuitive applications tailored to your needs. With a focus on user experience and functionality, we bring your ideas to life with finesse and flair. Trust us to navigate the ever-evolving landscape of mobile technology, delivering solutions that stand out in both style and substance. Elevate your digital presence with Innomatrics Technologies.
+</p>
+
+
+
+
             </div>
           </div>
           <div className="flex w-full md:w-[56%]">
@@ -47,7 +46,7 @@ export default function AppDev() {
               loading="lazy"
               src={app2}
               className="w-full h-auto aspect-w-16 aspect-h-10"
-              style={{borderRadius: '5%'}}
+              style={{borderRadius: '5%', boxShadow: 'gray 3px 10px 10px'}}
               alt="App Development"
             />
           </div>

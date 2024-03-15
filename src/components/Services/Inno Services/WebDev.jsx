@@ -32,14 +32,7 @@ export default function WebDev() {
               We focus on providing the right tool for product innovation and digital communication
             </div>
             <div className="mt-2 text-sm md:text-base text-zinc-800">
-              <p>Web Design and App Development</p>
-              <p>Mobile Apps</p>
-              <p>UI/UX Design</p>
-              <p>Logistics</p>
-              <p>Technology Consulting</p>
-              <p>Cybersecurity</p>
-              <p>Technical Support</p>
-              <p>CRM</p>
+              <p>Innomatrics Technologies leads the way in transformative web development solutions. With a fusion of creativity and technical prowess, we engineer dynamic websites that captivate audiences and drive results. Our team embraces the latest trends and technologies to ensure your online platform stands out in a crowded digital landscape. From robust backend systems to engaging user interfaces, we meticulously craft every aspect of your web presence with precision and flair. Experience innovation at its finest with Innomatrics Technologies as your trusted partner in web development excellence.</p>
             </div>
           </div>
           <div className="flex w-full md:w-[56%]">
@@ -47,7 +40,7 @@ export default function WebDev() {
               loading="lazy"
               src={app2}
               className="w-full h-auto aspect-w-16 aspect-h-10"
-              style={{borderRadius: '5%'}}
+              style={{borderRadius: '5%',boxShadow: 'gray 3px 10px 10px'}}
               alt="App Development"
             />
           </div>

@@ -32,14 +32,7 @@ export default function LogoDesign() {
               We focus on providing the right tool for product innovation and digital communication
             </div>
             <div className="mt-2 text-sm md:text-base text-zinc-800">
-              <p>Web Design and App Development</p>
-              <p>Mobile Apps</p>
-              <p>UI/UX Design</p>
-              <p>Logistics</p>
-              <p>Technology Consulting</p>
-              <p>Cybersecurity</p>
-              <p>Technical Support</p>
-              <p>CRM</p>
+              <p>Innomatrics Technologies excels in the art of logo design, where creativity meets brand identity. With a keen eye for detail and a passion for innovation, we craft iconic logos that resonate with your audience. Our team collaborates closely with you to understand your vision and values, translating them into visually striking symbols that leave a lasting impression. From sleek and modern to timeless and elegant, we tailor each design to reflect the essence of your brand. Trust Innomatrics Technologies to elevate your identity with logo designs that truly stand out in the digital realm.</p>
             </div>
           </div>
           <div className="flex w-full md:w-[56%]">
@@ -47,7 +40,7 @@ export default function LogoDesign() {
               loading="lazy"
               src={app2}
               className="w-full h-auto aspect-w-16 aspect-h-10"
-              style={{borderRadius: '5%'}}
+              style={{borderRadius: '5%', boxShadow: 'gray 3px 10px 10px'}}
               alt="App Development"
             />
           </div>

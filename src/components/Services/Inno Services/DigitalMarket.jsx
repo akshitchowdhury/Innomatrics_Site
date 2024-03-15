@@ -32,14 +32,7 @@ export default function DigitalMarket() {
               We focus on providing the right tool for product innovation and digital communication
             </div>
             <div className="mt-2 text-sm md:text-base text-zinc-800">
-              <p>Web Design and App Development</p>
-              <p>Mobile Apps</p>
-              <p>UI/UX Design</p>
-              <p>Logistics</p>
-              <p>Technology Consulting</p>
-              <p>Cybersecurity</p>
-              <p>Technical Support</p>
-              <p>CRM</p>
+              <p>At Innomatrics Technologies, we redefine digital marketing with a blend of strategy, creativity, and innovation. Our seasoned experts harness the power of data-driven insights and cutting-edge tools to craft bespoke marketing campaigns that resonate with your audience. From social media management to search engine optimization, we tailor each strategy to amplify your brand's online presence and drive measurable results. With a focus on ROI and continuous optimization, we ensure that your digital marketing efforts deliver tangible growth and engagement. Partner with Innomatrics Technologies to unlock the full potential of your online presence and stay ahead in the ever-evolving digital landscape.</p>
             </div>
           </div>
           <div className="flex w-full md:w-[56%]">
@@ -47,7 +40,7 @@ export default function DigitalMarket() {
               loading="lazy"
               src={app2}
               className="w-full h-auto aspect-w-16 aspect-h-10"
-              style={{borderRadius: '5%'}}
+              style={{borderRadius: '5%', boxShadow: 'gray 3px 10px 10px'}}
               alt="App Development"
             />
           </div>

@@ -9,7 +9,7 @@ import './Services.css'
 import { Carousel } from 'flowbite-react';
 import ImageCardContainer from './Carousel/ImageCardContainer';
 import { Link } from 'react-router-dom';
-
+import app from '../../assets/serviceBg2.jpg'
 
 
 
@@ -61,7 +61,7 @@ const Services = () => {
     <>   
 
     <div className='Services'> 
-    <section className=" service-section bg-cover bg-center" >
+    {/* <section className=" service-section bg-cover bg-center" >
             <div className="container mx-auto px-4 py-20 md:py-40">
                 <div className="serviceText flex flex-col items-center justify-center gap-4">
                     <h1 className="text-4xl font-bold text-black md:text-5xl">Services We Provide</h1>
@@ -70,11 +70,29 @@ const Services = () => {
                         <li className="text-black hover:text-white">App Development</li>
                         <li className="text-gray-300 hover:text-white">Website Design & Development</li>
                         <li className="text-gray-300 hover:text-white">SEO</li>
-                        {/* Add more services as needed */}
-                    </ul>
+                                            </ul>
                 </div>
             </div>
-        </section>
+        </section> */}
+
+        <div className="BgDiv relative flex flex-col items-center self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full" 
+        style={{marginTop: '0.2px', height: '60vh'}}>
+        <img
+          loading="lazy"
+          src={app}
+          className="AppBg object-cover absolute inset-0 size-full"
+          style={{opacity: ''}}          
+        />
+        <div className="relative -mt-4 text-3xl font-extrabold max-md:mr-2.5 max-md:max-w-full" style={{marginTop: '5%'}}>
+        <p className="text-xl text-gray-800 md:text-2xl">Helping businesses thrive with digital and tech solutions.</p>        </div>
+        <div className="relative text-sm mt-2 text-neutral-600 max-w-[90vw] max-md:text-base">
+        <p className='text-2xl text-white'>  We are a full service technology and digital solutions company with over 20 years of experience in industry.</p>
+        </div>
+        <div className="relative justify-center mt-4 space-x-2">
+          <button className="px-4 py-1.5 text-xs text-white bg-zinc-900 rounded-sm">Start a project together</button>
+          <button className="px-2 py-1.5 text-xs bg-white border border-zinc-900 rounded-sm">Read More</button>
+        </div>
+      </div>
 
         <div>
         <div className="bg-gray-100 py-12">

@@ -32,14 +32,8 @@ export default function WebDesign() {
               We focus on providing the right tool for product innovation and digital communication
             </div>
             <div className="mt-2 text-sm md:text-base text-zinc-800">
-              <p>Web Design and App Development</p>
-              <p>Mobile Apps</p>
-              <p>UI/UX Design</p>
-              <p>Logistics</p>
-              <p>Technology Consulting</p>
-              <p>Cybersecurity</p>
-              <p>Technical Support</p>
-              <p>CRM</p>
+              <p>Innomatrics Technologies is your premier destination for captivating web design solutions. Our team blends creativity with technical expertise to craft visually stunning and user-friendly websites. With an eye for detail and a passion for innovation, we ensure that your online presence leaves a lasting impression. From responsive layouts to seamless navigation, we tailor every aspect to reflect your unique brand identity. Step into the digital realm with confidence, knowing that Innomatrics Technologies is dedicated to bringing your vision to life with style and sophistication.</p>
+              
             </div>
           </div>
           <div className="flex w-full md:w-[56%]">
@@ -47,7 +41,7 @@ export default function WebDesign() {
               loading="lazy"
               src={app2}
               className="w-full h-auto aspect-w-16 aspect-h-10"
-              style={{borderRadius: '5%'}}
+              style={{borderRadius: '5%',boxShadow: 'gray 3px 10px 10px'}}
               alt="App Development"
             />
           </div>

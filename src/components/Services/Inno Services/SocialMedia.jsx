@@ -32,14 +32,7 @@ export default function SocialMedia() {
               We focus on providing the right tool for product innovation and digital communication
             </div>
             <div className="mt-2 text-sm md:text-base text-zinc-800">
-              <p>Web Design and App Development</p>
-              <p>Mobile Apps</p>
-              <p>UI/UX Design</p>
-              <p>Logistics</p>
-              <p>Technology Consulting</p>
-              <p>Cybersecurity</p>
-              <p>Technical Support</p>
-              <p>CRM</p>
+              <p>Innomatrics Technologies pioneers dynamic social media marketing strategies that connect brands with their audiences in meaningful ways. With a finger on the pulse of social trends, we craft compelling content and engaging campaigns across platforms like Facebook, Instagram, Twitter, and more. Our tailored approach leverages analytics and audience insights to optimize reach, engagement, and conversions. Whether it's community building, influencer partnerships, or viral content, we're committed to driving tangible results for your brand in the ever-evolving social media landscape. Elevate your online presence and foster genuine connections with Innomatrics Technologies as your trusted social media marketing partner.</p>
             </div>
           </div>
           <div className="flex w-full md:w-[56%]">
@@ -47,7 +40,7 @@ export default function SocialMedia() {
               loading="lazy"
               src={app2}
               className="w-full h-auto aspect-w-16 aspect-h-10"
-              style={{borderRadius: '5%'}}
+              style={{borderRadius: '5%', boxShadow: 'gray 3px 10px 10px'}}
               alt="App Development"
             />
           </div>
