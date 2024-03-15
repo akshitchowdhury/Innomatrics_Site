@@ -1,5 +1,6 @@
 import React from "react";
 import app from '../../../assets/AppDev.jpg';
+import app2 from '../../../assets/app2.jpg';
 import './Appdev.css';
 
 export default function AppDev() {
@@ -11,7 +12,7 @@ export default function AppDev() {
           src={app}
           className="AppBg object-cover absolute inset-0 size-full"
         />
-        <div className="relative -mt-20 text-3xl font-extrabold max-md:mr-2.5 max-md:max-w-full">
+        <div className="relative -mt-4 text-3xl font-extrabold max-md:mr-2.5 max-md:max-w-full">
           Make your Digital presence matter
         </div>
         <div className="relative text-sm mt-2 text-neutral-600 max-w-[90vw] max-md:text-base">
@@ -44,8 +45,9 @@ export default function AppDev() {
           <div className="flex w-full md:w-[56%]">
             <img
               loading="lazy"
-              src={app}
+              src={app2}
               className="w-full h-auto aspect-w-16 aspect-h-10"
+              style={{borderRadius: '5%'}}
               alt="App Development"
             />
           </div>
