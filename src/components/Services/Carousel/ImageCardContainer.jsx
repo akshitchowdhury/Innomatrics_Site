@@ -10,8 +10,9 @@ import { Link } from 'react-router-dom';
 
 const ImageCard = ({linkUrl, imageUrl, text }) => {
   return (
-    <div className="Icard relative overflow-hidden rounded-lg shadow-lg">
     <Link to={linkUrl}>
+    <div className="Icard relative overflow-hidden rounded-lg shadow-lg">
+    
       <img
         src={imageUrl}
         alt="Card"
@@ -20,8 +21,9 @@ const ImageCard = ({linkUrl, imageUrl, text }) => {
       <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100 bg-black bg-opacity-50">
         <p className="text-white">{text}</p>
       </div>
-      </Link>
+      
     </div>
+    </Link>
   );
 };
 
@@ -29,32 +31,32 @@ const ImageCardContainer = () => {
   const cards = [
     {
       imageUrl: c1,
-      text: 'Image 1',
-      linkUrl: "/app"
+      text: 'App Development',
+      linkUrl: "/appdev"
     },
     {
       imageUrl: c2,
-      text: 'Image 2',
+      text: 'Web Design',
       linkUrl: "/webdesign"
     },
     {
       imageUrl: c3,
-      text: 'Image 3',
+      text: 'Web Development',
       linkUrl: "/webdev"
     },
     {
       imageUrl: c4,
-      text: 'Image 4',
+      text: 'Digital Marketing',
       linkUrl: "/digitalmarket"
     },
     {
       imageUrl: c5,
-      text: 'Image 5',
+      text: 'Logo Deesigning',
       linkUrl: "/logodesign"
     },
     {
       imageUrl: c6,
-      text: 'Image 6',
+      text: 'Social Media',
       linkUrl: "/socialmedia"
     },
   ];

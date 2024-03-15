@@ -9,12 +9,15 @@ import Footer from './components/Footer/Footer';
 import Conatct from './components/Contact/Contact';
 import Portfolio from './components/Portfolio/Portfolio';
 import Career from './components/Career/Career';
-import Appdev from './components/Services/Inno Services/Appdev';
+// import Appdev from './components/Services/Inno Services/Appdev';
+
+
 import DigitalMarket from './components/Services/Inno Services/DigitalMarket';
 import LogoDesign from './components/Services/Inno Services/LogoDesign';
 import SocialMedia from './components/Services/Inno Services/SocialMedia';
 import WebDesign from './components/Services/Inno Services/WebDesign';
 import WebDev from './components/Services/Inno Services/WebDev';
+import Appdev from './components/Services/Inno Services/Appdev';
 
 
 
@@ -31,16 +34,17 @@ function App() {
     <Route path="/" element={<Home/>} />
     <Route path="/about" element={<About/>} />
     <Route path="/services" element={<Services/>} />
-    <Route path="/services" element={<Services/>} />
+    
     <Route path="/contact" element={<Conatct/>} /> 
     <Route path="/portfolio" element={<Portfolio/>} /> 
     <Route path="/career" element={<Career/>} /> 
-    <Route path="/appdev" element={<Appdev/>} /> 
-    <Route path="/digitalmarket" element={<DigitalMarket/>} /> 
-    <Route path="/logodesign" element={<LogoDesign/>} /> 
-    <Route path="/socialmedia" element={<SocialMedia/>} /> 
-    <Route path="/webdesign" element={<WebDesign/>} /> 
-    <Route path="/webdev" element={<WebDev/>} /> 
+    
+    <Route path="/appdev" element={<Appdev />} /> 
+          <Route path="/digitalmarket" element={<DigitalMarket />} /> 
+          <Route path="/logodesign" element={<LogoDesign />} /> 
+          <Route path="/socialmedia" element={<SocialMedia />} /> 
+          <Route path="/webdesign" element={<WebDesign />} /> 
+          <Route path="/webdev" element={<WebDev />} /> 
     </Routes>
     
     <Footer/>
