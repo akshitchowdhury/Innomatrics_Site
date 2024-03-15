@@ -8,6 +8,8 @@ import c6 from '../../assets/socialMedia.jpg'
 import './Services.css'
 import { Carousel } from 'flowbite-react';
 import ImageCardContainer from './Carousel/ImageCardContainer';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -99,12 +101,12 @@ const Services = () => {
         <div className="carosuelBox object-cover w-full h- h-56 sm:h-64 xl:h-80 2xl:h-96">
         
   <Carousel className="carosuel w-full h-full" >
-    <img src={c1} alt="..." className="object-contain w-full h-full" />
-    <img src={c2} alt="..." className="object-contain w-full h-full" />
-    <img src={c3} alt="..." className="object-contain w-full h-full" />
-    <img src={c4} alt="..." className="object-contain w-full h-full" />
-    <img src={c5} alt="..." className="object-contain w-full h-full" />
-    <img src={c6} alt="..." className="object-contain w-full h-full" />
+  <Link to="/app"><img src={c1} alt="..." className="object-contain w-full h-full" /></Link>
+  <Link to="/webdesign"><img src={c2} alt="..." className="object-contain w-full h-full" /></Link>
+  <Link to="/webdev"> <img src={c3} alt="..." className="object-contain w-full h-full" /></Link>
+  <Link to="/digitalmarket"><img src={c4} alt="..." className="object-contain w-full h-full" /></Link>
+  <Link to="/logodesign"><img src={c5} alt="..." className="object-contain w-full h-full" /></Link>
+    <Link to="/socialmedia">  <img src={c6} alt="..." className="object-contain w-full h-full" /></Link>
   </Carousel>
 </div>
 
