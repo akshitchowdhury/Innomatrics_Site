@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-          <div>
+          <div className="col-span-2 md:col-span-1 mb-6 md:mb-0 md:mr-4">
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Address</h2>
             <p className="text-gray-500 dark:text-gray-400 font-medium mb-4">
               123 Main Street,<br/>
@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Quick Links</h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
@@ -39,22 +39,32 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Legal</h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <a href="#" className="hover:underline">Privacy Policy</a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">Licensing</a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">Terms & Conditions</a>
-              </li>
-            </ul>
-          </div>
+          <div className="col-span-2 md:col-span-1">
+  <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Our Services</h2>
+  <ul className="text-gray-500 dark:text-gray-400 font-medium">
+    <li className="mb-4">
+      Web Design
+    </li>
+    <li className="mb-4">
+      Web Development
+    </li>
+    <li className="mb-4">
+      App Development
+    </li>
+    <li className="mb-4">
+      Social Media Marketing
+    </li>
+    <li className="mb-4">
+      Brand/Logo Design
+    </li>
+    <li className="mb-4">
+      Digital Marketing
+    </li>
+  </ul>
+</div>
 
-          <div>
+
+          <div className="col-span-2 md:col-span-1">
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Download</h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
