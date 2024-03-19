@@ -2,7 +2,7 @@
     position: relative;
     text-decoration: none;
     
-    transition: color 0.3s;
+    transition: color 0.5s;
     
   }
   
@@ -22,7 +22,7 @@
     bottom: 0;
     left: 0;
     background-color: transparent; /* Initial color of the underline */
-    transition: background-color 1.3s, width 0.3s;
+    transition: background-color 1.3s, width 1s;
   }
   
   .Qlinks li:hover {
@@ -30,7 +30,7 @@
   }
   
   .Qlinks li:hover::after {
-    background-color:#1DB954; /* Color of the underline when hovered */
+    background-color:#1d80b9; /* Color of the underline when hovered */
     width: 30%; /* Width of the underline when hovered */
     
 }
@@ -41,4 +41,12 @@
   background-position: center;
   opacity: 0.9;
   background-color: #191414;
+}
+
+.miniServices li{
+  color: #1d80b9;
+}
+
+.miniServices li:hover {
+  color: white;
 }

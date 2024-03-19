@@ -23,7 +23,7 @@ const Footer = () => {
 
           <div className="col-span-2 md:col-span-1">
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Quick Links</h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+            <ul className="Qlinks text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
                 <Link to="/" className="navbar-links">Home</Link>
               </li>
@@ -41,7 +41,7 @@ const Footer = () => {
 
           <div className="col-span-2 md:col-span-1">
   <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Our Services</h2>
-  <ul className="text-gray-500 dark:text-gray-400 font-medium">
+  <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
     <li className="mb-4">
       Web Design
     </li>
