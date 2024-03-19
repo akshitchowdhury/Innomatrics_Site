@@ -99,7 +99,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Overview</h2>
-          <p className="mt-2 leading-8 text-2xl font-extrabold text-gray-900 sm:text-3xl">
+          <p className="mt-2 leading-8 text-2xl font-extrabold font-serif text-gray-900 sm:text-3xl">
             With today’s fast-changing IT landscape, you must quickly build new applications to meet consumer demands, reduce tech debt, support legacy systems, and adopt new technologies – quite a balancing act.
           </p>
         </div>

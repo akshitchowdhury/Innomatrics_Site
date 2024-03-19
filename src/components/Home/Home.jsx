@@ -1,5 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import './Home.css'
+import { Link } from 'react-router-dom';
+
+import c1 from '../../assets/AppDev.jpg'
+import c2 from '../../assets/webDesign.jpg'
+import c3 from '../../assets/webDevelopment.jpg'
+import c4 from '../../assets/digitalMarkt.webp'
+import c5 from '../../assets/brandDesign.jpg'
+import c6 from '../../assets/socialMedia.jpg'
+
+import { Carousel } from 'flowbite-react';
+import ImageCardContainer from '../Services/Carousel/ImageCardContainer';
+
 
 const Home = () => {
   
@@ -38,7 +50,7 @@ const Home = () => {
                 media?
               </div>
               <div className="justify-center self-start px-6 py-2.5 mt-6 text-base font-medium text-center text-white whitespace-nowrap bg-indigo-900 rounded-sm max-md:px-5">
-                Register
+                <Link to= '/contact'> Get a Quote</Link> 
               </div>
             </div>
           </div>
@@ -102,7 +114,7 @@ const Home = () => {
       <div className="mt-1.5 w-full text-xs leading-4 text-center text-sky-500 max-md:max-w-full">
         Who is Nextcent suitable for?
       </div>
-      <div className="justify-between px-20 mt-3 w-full max-md:px-5 max-md:max-w-full">
+      {/* <div className="justify-between px-20 mt-3 w-full max-md:px-5 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col self-stretch px-3 py-4 my-auto w-full text-center bg-white rounded-md shadow-sm max-md:mt-10">
@@ -153,7 +165,22 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+    
+      {/* <div className="carosuelBox object-cover w-full h- h-56 sm:h-64 xl:h-80 2xl:h-96">
+        
+        <Carousel className="carosuel w-full h-full" >
+          <img src={c1} alt="..." className="object-contain w-full h-full" />
+          <img src={c2} alt="..." className="object-contain w-full h-full" />
+          <img src={c3} alt="..." className="object-contain w-full h-full" />
+          <img src={c4} alt="..." className="object-contain w-full h-full" />
+          <img src={c5} alt="..." className="object-contain w-full h-full" />
+          <img src={c6} alt="..." className="object-contain w-full h-full" />
+        </Carousel>
+      </div> */}
+      
+      <ImageCardContainer/>
+    
     </div>
 
 

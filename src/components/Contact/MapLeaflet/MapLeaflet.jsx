@@ -5,7 +5,7 @@ import './MapLeaflet.css'; // Create a separate CSS file for styling
 import L from 'leaflet';
 
 const MapLeaflet = () => {
-  const fixedLocation = [12.972007138583947, 77.61923362320319]; // Fixed location coordinates
+  const fixedLocation = [12.9163043,77.6076341]; // Fixed location coordinates
   const [userLocation, setUserLocation] = useState(null);
   const redIcon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
