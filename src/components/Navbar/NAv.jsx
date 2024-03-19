@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../assets/innoLogo2.jpeg'
-
+import './NAv.css'
 function NAv() {
   return (
     <nav className="bg-blue-900 dark:bg-gray-900  w-full z-20 top-0 start-0 ">
