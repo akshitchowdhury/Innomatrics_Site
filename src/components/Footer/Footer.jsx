@@ -1,19 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css'
+import MapLeaflet from '../Contact/MapLeaflet/MapLeaflet';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="mx-auto w-full max-w-screen-xl">
+      <div className="footerBlock1 mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-          <div className="col-span-2 md:col-span-1 mb-6 md:mb-0 md:mr-4">
+          <div className="address col-span-2 md:col-span-1 mb-6 md:mb-0 md:mr-4">
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Address</h2>
             <p className="text-gray-500 dark:text-gray-400 font-medium mb-4">
-              123 Main Street,<br/>
-              Cityville,<br/>
-              State ABC123,<br/>
-              Country XYZ
+            2nd Floor, Akshay Complex, No. 01, 16th Main Rd, near Bharat Petroleum, BTM 2nd Stage, Bengaluru, Karnataka 560076
             </p>
             <p className="text-gray-500 dark:text-gray-400 font-medium">
               Phone: 123-456-7890<br/>
@@ -64,22 +62,12 @@ const Footer = () => {
 </div>
 
 
-          <div className="col-span-2 md:col-span-1">
-            <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Download</h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <a href="#" className="hover:underline">iOS</a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">Android</a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">Windows</a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">MacOS</a>
-              </li>
-            </ul>
+          <div className="footerMap col-span-2 md:col-span-1">
+
+          <MapLeaflet className="mapFooter"/>
+
+
+
           </div>
         </div>
       </div>

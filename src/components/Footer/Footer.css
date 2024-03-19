@@ -41,6 +41,8 @@
   background-position: center;
   opacity: 0.9;
   background-color: #191414;
+
+  margin-bottom: -5%;
 }
 
 .miniServices li{
@@ -50,3 +52,25 @@
 .miniServices li:hover {
   color: white;
 }
+
+
+.address{
+  column-width: 30%;
+}
+
+.footerBlock1{
+  margin-bottom: -5%;
+}
+
+.footerMap{
+  margin-top: -10%;
+    
+}
+
+.mapFooter {
+  width: 100%; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+}
+
+
+
