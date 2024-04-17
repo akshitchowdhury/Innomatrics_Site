@@ -100,7 +100,7 @@ const Portfolio = () => {
     <>
    <div className='bg-gray-200 shadow-lg'>
    <div className="container  mx-auto flex flex-col md:flex-row items-center justify-center py-8">
-      <div className="md:w-1/2 md:pr-8 mb-4 md:mb-0">
+      <div className="md:w-full mx-4 md:pr-8 mb-4 md:mb-0">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Welcome to Our Portfolio</h2>
         <p className="text-lg md:text-xl mb-4">
           At Innomatrics Technologies, we take pride in delivering top-notch software consultancy services to businesses of all sizes. Our team of experienced professionals specializes in a wide range of technologies and domains, ensuring that we can cater to your specific needs with precision and expertise.
