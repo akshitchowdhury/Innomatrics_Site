@@ -10,13 +10,13 @@ import WhatsApp from './Whatsapp/Whatsapp';
 const SocialIcons = () => {
   return (
     <div className='social-icons' style={styles.container}>
-      <a href="https://www.instagram.com/play_pawws?igsh=YXVrOXJjb2gweTNw&utm_source=qr" style={styles.link}><FontAwesomeIcon icon={faInstagram} style={styles.icon('#E040E6', '#405DE6')} /></a>
+      <a href="https://www.instagram.com/innomatrics_tech/" style={styles.link}><FontAwesomeIcon icon={faInstagram} style={styles.icon('#E040E6', '#405DE6')} /></a>
       {/* <a href="https://www.instagram.com/play_pawws?igsh=YXVrOXJjb2gweTNw&utm_source=qr" style={styles.link}><FontAwesomeIcon icon={faWhatsapp} style={styles.icon('#405DE6', '#405DE6')} /></a>
        */}
       <a> <WhatsApp/> </a>
-      <a href="pawwsplay@gmail.com" style={styles.link}><FontAwesomeIcon icon={faEnvelope} style={styles.icon('#EA4335', '#EA4335')} /></a>
-      <a href="tel:+91 9740733118" style={styles.link}><FontAwesomeIcon icon={faPhone} style={styles.icon('#34A853', '#34A853')} /></a>
-      <a href="tel:+91 9740733118" style={styles.link}><FontAwesomeIcon icon={faLinkedin} style={styles.icon('#346AA8', '#34A853')} /></a>
+      <a href="hello@innomatrics.com" style={styles.link}><FontAwesomeIcon icon={faEnvelope} style={styles.icon('#EA4335', '#EA4335')} /></a>
+      <a href="tel:+91 84316 55799" style={styles.link}><FontAwesomeIcon icon={faPhone} style={styles.icon('#34A853', '#34A853')} /></a>
+      <a href="https://www.linkedin.com/in/innomatrics-technologies-b573952a8/" style={styles.link}><FontAwesomeIcon icon={faLinkedin} style={styles.icon('#346AA8', '#34A853')} /></a>
       
       
     </div>

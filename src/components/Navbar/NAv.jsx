@@ -12,7 +12,6 @@ function NAv() {
 
   return (
     <nav className="bg-blue-900 dark:bg-gray-900 w-full z-20 top-0 start-0 relative sticky">
-    
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <Link
           to="/"
@@ -30,12 +29,7 @@ function NAv() {
             {" "}
             <button
               type="button"
-              className="text-white 
-              bg-zinc-700 focus:ring-4 
-              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2
-              text-center dark:bg-blue-600 dark:focus:ring-blue-800
-              hover:bg-zinc-800 hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out"
+              className="text-black bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-3 text-center dark:bg-blue-600 dark:focus:ring-blue-800 hover:bg-zinc-800 hover:text-white hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
             >
               Get a Quote
             </button>
@@ -186,49 +180,3 @@ function NAv() {
 }
 
 export default NAv;
-
-// import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle, Button } from 'flowbite-react';
-// import logo from '../../assets/innoLogo.jpeg'
-// import { Link } from 'react-router-dom';
-// import './NAv.css'
-// import DropdownBasicExample from './Event List/DropdownButton';
-// import { useState } from 'react';
-
-// export default function NAv() {
-//   const [activeLink, setActiveLink] = useState('');
-
-//   const handleLinkClick = (link) => {
-//     setActiveLink(link);
-//   };
-
-//   return (
-//     <Navbar className='navbar' fluid rounded style={{height: '100px'}}>
-//       <NavbarBrand href="https://playpawws.com/">
-//         <img src={logo} className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-//         <span className="bubblegum-sans-regular self-center whitespace-nowrap text-xl text-fuchsia-900 font-semibold dark:text-white" >Play Pawws</span>
-//       </NavbarBrand>
-//       <div className="flex md:order-2 ">
-//         <Button ><Link to='/contact' >Book Now!</Link></Button>
-//         <NavbarToggle />
-//       </div>
-//       <NavbarCollapse className='NavbarCollapse'>
-
-//       <Navbar.Link href="#"  >
-//       <Link className='navbar-link' to="/" >
-//           Home
-//         </Link>
-//         </Navbar.Link>
-//         <Navbar.Link href="#" > <Link className='navbar-link '  to="/about">About</Link></Navbar.Link>
-//         {/* <Navbar.Link href="#"> <Link className='navbar-link' to="/attractions">Attractions</Link></Navbar.Link> */}
-//         <Navbar.Link href="#" ><Link className='navbar-link' to="/events">Events</Link></Navbar.Link>
-//         <Navbar.Link href="#" >
-//         <div className="pawDropDown">
-//         <DropdownBasicExample /></div></Navbar.Link>
-//         <Navbar.Link href="#"><Link className='navbar-link ' to="/franchise">Franchise</Link></Navbar.Link>
-//         <Navbar.Link href="#"> <Link className='navbar-link' to="/pricing">Pricing</Link></Navbar.Link>
-//         <Navbar.Link href="#"> <Link className='navbar-link' to="/contact">Contact</Link> </Navbar.Link>
-
-//       </NavbarCollapse>
-//     </Navbar>
-//   );
-// }
