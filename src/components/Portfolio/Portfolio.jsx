@@ -3,7 +3,18 @@ import React, { useState } from 'react';
 import v1 from '../../assets/video/v1.mp4';
 import v2 from '../../assets/video/v2.mp4';
 import p1 from '../../assets/p1.png';
-import p2 from '../../assets/p2.jpg';
+import p2 from '../../assets/portfolio/chan.jpg';
+import p3 from '../../assets/portfolio/dstudio.jpg';
+import p4 from '../../assets/portfolio/goldKey.jpg';
+import p5 from '../../assets/portfolio/indianDreams.jpg';
+import p6 from '../../assets/portfolio/mriTowing.jpg';
+import p7 from '../../assets/portfolio/osprzet.jpg';
+import p8 from '../../assets/portfolio/royalKing.jpg';
+import p9 from '../../assets/portfolio/skb.jpg';
+import p10 from '../../assets/portfolio/srisusa.jpg';
+import p11 from '../../assets/portfolio/tirupatiTours.jpg';
+import p12 from '../../assets/portfolio/vkLights.jpg';
+
 import './Portfolio.css'
 import VerticalImageCarousel from './Vertical Iamge Carousel/VerticalImageCarousle';
 
@@ -33,12 +44,52 @@ const Portfolio = () => {
       videoUrl: v2,
     },
     {
-      image: p2,
+      image: p3,
       text: 'Card 2',
       videoUrl: v2,
     },
     {
-      image: p2,
+      image: p4,
+      text: 'Card 2',
+      videoUrl: v2,
+    },
+    {
+      image: p5,
+      text: 'Card 2',
+      videoUrl: v2,
+    },
+    {
+      image: p6,
+      text: 'Card 2',
+      videoUrl: v2,
+    },
+    {
+      image: p7,
+      text: 'Card 2',
+      videoUrl: v2,
+    },
+    {
+      image: p8,
+      text: 'Card 2',
+      videoUrl: v2,
+    },
+    {
+      image: p9,
+      text: 'Card 2',
+      videoUrl: v2,
+    },
+    {
+      image: p10,
+      text: 'Card 2',
+      videoUrl: v2,
+    },
+    {
+      image: p11,
+      text: 'Card 2',
+      videoUrl: v2,
+    },
+    {
+      image: p12,
       text: 'Card 2',
       videoUrl: v2,
     },
