@@ -137,12 +137,6 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="self-center mt-7 text-4xl  leading-8 text-center text-indigo-400 w-[378px]">
-        Manage your entire community in a single system
-      </div>
-      <div className="my-4 w-full text-xl leading-4 text-center text-zinc-300 max-md:max-w-full">
-        Who is Nextcent suitable for?
-      </div>
       {/* <div className="justify-between px-20 mt-3 w-full max-md:px-5 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
