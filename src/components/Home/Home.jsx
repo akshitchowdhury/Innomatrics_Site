@@ -47,7 +47,7 @@ const Home = () => {
               <div className="text-5xl font-semibold text-indigo-900 leading-[53px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
                 Innomatrics Technologies
               </div>
-              <div className="mt-3 text-sky-500 max-md:max-w-full">
+              <div className="mt-3 text-xl text-sky-500 max-md:max-w-full">
                 Where to grow your business as a photographer: site or social
                 media?
               </div>
@@ -58,7 +58,7 @@ const Home = () => {
               className="text-white 
               px-6 py-2.5 mt-6
               bg-blue-700 focus:ring-4 
-              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2
+              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-4
               text-center dark:bg-blue-600 dark:focus:ring-blue-800
               hover:bg-white hover:text-black hover:transform hover:scale-105
               hover:shadow-lg transition duration-300 ease-in-out"
