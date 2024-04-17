@@ -66,14 +66,20 @@
 
 import React, { useState, useEffect } from 'react';
 
-import p1 from '../../../assets/portfolioBg.webp';
-import p2 from '../../../assets/p2.jpg';
-import p3 from '../../../assets/p1.png';
+import p1 from '../../../assets/portfolio/skb.jpg';
+import p2 from '../../../assets/portfolio/chan.jpg';
+import p3 from '../../../assets/portfolio/mriTowing.jpg';
+import p4 from '../../../assets/portfolio/dstudio.jpg';
+import p5 from '../../../assets/portfolio/goldKey.jpg';
+import p6 from '../../../assets/portfolio/osprzet.jpg';
+import p7 from '../../../assets/portfolio/royalKing.jpg';
+import p8 from '../../../assets/portfolio/vkLights.jpg';
 import './VerticalImageCarousle.css'
 
 const cards = [
-p1,p2,p3
+p1,p2,p3,p4,p5,p6,p7,p8
 ];
+
 const VerticalImageCarousel = () => {
   return (
     <div className="carouselContainer flex justify-center items-center h-screen ">

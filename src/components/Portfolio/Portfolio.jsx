@@ -35,62 +35,62 @@ const Portfolio = () => {
   const imageCardsData = [
     {
       image: p1,
-      text: 'Card 1',
+      text: 'KK Industries',
       videoUrl: v1,
     },
     {
       image: p2,
-      text: 'Card 2',
+      text: 'Chan Construcn',
       videoUrl: v2,
     },
     {
       image: p3,
-      text: 'Card 2',
+      text: 'D studio Weddings',
       videoUrl: v2,
     },
     {
       image: p4,
-      text: 'Card 2',
+      text: 'Gold Key',
       videoUrl: v2,
     },
     {
       image: p5,
-      text: 'Card 2',
+      text: 'Indian Dream Consultancy',
       videoUrl: v2,
     },
     {
       image: p6,
-      text: 'Card 2',
+      text: 'MRI Towing',
       videoUrl: v2,
     },
     {
       image: p7,
-      text: 'Card 2',
+      text: 'Osprezt technologies',
       videoUrl: v2,
     },
     {
       image: p8,
-      text: 'Card 2',
+      text: 'Royal King Facility',
       videoUrl: v2,
     },
     {
       image: p9,
-      text: 'Card 2',
+      text: 'SKB Tours and Travels',
       videoUrl: v2,
     },
     {
       image: p10,
-      text: 'Card 2',
+      text: 'Sri Susamskrutha Sai Charitable Trust',
       videoUrl: v2,
     },
     {
       image: p11,
-      text: 'Card 2',
+      text: 'Tirupathi Balaji Tours',
       videoUrl: v2,
     },
     {
       image: p12,
-      text: 'Card 2',
+      text: 'V.K Lights',
       videoUrl: v2,
     },
     // Add more card data as needed
