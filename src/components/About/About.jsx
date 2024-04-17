@@ -39,8 +39,8 @@ const About = () => {
     </p>
   </div>
 
-  <div className="p-3 aboutMe bg-gray-100 w-full lg:w-1/2">
-    <img src={aboutMe} alt="aboutMe" className="w-full" />
+  <div className="p-3 aboutMe bg-gray-100 w-full lg:w-1/2 ">
+    <img src={aboutMe} alt="aboutMe" className="w-full " />
   </div>
 </div>
 
