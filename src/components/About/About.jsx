@@ -2,6 +2,7 @@ import React from 'react';
 import './About.css'; // Import Tailwind styles
 import aboutMe from '../../assets/aboutMe.jpeg'
 import about from '../../assets/about.jpg'
+import OurVision from '../Home/Our Vision/OurVision';
 const About = () => {
     return (
         <>
@@ -42,6 +43,10 @@ const About = () => {
   <div className="p-3 aboutMe bg-gray-100 w-full lg:w-1/2 ">
     <img src={aboutMe} alt="aboutMe" className="w-full " />
   </div>
+</div>
+
+<div className='bg-sky-700 p-8'>
+<OurVision/>
 </div>
 
 <div className="text-center py-8 lg:py-12">

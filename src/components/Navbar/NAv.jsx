@@ -11,15 +11,18 @@ function NAv() {
   };
 
   return (
-    <nav className="bg-blue-900 dark:bg-gray-900  w-full z-20 top-0 start-0 relative ">
+    <nav className="bg-blue-900 dark:bg-gray-900 w-full z-20 top-0 start-0 relative sticky">
+    
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <Link
           to="/"
           className="flex flex-col items-center space-x-2 rtl:space-x-reverse"
         >
-          <img src={logo} className="h-14" alt="Flowbite Logo" />
-          
-          <h1 className="text-white text-sm text-bold">Innomatrics Technologies </h1>
+          <img src={logo} className="h-16" alt="Flowbite Logo" />
+
+          <h1 className="text-white text-sm text-bold">
+            Innomatrics Technologies{" "}
+          </h1>
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -27,7 +30,12 @@ function NAv() {
             {" "}
             <button
               type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white 
+              bg-blue-700 focus:ring-4 
+              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2
+              text-center dark:bg-blue-600 dark:focus:ring-blue-800
+              hover:bg-zinc-800 hover:transform hover:scale-105
+              hover:shadow-lg transition duration-300 ease-in-out"
             >
               Get a Quote
             </button>
@@ -179,8 +187,6 @@ function NAv() {
 
 export default NAv;
 
-
-
 // import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle, Button } from 'flowbite-react';
 // import logo from '../../assets/innoLogo.jpeg'
 // import { Link } from 'react-router-dom';
@@ -206,7 +212,7 @@ export default NAv;
 //         <NavbarToggle />
 //       </div>
 //       <NavbarCollapse className='NavbarCollapse'>
-   
+
 //       <Navbar.Link href="#"  >
 //       <Link className='navbar-link' to="/" >
 //           Home
@@ -221,10 +227,7 @@ export default NAv;
 //         <Navbar.Link href="#"><Link className='navbar-link ' to="/franchise">Franchise</Link></Navbar.Link>
 //         <Navbar.Link href="#"> <Link className='navbar-link' to="/pricing">Pricing</Link></Navbar.Link>
 //         <Navbar.Link href="#"> <Link className='navbar-link' to="/contact">Contact</Link> </Navbar.Link>
-        
-        
-        
-      
+
 //       </NavbarCollapse>
 //     </Navbar>
 //   );

@@ -11,6 +11,7 @@ import c6 from '../../assets/socialMedia.jpg'
 
 import { Carousel } from 'flowbite-react';
 import ImageCardContainer from '../Services/Carousel/ImageCardContainer';
+import OurVision from './Our Vision/OurVision';
 
 
 const Home = () => {
@@ -49,19 +50,38 @@ const Home = () => {
                 Where to grow your business as a photographer: site or social
                 media?
               </div>
-              <div className="justify-center self-start px-6 py-2.5 mt-6 text-base font-medium text-center text-white whitespace-nowrap bg-indigo-900 rounded-sm max-md:px-5">
-                <Link to= '/contact'> Get a Quote</Link> 
-              </div>
+              <Link to="/contact">
+            {" "}
+            <button
+              type="button"
+              className="text-white 
+              px-6 py-2.5 mt-6
+              bg-blue-700 focus:ring-4 
+              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2
+              text-center dark:bg-blue-600 dark:focus:ring-blue-800
+              hover:bg-zinc-800 hover:transform hover:scale-105
+              hover:shadow-lg transition duration-300 ease-in-out"
+            >
+              Get a Quote
+            </button>
+          </Link> 
             </div>
           </div>
          
-        
+
+
+
+
       </div>
+              
+      <div style={{padding: '4%'}}>
+          <OurVision/>
+        </div>
       <div className="flex flex-col items-center px-20 mt-7 w-full max-md:px-5 max-md:max-w-full">
-        <div className="text-2xl font-semibold leading-8 text-center text-indigo-300 max-md:max-w-full">
+        <div className="text-4xl font-semibold leading-8 text-center text-indigo-400 max-md:max-w-full">
           Our Clients
         </div>
-        <div className="mt-1.5 text-xs leading-4 text-center text-sky-300 max-md:max-w-full">
+        <div className="mt-1.5 text-lg leading-4 text-center text-zinc-300 max-md:max-w-full">
           We have been working with some Fortune 500+ clients
         </div>
         <div className="flex gap-5 justify-between py-4 mt-3 w-full max-w-[802px] max-md:flex-wrap max-md:max-w-full">
@@ -102,10 +122,10 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="self-center mt-7 text-2xl font-semibold leading-8 text-center text-indigo-300 w-[378px]">
+      <div className="self-center mt-7 text-4xl font-semibold leading-8 text-center text-indigo-400 w-[378px]">
         Manage your entire community in a single system
       </div>
-      <div className="mt-1.5 w-full text-xs leading-4 text-center text-sky-500 max-md:max-w-full">
+      <div className="my-4 w-full text-xl leading-4 text-center text-zinc-300 max-md:max-w-full">
         Who is Nextcent suitable for?
       </div>
       {/* <div className="justify-between px-20 mt-3 w-full max-md:px-5 max-md:max-w-full">
