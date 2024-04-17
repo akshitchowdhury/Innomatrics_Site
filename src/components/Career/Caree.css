@@ -78,8 +78,9 @@
   
   .career-form {
     flex: 1;
-    padding-left: 100px; /* Add padding to create space between the image and the form */
-  }
+     /* Add padding to create space between the image and the form */
+    margin-left: 5%;
+    }
   
   @media screen and (max-width: 768px) {
     .career-image{
