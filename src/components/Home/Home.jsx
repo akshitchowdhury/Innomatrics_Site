@@ -12,6 +12,7 @@ import c6 from '../../assets/socialMedia.jpg'
 import { Carousel } from 'flowbite-react';
 import ImageCardContainer from '../Services/Carousel/ImageCardContainer';
 import OurVision from './Our Vision/OurVision';
+import OurMission from './Our Mission/OurMission';
 
 
 const Home = () => {
@@ -73,12 +74,26 @@ const Home = () => {
 
 
       </div>
-              
-      <div style={{padding: '4%'}}>
-          <OurVision/>
-        </div>
+      <div className='p-8 my-6'>
+
+      <h2 className='text-4xl text-white text-center'>Our Services</h2>
+      
+      <ImageCardContainer/>
+      </div>
+
+
+      <div style={{ padding: '4%' }} className='flex flex-col sm:flex-row'>
+  <div style={{ flex: 1,
+  marginRight: '2%' }}>
+    <OurVision />
+  </div>
+  <div style={{ flex: 1 }}>
+    <OurMission />
+  </div>
+</div>
+
       <div className="flex flex-col items-center px-20 mt-7 w-full max-md:px-5 max-md:max-w-full">
-        <div className="text-4xl font-semibold leading-8 text-center text-indigo-400 max-md:max-w-full">
+        <div className="text-4xl  leading-8 text-center text-indigo-400 max-md:max-w-full">
           Our Clients
         </div>
         <div className="mt-1.5 text-lg leading-4 text-center text-zinc-300 max-md:max-w-full">
@@ -122,7 +137,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="self-center mt-7 text-4xl font-semibold leading-8 text-center text-indigo-400 w-[378px]">
+      <div className="self-center mt-7 text-4xl  leading-8 text-center text-indigo-400 w-[378px]">
         Manage your entire community in a single system
       </div>
       <div className="my-4 w-full text-xl leading-4 text-center text-zinc-300 max-md:max-w-full">
@@ -193,7 +208,6 @@ const Home = () => {
         </Carousel>
       </div> */}
       
-      <ImageCardContainer/>
     
     </div>
 
