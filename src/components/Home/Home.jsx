@@ -37,9 +37,9 @@ const Home = () => {
     </div> */}
 
     
-    <div className="flex flex-col">
-      <div className="p-20 w-full bg-white max-md:px-5 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+    <div className="home flex flex-col">
+      
+        <div className="p-20 flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[63%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col self-stretch my-auto text-xs leading-4 max-md:mt-10 max-md:max-w-full">
               <div className="text-5xl font-semibold text-indigo-900 leading-[53px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
@@ -54,20 +54,14 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col ml-5 w-[37%] max-md:ml-0 max-md:w-full">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec84fd69f507c32720d5a6dc2b043ff93948a2d94d0deebedd3029c784d69a4e?"
-              className="mt-1.5 w-full aspect-[0.96] max-md:mt-10"
-            />
-          </div>
-        </div>
+         
+        
       </div>
       <div className="flex flex-col items-center px-20 mt-7 w-full max-md:px-5 max-md:max-w-full">
-        <div className="text-2xl font-semibold leading-8 text-center text-indigo-900 max-md:max-w-full">
+        <div className="text-2xl font-semibold leading-8 text-center text-indigo-300 max-md:max-w-full">
           Our Clients
         </div>
-        <div className="mt-1.5 text-xs leading-4 text-center text-sky-500 max-md:max-w-full">
+        <div className="mt-1.5 text-xs leading-4 text-center text-sky-300 max-md:max-w-full">
           We have been working with some Fortune 500+ clients
         </div>
         <div className="flex gap-5 justify-between py-4 mt-3 w-full max-w-[802px] max-md:flex-wrap max-md:max-w-full">
@@ -108,7 +102,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="self-center mt-7 text-2xl font-semibold leading-8 text-center text-indigo-900 w-[378px]">
+      <div className="self-center mt-7 text-2xl font-semibold leading-8 text-center text-indigo-300 w-[378px]">
         Manage your entire community in a single system
       </div>
       <div className="mt-1.5 w-full text-xs leading-4 text-center text-sky-500 max-md:max-w-full">

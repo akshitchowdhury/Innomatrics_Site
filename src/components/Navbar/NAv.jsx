@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/innoLogo2.jpeg";
+import logo from "../../assets/innomatric_logo_only.png";
 import "./NAv.css";
 function NAv() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,12 +12,14 @@ function NAv() {
 
   return (
     <nav className="bg-blue-900 dark:bg-gray-900  w-full z-20 top-0 start-0 relative ">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <Link
           to="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
+          className="flex flex-col items-center space-x-2 rtl:space-x-reverse"
         >
-          <img src={logo} className="h-16" alt="Flowbite Logo" />
+          <img src={logo} className="h-14" alt="Flowbite Logo" />
+          
+          <h1 className="text-white text-sm text-bold">Innomatrics Technologies </h1>
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">

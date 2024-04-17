@@ -1,15 +1,5 @@
-.home {
-    width: 100rem;
-    height: 100vh;
-    background-image: url('../../assets/homeBg.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: 0.5;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .home.animate {
-    opacity: 1;
-    transition: opacity 1s ease-in-out; /* Make sure to include the transition here as well */
-  }
-  
+.home{
+  background-image: url('../../assets/homeBgif2.gif');
+  background-attachment: fixed;
+  background-size: cover;
+}
