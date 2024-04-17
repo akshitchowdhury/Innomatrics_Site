@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import v1 from '../../assets/video/v1.mp4';
 import v2 from '../../assets/video/v2.mp4';
-import p1 from '../../assets/p1.png';
+import p1 from '../../assets/portfolio/infinity.jpg';
 import p2 from '../../assets/portfolio/chan.jpg';
 import p3 from '../../assets/portfolio/dstudio.jpg';
 import p4 from '../../assets/portfolio/goldKey.jpg';
@@ -36,9 +36,9 @@ const Portfolio = () => {
   const imageCardsData = [
     {
       image: p1,
-      text: 'KK Industries',
+      text: 'Inifinty Travles',
       videoUrl: v1,
-      link: "https://www.kkindustrie.com/"
+      link: "https://infinitytravelsblr.com/"
     },
     {
       image: p2,
