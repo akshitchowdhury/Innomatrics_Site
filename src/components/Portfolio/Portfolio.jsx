@@ -17,6 +17,7 @@ import p12 from '../../assets/portfolio/vkLights.jpg';
 
 import './Portfolio.css'
 import VerticalImageCarousel from './Vertical Iamge Carousel/VerticalImageCarousle';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   const [videoUrl, setVideoUrl] = useState('');
@@ -37,61 +38,68 @@ const Portfolio = () => {
       image: p1,
       text: 'KK Industries',
       videoUrl: v1,
+      link: "https://www.kkindustrie.com/"
     },
     {
       image: p2,
       text: 'Chan Construcn',
-      videoUrl: v2,
+      videoUrl: v2, link: "https://chanconstructions.com/"
+      
     },
     {
       image: p3,
       text: 'D studio Weddings',
-      videoUrl: v2,
+      videoUrl: v2, 
+      link: "https://dstudioweddings.com/"
     },
     {
       image: p4,
       text: 'Gold Key',
-      videoUrl: v2,
+      videoUrl: v2, link: "http://goldenkeysolutions.co.in/"
+      
     },
     {
       image: p5,
       text: 'Indian Dream Consultancy',
-      videoUrl: v2,
+      videoUrl: v2, link: "https://indiandreamsconsultancy.in/"
+      
     },
     {
       image: p6,
       text: 'MRI Towing',
-      videoUrl: v2,
+      videoUrl: v2, link: "https://mritowingservice.com/"
     },
     {
       image: p7,
       text: 'Osprezt technologies',
-      videoUrl: v2,
+      videoUrl: v2, 
+      link: "https://osprzet.in/"
     },
     {
       image: p8,
       text: 'Royal King Facility',
-      videoUrl: v2,
+      videoUrl: v2, 
+      link: "https://royalkingfacility.co.in/"
     },
     {
       image: p9,
       text: 'SKB Tours and Travels',
-      videoUrl: v2,
+      videoUrl: v2, link: "https://skbtoursandtravels.com/"
     },
     {
       image: p10,
       text: 'Sri Susamskrutha Sai Charitable Trust',
-      videoUrl: v2,
+      videoUrl: v2, link: "https://srisusamskrutha.org/"
     },
     {
       image: p11,
       text: 'Tirupathi Balaji Tours',
-      videoUrl: v2,
+      videoUrl: v2, link: "https://tirupatibalajitours.in/"
     },
     {
       image: p12,
       text: 'V.K Lights',
-      videoUrl: v2,
+      videoUrl: v2, link: "https://vklights.in/"
     },
     // Add more card data as needed
   ];
@@ -137,6 +145,7 @@ const Portfolio = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {imageCardsData.map((card, index) => (
+            <a href= {card.link} target='_blank'> 
             <div
               key={index}
               onClick={() => handleCardClick(card.videoUrl)}
@@ -149,6 +158,7 @@ const Portfolio = () => {
                 <p className="text-lg font-semibold mb-2">{card.text}</p>
               </div>
             </div>
+            </a>
           ))}
         </div>
     </div>
