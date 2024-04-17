@@ -14,7 +14,7 @@ const Footer = () => {
             2nd Floor, Akshay Complex, No. 01, 16th Main Rd, near Bharat Petroleum, BTM 2nd Stage, Bengaluru, Karnataka 560076
             </p>
             <p className="text-gray-500 dark:text-gray-400 font-medium">
-              Phone: 8431655799<br/>
+              Phone: +91 84316 55799<br/>
               Email: hello@innomatricstech.com
             </p>
           </div>

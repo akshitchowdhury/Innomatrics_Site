@@ -1,19 +1,29 @@
 import React, { useState } from 'react';
-import { FaInstagram, FaFacebook, FaEnvelope, FaPhone } from 'react-icons/fa';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChild, faEnvelope, faPaw, faPhone, } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram, faLinkedin, faWhatsapp,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import './SocialIcons2.css'
+import WhatsApp from './Whatsapp/Whatsapp';
 
 
 const SocialIcons = () => {
   return (
     <div className='social-icons' style={styles.container}>
-      <a href="https://www.instagram.com/" style={styles.link}><FaInstagram style={styles.icon('#405DE6', '#405DE6')} /></a>
-      <a href="https://www.facebook.com/" style={styles.link}><FaFacebook style={styles.icon('#1877F2', '#1877F2')} /></a>
-      <a href="Info@kkindustries.com" style={styles.link}><FaEnvelope style={styles.icon('#EA4335', '#EA4335')} /></a>
-      <a href="tel:7975656410" style={styles.link}><FaPhone style={styles.icon('#34A853', '#34A853')} /></a>
+      <a href="https://www.instagram.com/play_pawws?igsh=YXVrOXJjb2gweTNw&utm_source=qr" style={styles.link}><FontAwesomeIcon icon={faInstagram} style={styles.icon('#E040E6', '#405DE6')} /></a>
+      {/* <a href="https://www.instagram.com/play_pawws?igsh=YXVrOXJjb2gweTNw&utm_source=qr" style={styles.link}><FontAwesomeIcon icon={faWhatsapp} style={styles.icon('#405DE6', '#405DE6')} /></a>
+       */}
+      <a> <WhatsApp/> </a>
+      <a href="pawwsplay@gmail.com" style={styles.link}><FontAwesomeIcon icon={faEnvelope} style={styles.icon('#EA4335', '#EA4335')} /></a>
+      <a href="tel:+91 9740733118" style={styles.link}><FontAwesomeIcon icon={faPhone} style={styles.icon('#34A853', '#34A853')} /></a>
+      <a href="tel:+91 9740733118" style={styles.link}><FontAwesomeIcon icon={faLinkedin} style={styles.icon('#346AA8', '#34A853')} /></a>
+      
+      
     </div>
   );
 }
+
+
 
 const styles = {
   container: {
