@@ -8,7 +8,7 @@ const ClientsCard = ({ text, author,  Place, image }) => {
       
        rounded-lg shadow-lg overflow-hidden">
          {/* Reduced the margin */}
-            <img className="h-24 w-24  rounded-full object-contain   mx-32 md:mx-40 " 
+            <img className="h-56 w-48  rounded-full object-contain   mx-32 md:mx-40 " 
             src={image} alt="Profile Image" />
           
 {/*           
