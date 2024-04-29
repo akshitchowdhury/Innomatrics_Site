@@ -29,7 +29,10 @@ function NAv() {
             {" "}
             <button
               type="button"
-              className="text-black bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-3 text-center dark:bg-blue-600 dark:focus:ring-blue-800 hover:bg-zinc-800 hover:text-white hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
+              className="text-black bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium
+               rounded-lg text-sm px-6 py-3 text-center dark:bg-blue-600 dark:focus:ring-blue-800 
+               hover:bg-zinc-800 hover:text-white
+               hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
             >
               Get a Quote
             </button>
@@ -125,7 +128,7 @@ function NAv() {
             <li>
               <Link
                 to="/"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500 md:hover:text-black"
+                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500 md:hover:text-zinc-900"
                 aria-current="page"
               >
                 Home
@@ -134,7 +137,7 @@ function NAv() {
             <li>
               <Link
                 to="/about"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-black dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 aria-current="page"
               >
                 About
@@ -143,7 +146,7 @@ function NAv() {
             <li>
               <Link
                 to="/services"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-black dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Services
               </Link>
@@ -151,7 +154,7 @@ function NAv() {
             <li>
               <Link
                 to="/portfolio"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-black dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Portfolio
               </Link>
@@ -159,7 +162,7 @@ function NAv() {
             <li>
               <Link
                 to="/career"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-black dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Career
               </Link>
@@ -167,7 +170,7 @@ function NAv() {
             <li>
               <Link
                 to="/contact"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:hover:text-black dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Contact
               </Link>

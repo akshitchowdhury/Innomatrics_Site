@@ -2,21 +2,63 @@ import React, { useEffect, useState } from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom';
 
-import c1 from '../../assets/AppDev.jpg'
-import c2 from '../../assets/webDesign.jpg'
-import c3 from '../../assets/webDevelopment.jpg'
-import c4 from '../../assets/digitalMarkt.webp'
-import c5 from '../../assets/brandDesign.jpg'
-import c6 from '../../assets/socialMedia.jpg'
+import c1 from '../../assets/portfolioLogo/MRItow.jpg'
+import c2 from '../../assets/portfolioLogo/RoyalKing.jpg'
+import c3 from '../../assets/portfolioLogo/chanconst.jpg'
+import c4 from '../../assets/portfolioLogo/dstudio.jpg'
+import c5 from '../../assets/portfolioLogo/goldkey.jpg'
+import c6 from '../../assets/portfolioLogo/infinitytravels.jpg'
+import c7 from '../../assets/portfolioLogo/ngo.jpg'
+import c8 from '../../assets/portfolioLogo/osprezt.jpg'
+import c9 from '../../assets/portfolioLogo/skb.jpg'
+import c10 from '../../assets/portfolioLogo/thriupathiTours.jpg'
+import c11 from '../../assets/portfolioLogo/vklights.jpg'
 
 import { Carousel } from 'flowbite-react';
 import ImageCardContainer from '../Services/Carousel/ImageCardContainer';
 import OurVision from './Our Vision/OurVision';
 import OurMission from './Our Mission/OurMission';
+import ClientsCard from '../ClientsLogo/ClientsCard';
+import ClientsCarousel from '../ClientsLogo/ClientsCarousel';
 
 
 const Home = () => {
   
+  const clientLogos = [
+    {
+      image: c1
+    },
+    {
+      image: c2
+    },
+    {
+      image: c3
+    },
+    {
+      image: c4
+    },
+    {
+      image: c5
+    },
+    {
+      image: c6
+    },
+    {
+      image: c7
+    },
+    {
+      image: c8
+    },
+    {
+      image: c9
+    },
+    {
+      image: c10
+    },
+    {
+      image: c11
+    },
+  ]
   
     const[isAnimating, setIsAnimating] = useState(true);
     useEffect(() => {
@@ -29,14 +71,7 @@ const Home = () => {
     }, []); // Empty dependency array ensures this effect runs only once on mount
     return (<>    
     
-    {/* <div className={`home ${isAnimating? 'animate' : '' }`}  >
 
-    <div className="text-5xl font-semibold text-black leading-[53px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
-                Lessons and insights{" "}
-                <span className="text-red-500">from 8 years</span>
-              </div>      
-            
-    </div> */}
 
     
     <div className="home flex flex-col">
@@ -56,9 +91,9 @@ const Home = () => {
             <button
               type="button"
               className="text-white 
-              px-6 py-2.5 mt-6
+              px-6  mt-6
               bg-blue-700 focus:ring-4 
-              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-4
+              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  py-4
               text-center dark:bg-blue-600 dark:focus:ring-blue-800
               hover:bg-white hover:text-black hover:transform hover:scale-105
               hover:shadow-lg transition duration-300 ease-in-out"
@@ -97,44 +132,10 @@ const Home = () => {
           Our Clients
         </div>
         <div className="mt-1.5 text-lg leading-4 text-center text-zinc-300 max-md:max-w-full">
-          We have been working with some Fortune 500+ clients
+          We have been working with some of the best players in the industry
         </div>
         <div className="flex gap-5 justify-between py-4 mt-3 w-full max-w-[802px] max-md:flex-wrap max-md:max-w-full">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/862c454318dd82ea8d6e4889ae7eb9b83c305258ef052d2e871c9ff96f3f1f92?"
-            className="shrink-0 aspect-square w-[34px]"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f521e3cd8ddfa7e987de066bdaa63ee8048eb8b0c8e637e70eb4ef5fd776efa7?"
-            className="shrink-0 aspect-square w-[34px]"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f2e071476f0d2ba0209884d838d3d76ed2855bea53dafc4d975a881e16399c3?"
-            className="shrink-0 aspect-square w-[34px]"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/66fab2ff47fb872d33a1205c52c1db01f145dcad2c566f4d8a8dfa4f9b28cf09?"
-            className="shrink-0 aspect-square w-[34px]"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a7b22aa5a5a9734cf9f059f837e491274237b536c42e84ad310cedb26c2b0fa?"
-            className="shrink-0 aspect-[0.97] w-[33px]"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2788ff02d485976e68363ac8740f7dec276bb8573f9a6b527d0fafa87f132e1?"
-            className="shrink-0 aspect-[0.97] w-[33px]"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3409b9692d07a2ae5e1b1f267b6c5f4ad809e9621000bd8656962e7d902929e5?"
-            className="shrink-0 aspect-[0.97] w-[33px]"
-          />
+          <ClientsCarousel clientLogos ={clientLogos}/>
         </div>
       </div>
       {/* <div className="justify-between px-20 mt-3 w-full max-md:px-5 max-md:max-w-full">

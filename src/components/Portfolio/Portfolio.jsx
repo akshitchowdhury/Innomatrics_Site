@@ -133,7 +133,7 @@ const Portfolio = () => {
 
     <div className="block2">
     <div className="mb-8 flex justify-center">
-        <video
+        {/* <video
           src={videoUrl}
           controls={isPlaying}
           autoPlay={isPlaying}
@@ -141,7 +141,9 @@ const Portfolio = () => {
           width="600"
           height="400"
           className="rounded-lg shadow-md"
-        />
+        /> */}
+
+        <h1 className= "text-zinc-800 font-semibold text-6xl">Our Portfolio</h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {imageCardsData.map((card, index) => (
