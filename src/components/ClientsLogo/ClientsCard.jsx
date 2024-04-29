@@ -2,13 +2,13 @@ import React from 'react';
 
 const ClientsCard = ({ text, author,  Place, image }) => {
   return (
-    <section className="bg-inherit dark:bg-gray-900 w-full overflow-hidden">
-    <div className="max-w-screen-md mx-auto px-4 py-8 lg:py-16 lg:px-6">
+    <section className="bg-inherit dark:bg-gray-900 w-full mx-11 md:mx-auto overflow-hidden">
+    <div className="max-w-screen-md mx-auto px-4 w-full py-8 lg:py-16 lg:px-6">
       <div className="max-w-md   py-4 md:py-6 
-        mx-auto md:mx-24
-       rounded-lg shadow-lg overflow-hidden">
+        mx-auto h-64 md:h-56 w-full md:w-full
+        shadow-lg overflow-hidden">
          {/* Reduced the margin */}
-            <img className="h-56 w-48  rounded-full object-contain   mx-32 md:mx-40 " 
+            <img className="h-64 md:h-56 w-64 md:w-48   object-contain   mx-48 md:mx-40 " 
             src={image} alt="Profile Image" />
           
 {/*           
