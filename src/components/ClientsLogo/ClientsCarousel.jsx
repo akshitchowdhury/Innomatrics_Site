@@ -41,7 +41,7 @@ const ClientsCarousel = ({ clientLogos }) => {
   return (
 
     <>
-   <div className="carousel-container bg-inherit justify-center -mx-36">
+   <div className="carousel-container bg-inherit justify-center -mx-44">
     
 
     <div className="max-w-6xl mx-auto">

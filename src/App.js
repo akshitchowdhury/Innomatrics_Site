@@ -25,7 +25,7 @@ import SocialIcons from './components/Social Icons/SocialIcons';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-clip">
         
     <Router>
     <NAv/> 

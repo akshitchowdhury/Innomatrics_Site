@@ -35,7 +35,7 @@ const styles = {
 
 const WhatsApp = ({ phoneNumber, message }) => {
   const handleClick = () => {
-    const url = generateLink(phoneNumber=9740733118, message="Welcome to Innomatrics Technologies...Feel free to connect with us");
+    const url = generateLink(phoneNumber=8431655799, message="Welcome to Innomatrics Technologies...Feel free to connect with us");
     window.open(url, '_blank');
   };
 
