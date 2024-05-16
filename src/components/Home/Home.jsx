@@ -109,7 +109,7 @@ const Home = () => {
 
 
       </div>
-      <div className='p-8 my-6'>
+      <div className='p-8 my-36'>
 
       <h2 className='text-4xl text-white text-center'>Our Services</h2>
       
