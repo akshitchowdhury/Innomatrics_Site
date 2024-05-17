@@ -73,9 +73,12 @@ const InquiryAndMapComponent = () => {
   
   return (
     <div className='contactBlock display-flex flex-col md:flex-row sm:flex-col ' style={{ display: 'flex' }}>
-      <Card className='bg-inherit' style={{ flex: 1, marginRight: '1rem', maxHeight: '500px'}}>
+      <Card className='bg-inherit' style={{ flex: 1, marginRight: '1rem', maxHeight: '500px',
+      border: 'none'}}>
        {/* Adjust the max-height as per your requirement */}
-        <h2 className='text-center text-black text-7xl mb-6'>We'd love to hear from you</h2>
+        <h2 className='text-left text-gray-700 font-semibold
+        font-sans
+         text-6xl mb-6'>We'd love to hear from you!</h2>
         
       </Card>
      
