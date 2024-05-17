@@ -1,6 +1,7 @@
 .contact{
     background-image: url('../../assets/contact2.jpg');
     margin-top: -5%;
+    background-size: contain;
     
 }
 
