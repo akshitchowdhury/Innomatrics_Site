@@ -65,8 +65,8 @@ const InquiryForm = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit">
-          <h2 className="text-center text-black text-l mb-6">Submit</h2>
+        <Button type="primary" className="w-full bg-red-500 h-12" htmlType="submit">
+          <h2 className="text-center p-2 text-white font-semibold text-lg mb-6">Submit</h2>
         </Button>
       </Form.Item>
     </Form>
@@ -115,7 +115,7 @@ const InquiryAndMapComponent = () => {
           marginBottom: "5%",
           flex: 1,
           marginRight: "1rem",
-          maxHeight: "500px",
+          maxHeight: "520px",
         }}
       >
         {" "}
