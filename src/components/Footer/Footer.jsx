@@ -8,16 +8,7 @@ const Footer = () => {
     <footer className="footer bg-blue-900">
       <div className="footerBlock1 mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-          <div className="address col-span-2 md:col-span-1 mb-6 md:mb-0 md:mr-4">
-            <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Address</h2>
-            <p className="text-white dark:text-gray-400 font-medium mb-4">
-            2nd Floor, Akshay Complex, No. 01, 16th Main Rd, near Bharat Petroleum, BTM 2nd Stage, Bengaluru, Karnataka 560076
-            </p>
-            <p className="text-white dark:text-gray-400 font-medium">
-              Phone: +91 84316 55799<br/>
-              Email: hello@innomatricstech.com
-            </p>
-          </div>
+          
 
           <div className="col-span-2 md:col-span-1">
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Quick Links</h2>
@@ -38,7 +29,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-2 md:col-span-1">
-  <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Our Services</h2>
+  <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">What We Do</h2>
   <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
     <li className="mb-4">
       Web Design
@@ -61,14 +52,43 @@ const Footer = () => {
   </ul>
 </div>
 
+          <div className="col-span-2 md:col-span-1">
+  <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Important Links</h2>
+  <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
+    <li className="mb-4">
+    Privacy Policy
+    </li>
+    <li className="mb-4">
+      
+    Terms of Service
+    </li>
+    <li className="mb-4">
+    Content Disclaimer
+    
+    </li>
+    <li className="mb-4">
+    Refund/Cancellation
+    
+    </li>
+    <li className="mb-4">
+    Data Retention Policy
+    </li>
+  </ul>
+</div>
 
-          <div className="footerMap col-span-2 md:col-span-1">
 
-          <MapLeaflet className="mapFooter"/>
-
-
-
+          <div className="address col-span-2 md:col-span-1 mb-6 md:mb-0 md:mr-4">
+            <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Address</h2>
+            <p className="text-white dark:text-gray-400 font-medium mb-4">
+            2nd Floor, Akshay Complex, No. 01, 16th Main Rd, near Bharat Petroleum, BTM 2nd Stage, Bengaluru, Karnataka 560076
+            </p>
+            <p className="text-white dark:text-gray-400 font-medium">
+              Phone: +91 84316 55799<br/>
+              Email: hello@innomatricstech.com
+            </p>
           </div>
+
+
         </div>
       </div>
 

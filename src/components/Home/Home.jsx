@@ -79,7 +79,7 @@ const Home = () => {
         <div className="p-20 flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[63%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col self-stretch my-auto text-xs leading-4 max-md:mt-10 max-md:max-w-full">
-              <div className="text-5xl font-semibold text-indigo-900 leading-[53px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
+              <div className="text-5xl font-semibold text-indigo-500 leading-[53px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
                 Innomatrics Technologies
               </div>
               <div className="mt-3 text-sm text-sky-500 flex items-center justify-normal">
