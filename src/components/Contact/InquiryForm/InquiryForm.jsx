@@ -73,15 +73,18 @@ const InquiryAndMapComponent = () => {
   
   return (
     <div className='contactBlock display-flex flex-col md:flex-row sm:flex-col ' style={{ display: 'flex' }}>
-      <Card style={{marginBottom: '5%', flex: 1, marginRight: '1rem', maxHeight: '500px', boxShadow: '0 4px 6px rgba(255, 0, 0, 0.6)' }}> {/* Adjust the max-height as per your requirement */}
+      <Card className='bg-inherit' style={{ flex: 1, marginRight: '1rem', maxHeight: '500px'}}>
+       {/* Adjust the max-height as per your requirement */}
+        <h2 className='text-center text-black text-7xl mb-6'>We'd love to hear from you</h2>
+        
+      </Card>
+     
+      <Card
+       style={{marginBottom: '5%', flex: 1, marginRight: '1rem', maxHeight: '500px' }}> {/* Adjust the max-height as per your requirement */}
         <h2 className='text-center text-black text-xl mb-6'>Inquiry Form</h2>
         <InquiryForm />
       </Card>
-      <Card style={{ flex: 1, marginRight: '1rem', maxHeight: '500px', boxShadow: '0 4px 6px rgba(0, 255, 0, 0.6)'}}>
-       {/* Adjust the max-height as per your requirement */}
-        <h2 className='text-center text-black text-xl mb-6'>Map</h2>
-        <MapLeaflet />
-      </Card>
+     
     </div>
   );
 };
