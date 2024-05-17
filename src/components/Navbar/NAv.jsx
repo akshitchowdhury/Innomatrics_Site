@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import logo from "../../assets/innomatric_logo_only.png";
 import "./NAv.css";
+import { Dropdown } from "flowbite-react";
 function NAv() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -148,12 +149,26 @@ function NAv() {
               </Link>
             </li>
             <li>
-              <Link
+              {/* <Link
                 to="/services"
                 className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Services
-              </Link>
+              </Link> */}
+              <Link
+                to="/services"
+                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+              
+              <Dropdown label="SERVICES" className="justify-center items-center " inline dismissOnClick={false}>
+      <Dropdown.Item >APP DEVELOPMENT</Dropdown.Item>
+      <Dropdown.Item>WEB DEVELOPMENT</Dropdown.Item>
+      <Dropdown.Item>WEBSITE DESIGN</Dropdown.Item>
+      <Dropdown.Item>SEO</Dropdown.Item>
+      <Dropdown.Item>DIGITAL MARKETING</Dropdown.Item>
+      <Dropdown.Item>SOCIAL MEDIA MARKETING</Dropdown.Item>
+    </Dropdown>
+    </Link>
             </li>
             <li>
               <Link
