@@ -5,3 +5,11 @@ li{
 li:hover{
     transform: scale(1.2);
 }
+
+.services{
+    transition: transform 0.3s ease;
+}
+
+.services:hover{
+    transform: none;
+}
