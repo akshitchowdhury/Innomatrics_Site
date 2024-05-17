@@ -19,7 +19,7 @@ function NAv() {
         >
           <img src={logo} className="h-16" alt="Flowbite Logo" />
 
-          <h1 className="text-white text-sm text-bold">
+          <h1 className="text-white text-sm text-bold ">
             Innomatrics Technologies{" "}
           </h1>
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}

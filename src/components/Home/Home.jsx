@@ -82,10 +82,12 @@ const Home = () => {
               <div className="text-5xl font-semibold text-indigo-900 leading-[53px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
                 Innomatrics Technologies
               </div>
-              <div className="mt-3 text-xl text-sky-500 max-md:max-w-full">
-                Where to grow your business as a photographer: site or social
-                media?
-              </div>
+              <div className="mt-3 text-sm text-sky-500 flex items-center justify-normal">
+  <hr className="w-1/12"/>
+  <span className="mx-2 md:mx-4">Innovate Inspire Integrate</span>
+  <hr className="w-1/12"/>
+</div>
+
               <Link to="/contact">
             {" "}
             <button
