@@ -62,11 +62,11 @@ function NAv() {
         </div>
         {menuOpen && (
           <div className="absolute top-full left-0 w-full bg-zinc-600 text-white border border-gray-200 md:hidden">
-            <ul className="flex flex-col p-4 md:p-0 text-lg font-semibold uppercase">
+            <ul className="flex flex-col p-4 md:p-0  font-thin text-sm uppercase">
               <li>
                 <Link
                   to="/"
-                  className="block py-2 px-3 hover:text-black"
+                  className="block py-2 px-3  hover:text-black"
                   onClick={toggleMenu}
                 >
                   Home
@@ -124,7 +124,11 @@ function NAv() {
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 text-lg font-semibold	 uppercase border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
+          <ul className="flex flex-col gap-6 p-4 md:p-0 mt-4  font-semibold	
+           uppercase border border-gray-100 rounded-lg  
+           md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
+           text-sm 
+            dark:border-gray-700">
             <li>
               <Link
                 to="/"

@@ -5,15 +5,15 @@ import MapLeaflet from '../Contact/MapLeaflet/MapLeaflet';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer bg-blue-900">
       <div className="footerBlock1 mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div className="address col-span-2 md:col-span-1 mb-6 md:mb-0 md:mr-4">
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Address</h2>
-            <p className="text-gray-500 dark:text-gray-400 font-medium mb-4">
+            <p className="text-white dark:text-gray-400 font-medium mb-4">
             2nd Floor, Akshay Complex, No. 01, 16th Main Rd, near Bharat Petroleum, BTM 2nd Stage, Bengaluru, Karnataka 560076
             </p>
-            <p className="text-gray-500 dark:text-gray-400 font-medium">
+            <p className="text-white dark:text-gray-400 font-medium">
               Phone: +91 84316 55799<br/>
               Email: hello@innomatricstech.com
             </p>
