@@ -8,7 +8,7 @@ import InquiryAndMapComponent from './InquiryForm/InquiryForm';
 
 const Conatct = () => {
   return (
-    <div className='contact'>
+    <div className='contact h-[170vh]  md:h-[100vh]'>
     
     
     <InquiryAndMapComponent/>
