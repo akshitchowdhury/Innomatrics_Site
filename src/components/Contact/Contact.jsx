@@ -11,9 +11,6 @@ const Conatct = () => {
     <div className='contact'>
     
     
-    <br />  
-    <br />  
-    <br />  
     <InquiryAndMapComponent/>
     </div>
   )
