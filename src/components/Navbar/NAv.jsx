@@ -31,11 +31,11 @@ function NAv() {
             <button
               type="button"
               className="text-black bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium
-               rounded-lg text-sm px-6 py-3 text-center dark:bg-blue-600 dark:focus:ring-blue-800 
+                text-sm px-6 py-3 text-center dark:bg-blue-600 dark:focus:ring-blue-800 
                hover:bg-zinc-800 hover:text-white
                hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
             >
-              Get a Quote
+              Get Started
             </button>
           </Link>
           <button
@@ -125,10 +125,10 @@ function NAv() {
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul className="flex flex-col gap-6 p-4 md:p-0 mt-4  font-semibold	
-           uppercase border border-gray-100 rounded-lg  
+          <ul className="flex flex-col gap-6 p-4 md:p-0 mt-4  font-medium	
+            border border-gray-100 rounded-lg  
            md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
-           text-sm 
+           text-lg
             dark:border-gray-700">
             <li>
               <Link
@@ -154,13 +154,13 @@ function NAv() {
                 to="/services"
                 className="block py-2 px-3 text-white rounded
                  hover:bg-gray-100 md:hover:bg-transparent 
-                 hover:text-sm
+                 
                  md:p-0 md:hover:text-zinc-900 dark:text-white
                   dark:hover:bg-gray-700 dark:hover:text-white 
                   md:dark:hover:bg-transparent dark:border-gray-700"
               >
               
-              <Dropdown label="SERVICES" className="justify-center items-center w-auto 
+              <Dropdown label="Services" className="justify-center items-center w-auto 
               hover:text-sm 
                " inline dismissOnClick={false}>
       <Dropdown.Item >

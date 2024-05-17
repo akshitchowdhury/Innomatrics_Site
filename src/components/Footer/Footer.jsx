@@ -4,7 +4,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer className="footer bg-blue-900 h-auto">
+    <footer className="footer bg-black h-auto">
       <div className="footerBlock1 mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           

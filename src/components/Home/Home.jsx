@@ -79,10 +79,11 @@ const Home = () => {
         <div className="p-20 flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[63%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col self-stretch my-auto text-xs leading-4 max-md:mt-10 max-md:max-w-full">
-              <div className="text-5xl font-semibold text-indigo-500 leading-[53px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
+              <div className="text-7xl font-semibold
+               text-white leading-[79px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]">
                 Innomatrics Technologies
               </div>
-              <div className="mt-3 text-sm text-sky-500 flex items-center justify-normal">
+              <div className="mt-3 text-sm text-sky-500 flex items-center mx-11">
   <hr className="w-1/12"/>
   <span className="mx-2 md:mx-4">Innovate Inspire Integrate</span>
   <hr className="w-1/12"/>
@@ -95,10 +96,11 @@ const Home = () => {
               className="text-white 
               px-6  mt-6
               bg-blue-700 focus:ring-4 
-              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  py-4
+              focus:outline-none focus:ring-blue-300 font-medium  text-sm  py-4
               text-center dark:bg-blue-600 dark:focus:ring-blue-800
               hover:bg-white hover:text-black hover:transform hover:scale-105
-              hover:shadow-lg transition duration-300 ease-in-out"
+              hover:shadow-lg transition duration-300 ease-in-out
+              mx-32"
             >
               Get a Quote
             </button>
@@ -111,7 +113,7 @@ const Home = () => {
 
 
       </div>
-      <div className='p-8 my-36'>
+      <div className='p-8 my-28'>
 
       <h2 className='text-4xl text-white text-center'>Our Services</h2>
       

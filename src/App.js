@@ -18,6 +18,7 @@ import SocialMedia from './components/Services/Inno Services/SocialMedia';
 import WebDesign from './components/Services/Inno Services/WebDesign';
 import WebDev from './components/Services/Inno Services/WebDev';
 import Appdev from './components/Services/Inno Services/Appdev';
+import SocialIcons from './components/Social Icons/SocialIcons';
 
 
 
@@ -28,8 +29,8 @@ function App() {
         
     <Router>
     <NAv/> 
-{/*     
-    <SocialIcons/> */}
+    
+    <SocialIcons/>
     <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/about" element={<About/>} />
