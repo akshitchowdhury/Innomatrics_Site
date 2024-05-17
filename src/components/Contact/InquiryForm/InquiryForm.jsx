@@ -23,6 +23,7 @@ const InquiryForm = () => {
         
         label="Name"
         name="name"
+        className=' font-semibold text-gray-700'
         rules={[{ required: true, message: 'Please input your name!' }]}
       >
         <Input className='enter-name' />
@@ -30,8 +31,9 @@ const InquiryForm = () => {
 
       <Form.Item
       
-        label="Email Address"
+        label="Business email Address"
         name="email"
+        className=' font-semibold'
         rules={[
           { required: true, message: 'Please input your email!' },
           { type: 'email', message: 'Please enter a valid email address!' },
@@ -43,6 +45,7 @@ const InquiryForm = () => {
       <Form.Item
       
         label="Message"
+        className=' font-semibold'
         name="message"
         rules={[{ required: true, message: 'Please input your message!' }]}
       >
@@ -51,6 +54,7 @@ const InquiryForm = () => {
 
       <Form.Item
         label="Phone Number"
+        className=' font-semibold'
         name="phone"
         rules={[
           { required: true, message: 'Please input your phone number!' },
@@ -79,12 +83,17 @@ const InquiryAndMapComponent = () => {
         <h2 className='text-left text-gray-700 font-semibold
         font-sans
          text-6xl mb-6'>We'd love to hear from you!</h2>
-        
+        <p
+        className='text-lg'>Please let us know what you are looking for and we will get in touch with you</p>
       </Card>
      
       <Card
-       style={{marginBottom: '5%', flex: 1, marginRight: '1rem', maxHeight: '500px' }}> {/* Adjust the max-height as per your requirement */}
-        <h2 className='text-center text-black text-xl mb-6'>Inquiry Form</h2>
+       className='p-10 '
+       style={{
+        
+        marginBottom: '5%', flex: 1, marginRight: '1rem', maxHeight: '500px', 
+        }}> {/* Adjust the max-height as per your requirement */}
+        
         <InquiryForm />
       </Card>
      
