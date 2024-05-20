@@ -55,22 +55,31 @@ const Footer = () => {
   <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Important Links</h2>
   <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
     <li className="mb-4">
+    <Link to="/privacy">
     Privacy Policy
+    </Link>
     </li>
     <li className="mb-4">
-      
+      <Link to="/terms">
     Terms of Service
+    </Link>
     </li>
     <li className="mb-4">
+    <Link to= "/content">
     Content Disclaimer
-    
+    </Link>
     </li>
     <li className="mb-4">
+    <Link to= "/refund">
+
     Refund/Cancellation
-    
+    </Link>
     </li>
     <li className="mb-4">
+    <Link to= "/data">
+
     Data Retention Policy
+    </Link>
     </li>
   </ul>
 </div>

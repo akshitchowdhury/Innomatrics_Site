@@ -19,6 +19,11 @@ import WebDesign from './components/Services/Inno Services/WebDesign';
 import WebDev from './components/Services/Inno Services/WebDev';
 import Appdev from './components/Services/Inno Services/Appdev';
 import SocialIcons from './components/Social Icons/SocialIcons';
+import PrivacyPolicy from './components/Footer/Legal/PrivacyPolicy';
+import TermsOfService from './components/Footer/Legal/TermsOfService';
+import ContentDisclaimer from './components/Footer/Legal/ContentDisclaimer';
+import RefundCancellationPolicy from './components/Footer/Legal/RefundCancellationPolicy';
+import DataRetentionPolicy from './components/Footer/Legal/DataRetentionPolicy';
 
 
 
@@ -30,7 +35,7 @@ function App() {
     <Router>
     <NAv/> 
     
-    <SocialIcons/>
+    {/* <SocialIcons/> */}
     <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/about" element={<About/>} />
@@ -46,6 +51,11 @@ function App() {
           <Route path="/socialmedia" element={<SocialMedia />} /> 
           <Route path="/webdesign" element={<WebDesign />} /> 
           <Route path="/webdev" element={<WebDev />} /> 
+          <Route path="/privacy" element={<PrivacyPolicy />} /> 
+          <Route path="/terms" element={<TermsOfService />} /> 
+          <Route path="/content" element={<ContentDisclaimer />} /> 
+          <Route path="/refund" element={<RefundCancellationPolicy />} /> 
+          <Route path="/data" element={<DataRetentionPolicy />} /> 
     </Routes>
     
     <Footer/>
