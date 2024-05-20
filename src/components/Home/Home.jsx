@@ -20,6 +20,8 @@ import OurVision from './Our Vision/OurVision';
 import OurMission from './Our Mission/OurMission';
 import ClientsCard from '../ClientsLogo/ClientsCard';
 import ClientsCarousel from '../ClientsLogo/ClientsCarousel';
+import Join from './JoinTeam/Join';
+import CountRise from './CountRise/CountRise';
 
 
 const Home = () => {
@@ -131,8 +133,11 @@ const Home = () => {
   </div>
 </div>
 
+<Join/>
+
+<CountRise/>
       <div className="flex flex-col items-center px-20 mt-7 w-full max-md:px-5 max-md:max-w-full">
-        <div className="text-4xl  leading-8 text-center text-indigo-400 max-md:max-w-full">
+        <div className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
           Our Clients
         </div>
         <div className="mt-1.5 text-lg leading-4 text-center text-zinc-300 max-md:max-w-full">

@@ -9,7 +9,7 @@ import growth from '../../../assets/m4.png'
 const OurMission = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="text-4xl  text-purple-300 text-center mb-8 ">Our Mission</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12 ">Our Mission</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 ">
         {/* Card 1 */}
         <div className="bg-white rounded-lg shadow-lg overflow-hidden  p-6

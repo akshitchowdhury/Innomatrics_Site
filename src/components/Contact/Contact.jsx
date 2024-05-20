@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 // import { Bounce } from "react-swift-reveal";
 // import MapLeaflet from './MapLeaflet/MapLeaflet';
 import InquiryAndMapComponent from './InquiryForm/InquiryForm';
+import CountRise from '../Home/CountRise/CountRise';
 
 
 const Conatct = () => {
@@ -12,6 +13,7 @@ const Conatct = () => {
     
     
     <InquiryAndMapComponent/>
+    <CountRise/>
     </div>
   )
 }

@@ -8,11 +8,11 @@
   
   .navbar-links{
 
-    color: #1d80b9
+    color: white;
   }
   .navbar-links:hover{
 
-    color: white
+    color: rgb(226, 114, 23)
   }
   .Qlinks li::after {
     content: '';
@@ -29,11 +29,6 @@
     color: white /* Color of the link when hovered */
   }
   
-  .Qlinks li:hover::after {
-    background-color:#1d80b9; /* Color of the underline when hovered */
-    width: 30%; /* Width of the underline when hovered */
-    
-}
 
 .footer{
   /* background-image: url('../../assets/footerBg.jpg'); */
@@ -44,11 +39,11 @@
 }
 
 .miniServices li{
-  color: #1d80b9;
+  color: white;
 }
 
 .miniServices li:hover {
-  color: white;
+  color: rgb(226, 114, 23);
 }
 
 
