@@ -14,7 +14,7 @@ const Industry = () => {
   };
 
   return (
-    <div className="container mx-auto py-16 px-4">
+    <div className="container mx-auto py-16 px-4 my-14">
       <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8">
         {/* First Column */}
         <div className="w-full lg:w-1/3">
