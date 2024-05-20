@@ -22,6 +22,7 @@ import ClientsCard from '../ClientsLogo/ClientsCard';
 import ClientsCarousel from '../ClientsLogo/ClientsCarousel';
 import Join from './JoinTeam/Join';
 import CountRise from './CountRise/CountRise';
+import Industry from './Industry/Industry';
 
 
 const Home = () => {
@@ -111,10 +112,12 @@ const Home = () => {
           </div>
          
 
-
+        
 
 
       </div>
+
+      <Industry/>
       <div className='p-8 my-28'>
 
       <h2 className='text-4xl text-white text-center'>Our Services</h2>
