@@ -49,7 +49,7 @@ const Industry = () => {
         {/* Third Column */}
         <div className="w-full lg:w-1/3 flex justify-center lg:justify-end">
           <img
-            src={indus1}
+            src={hoveredItem !== null ? data[hoveredItem].image : indus1}
             alt="Industry"
             className="w-full h-auto max-w-sm rounded-md shadow-md"
           />
