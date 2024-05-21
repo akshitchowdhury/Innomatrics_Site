@@ -1,13 +1,39 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+
+const useIntersection = (callback, options) => {
+  const ref = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        callback();
+      }
+    }, options);
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [callback, options]);
+
+  return ref;
+};
 
 const CountUpAnimation = ({ initialValue, targetValue, text }) => {
   const [count, setCount] = useState(initialValue);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const duration = 4000; // 4 seconds
 
-  useEffect(() => {
+  const startAnimation = () => {
+    if (hasAnimated) return; // Do not animate again if already animated
+    setHasAnimated(true); // Mark as animated
     let startValue = initialValue;
     const interval = Math.floor(duration / (targetValue - initialValue));
-
+    
     const counter = setInterval(() => {
       startValue += 1;
       setCount(startValue);
@@ -15,14 +41,14 @@ const CountUpAnimation = ({ initialValue, targetValue, text }) => {
         clearInterval(counter);
       }
     }, interval);
+  };
 
-    return () => {
-      clearInterval(counter);
-    };
-  }, [targetValue, initialValue]);
+  const ref = useIntersection(() => {
+    startAnimation();
+  });
 
   return (
-    <div className="flex flex-col items-center">
+    <div ref={ref} className="flex flex-col items-center">
       <span className="text-4xl md:text-6xl font-bold text-orange-500">{count}</span>
       <span className="text-lg md:text-xl text-white mt-2">{text}</span>
     </div>

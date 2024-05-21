@@ -10,20 +10,20 @@ const data = [
         desc: "Driving transformation with our banking, financial services, insurance, and payments experts"
     },
     {
-        title : "TELECOM",
-        desc: "Next-gen digital platforms and differentiated offerings for 5G technologies"
+        title : "NGO ORGANISATIONS",
+        desc: "Empowering communities and driving impactful change through dedicated efforts"
     },
     {
-        title : "HIGH TECHNOLOGY",
-        desc: "Solving real world challenges through rapid innovation and cutting-edge R&D"
+        title : "TOURS AND TRAVELS",
+        desc: "Embark on unforgettable journeys with tailored experiences and exceptional hospitality"
     },
     {
-        title : "MEDIA & ENTERTAINMENT",
-        desc: "Bringing our clients secure, seamless, and advanced enterprise messaging"
+        title : "CONSTRUCTION FIRMS",
+        desc: "Building the future with innovative and sustainable solutions"
     },
     {
-        title : "GOVERNMENT",
-        desc: "Modernizing IT for digital-first experiences for state, local, and federal agencies"
+        title : "SECURITY",
+        desc: "Ensuring safety and peace of mind with cutting-edge protection services"
     },
 ]
 
