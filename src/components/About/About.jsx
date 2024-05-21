@@ -158,12 +158,12 @@ const About = () => {
           We are proud to have developed deep partnerships with some of today’s
           leading digital technology companies.
         </p>
-
+{/* 
         <h4 className="text-left text-2xl lg:text-2xl font-bold text-gray-800 mb-4">
           OUR CLIENTS
         </h4>
 
-        <div className="clientCard"></div>
+        <div className="clientCard"></div> */}
       </div>
     </>
   );
