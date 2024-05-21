@@ -18,11 +18,8 @@ function NAv() {
           to="/"
           className="flex flex-col items-center space-x-2 rtl:space-x-reverse"
         >
-          <img src={logo} className="h-16" alt="Flowbite Logo" />
+          <img src={logo} className="h-24" alt="Flowbite Logo" />
 
-          <h1 className="text-white text-sm text-bold ">
-            Innomatrics Technologies{" "}
-          </h1>
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">

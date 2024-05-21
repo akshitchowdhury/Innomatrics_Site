@@ -30,24 +30,41 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
   <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">What We Do</h2>
   <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
+  <Link to ="/webdesign">
     <li className="mb-4">
       Web Design
     </li>
+    </Link>
+
+    <Link to ="/webdev">
     <li className="mb-4">
       Web Development
     </li>
+    </Link>
+    
+    <Link to ="/appdev">
     <li className="mb-4">
       App Development
     </li>
+    </Link>
+
+    <Link to ="/socialmedia">
     <li className="mb-4">
       Social Media Marketing
     </li>
+    </Link>
+
+    <Link to = "/logodesign">
     <li className="mb-4">
       Brand/Logo Design
     </li>
+    </Link>
+    
+    <Link to = "/digitalmarket">
     <li className="mb-4">
       Digital Marketing
     </li>
+    </Link>
   </ul>
 </div>
 
