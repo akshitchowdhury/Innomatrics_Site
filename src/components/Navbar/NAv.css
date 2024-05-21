@@ -10,6 +10,6 @@ li:hover{
     transition: transform 0.3s ease;
 }
 
-.services:hover{
+.serviceBlock:hover{
     transform: none;
 }

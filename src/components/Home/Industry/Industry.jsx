@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import indus1 from '../../../assets/brandDesign.jpg';
 import data from './data';
+import { Link } from 'react-router-dom';
 
 const Industry = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -41,9 +42,11 @@ const Industry = () => {
           <p className="text-base md:text-lg text-white mb-6">
             {hoveredItem !== null ? data[hoveredItem].desc : "Hover over an industry to see more information."}
           </p>
+          <Link to= "/contact">
           <button className="bg-orange-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-orange-700 transition duration-300">
             Learn More
           </button>
+          </Link>
         </div>
         
         {/* Third Column */}

@@ -82,7 +82,7 @@ function NAv() {
                   About
                 </Link>
               </li>
-              <li>
+              <li >
                 <Link
                   to="/services"
                   className="block py-2 px-3 hover:text-black"
@@ -148,6 +148,8 @@ function NAv() {
                 About
               </Link>
             </li>
+            
+            <ul className="flex flex-row gap-x-0.1">
             <li className="services">
               
               <Link
@@ -159,8 +161,16 @@ function NAv() {
                   dark:hover:bg-gray-700 dark:hover:text-white 
                   md:dark:hover:bg-transparent dark:border-gray-700"
               >
-              
-              <Dropdown label="Services" className="justify-center items-center w-auto 
+              Services
+    </Link>
+            </li>
+            <li className="serviceBlock  text-white rounded 
+                 hover:bg-gray-100 md:hover:bg-transparent 
+                 
+                 md:p-0 md:hover:text-zinc-900 dark:text-white
+                  dark:hover:bg-gray-700 dark:hover:text-white 
+                  md:dark:hover:bg-transparent dark:border-gray-700">
+            <Dropdown  className="justify-start items-start py-2
               hover:text-sm 
                " inline dismissOnClick={false}>
       <Dropdown.Item >
@@ -193,8 +203,8 @@ function NAv() {
       <Dropdown.Item>SOCIAL MEDIA MARKETING</Dropdown.Item>
       </Link>
     </Dropdown>
-    </Link>
             </li>
+            </ul>
             <li>
               <Link
                 to="/portfolio"

@@ -49,7 +49,7 @@ const CountUpAnimation = ({ initialValue, targetValue, text }) => {
 
   return (
     <div ref={ref} className="flex flex-col items-center">
-      <span className="text-4xl md:text-6xl font-bold text-orange-500">{count}</span>
+      <span className="text-4xl md:text-6xl font-bold text-orange-500">{count >= targetValue ? `${targetValue}+` : count}</span>
       <span className="text-lg md:text-xl text-white mt-2">{text}</span>
     </div>
   );
@@ -63,7 +63,7 @@ function CountRise() {
       </h2>
       <div className="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0">
         <div className="flex flex-col items-center">
-          <CountUpAnimation initialValue={0} targetValue={150} text="Lives Impacted" />
+          <CountUpAnimation initialValue={0} targetValue={150}  text="Lives Impacted" />
         </div>
         <div className="w-px h-24 bg-orange-500 hidden md:block"></div>
         <div className="flex flex-col items-center">
