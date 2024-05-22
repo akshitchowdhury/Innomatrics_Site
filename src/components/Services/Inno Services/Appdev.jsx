@@ -2,48 +2,63 @@ import React from "react";
 import app from "../../../assets/AppDev.jpg";
 import app2 from "../../../assets/app2.jpg";
 import approach from "../../../assets/approach.jpg";
+import a1 from "../../../assets/appServices/strategicPlanApp.jpg";
+import a2 from "../../../assets/appServices/usercentric.webp";
+import a3 from "../../../assets/appServices/customDev.jpg";
+import a4 from "../../../assets/appServices/crossPlatform.png";
+import a5 from "../../../assets/appServices/qualityTest.png";
+import a6 from "../../../assets/appServices/maintainenece.jpg";
 import "./Appdev.css";
 
-const ServicesCard = ({ title, description }) => (
-  <div className="bg-white shadow-md rounded-lg p-6 m-4 flex-1">
+const ServicesCard = ({ title, description, image }) => (
+  <div className="bg-white shadow-md rounded-lg p-6 m-4 flex-1 hover:scale-105
+  transition ease-in-out duration-300">
+    <img src={image} className="w-full h-32 object-contain mb-4" alt={title} />
     <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
     <p className="text-gray-600">{description}</p>
   </div>
 );
 
-
 export default function AppDev() {
-
   const services = [
     {
-      title: 'Strategic Planning',
-      description: 'We start by understanding your business goals, target audience, and technical requirements to develop a comprehensive strategy that guides the entire application design and development process.',
+      title: "Strategic Planning",
+      description:
+        "We start by understanding your business goals, target audience, and technical requirements to develop a comprehensive strategy that guides the entire application design and development process.",
+      image: a1,
     },
     {
-      title: 'User-Centric Design',
-      description: 'Our talented team of designers will create a visually stunning and intuitive user interface (UI) and user experience (UX) design that delights users and enhances engagement.',
+      title: "User-Centric Design",
+      description:
+        "Our talented team of designers will create a visually stunning and intuitive user interface (UI) and user experience (UX) design that delights users and enhances engagement.",
+      image: a2,
     },
     {
-      title: 'Custom Development',
-      description: 'Whether you need a mobile app, web app, or desktop application, we have the expertise to develop custom solutions that are scalable, secure, and built to perform.',
+      title: "Custom Development",
+      description:
+        "Whether you need a mobile app, web app, or desktop application, we have the expertise to develop custom solutions that are scalable, secure, and built to perform.",
+      image: a3,
     },
     {
-      title: 'Cross-Platform Compatibility',
-      description: 'We specialize in developing applications that work seamlessly across multiple platforms and devices, ensuring a consistent experience for users regardless of their preferred device or operating system.',
+      title: "Cross-Platform Compatibility",
+      description:
+        "We specialize in developing applications that work seamlessly across multiple platforms and devices, ensuring a consistent experience for users regardless of their preferred device or operating system.",
+      image: a4,
     },
     {
-      title: 'Integration Services',
-      description: 'We can integrate your application with third-party APIs, databases, and systems to enhance functionality, streamline processes, and improve overall efficiency.',
+      title: "Quality Assurance and Testing",
+      description:
+        "Our rigorous QA testing process ensures that your application is thoroughly tested for functionality, performance, security, and compatibility before launch, resulting in a high-quality and error-free product.",
+      image: a5,
     },
     {
-      title: 'Quality Assurance and Testing',
-      description: 'Our rigorous QA testing process ensures that your application is thoroughly tested for functionality, performance, security, and compatibility before launch, resulting in a high-quality and error-free product.',
-    },
-    {
-      title: 'Maintenance and Support',
-      description: 'Our commitment to customer satisfaction doesn’t end at launch. We provide ongoing maintenance and support services to ensure that your application remains up-to-date, secure, and optimized for performance.',
+      title: "Maintenance and Support",
+      description:
+        "Our commitment to customer satisfaction doesn’t end at launch. We provide ongoing maintenance and support services to ensure that your application remains up-to-date, secure, and optimized for performance.",
+      image: a6,
     },
   ];
+
   return (
     <div className="flex flex-col items-center pt-10 pb-20 bg-white shadow-sm">
       <div className="BgDiv relative flex flex-col items-center self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full">
@@ -87,7 +102,6 @@ export default function AppDev() {
                 competition
               </p>
             </div>
-
           </div>
           <div className="flex flex-auto w-full md:w-[40%]">
             <img
@@ -98,51 +112,47 @@ export default function AppDev() {
               alt="App Development"
             />
           </div>
-          
         </div>
-        
       </div>
 
-
-
-
       <div className="mt-16 max-w-[65vw] ">
-      <div className="flex flex-col md:flex-row gap-20 -mx-36 ">
-        <div className="flex w-full md:w-1/2">
-          <img
-            loading="lazy"
-            src={approach}
-            className="w-full h-auto rounded-lg shadow-lg"
-            alt="App Development"
-          />
-        </div>
+        <div className="flex flex-col md:flex-row gap-20 -mx-36 ">
+          <div className="flex w-full md:w-1/2">
+            <img
+              loading="lazy"
+              src={approach}
+              className="w-full h-auto rounded-lg shadow-lg"
+              alt="App Development"
+            />
+          </div>
 
-        <div className="flex flex-col  w-full md:w-1/2 ">
-          <div className="text-justify mb-8">
-            <h1 className="text-3xl font-bold text-gray-800">Our Approach</h1>
-            <p className="mt-4 text-gray-600">
-              We believe that successful applications are built on a foundation of strategic planning, creative design, and flawless execution. Our process begins with a deep dive into your business objectives, target audience, and industry landscape. From there, we work collaboratively with you to conceptualize, design, develop, and launch a tailored solution that meets your specific needs and exceeds your expectations.
-            </p>
+          <div className="flex flex-col  w-full md:w-1/2 ">
+            <div className="text-justify mb-8">
+              <h1 className="text-3xl font-bold text-gray-800">Our Approach</h1>
+              <p className="mt-4 text-gray-600">
+                We believe that successful applications are built on a foundation of strategic planning, creative design, and flawless execution. Our process begins with a deep dive into your business objectives, target audience, and industry landscape. From there, we work collaboratively with you to conceptualize, design, develop, and launch a tailored solution that meets your specific needs and exceeds your expectations.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-{/* //-------------------------------------------// */}
 
       <div className="container mx-auto p-6">
-      
-      <div className="text-center mb-8 my-4">
-        <h2 className="text-2xl font-semibold text-gray-800">Services We Offer</h2>
-      </div>
+        <div className="text-center mb-8 my-4">
+          <h2 className="text-2xl font-semibold text-gray-800">Services We Offer</h2>
+        </div>
 
-      <div className="grid grid-cols-3 justify-center">
-        {services.map((service, index) => (
-          <ServicesCard key={index} title={service.title} description={service.description} />
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service, index) => (
+            <ServicesCard
+              key={index}
+              title={service.title}
+              description={service.description}
+              image={service.image}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-
-      {/* Add other sections similarly */}
     </div>
   );
 }
