@@ -62,7 +62,7 @@ function NAv() {
         {menuOpen && (
           <div className="absolute top-full left-0 w-full bg-zinc-600 text-white border border-gray-200 md:hidden">
             <ul className="flex flex-col p-4 md:p-0  font-thin text-sm uppercase">
-              <li>
+              <li className="navLinks">
                 <Link
                   to="/"
                   className="block py-2 px-3  hover:text-black"
@@ -71,7 +71,7 @@ function NAv() {
                   Home
                 </Link>
               </li>
-              <li>
+              <li className="navLinks">
                 <Link
                   to="/about"
                   className="block py-2 px-3 hover:text-black"
@@ -89,7 +89,7 @@ function NAv() {
                   Services
                 </Link>
               </li>
-              <li>
+              <li className="navLinks">
                 <Link
                   to="/portfolio"
                   className="block py-2 px-3 hover:text-black"
@@ -98,7 +98,7 @@ function NAv() {
                   Portfolio
                 </Link>
               </li>
-              <li>
+              <li className="navLinks">
                 <Link
                   to="/career"
                   className="block py-2 px-3 hover:text-black"
@@ -107,7 +107,7 @@ function NAv() {
                   Career
                 </Link>
               </li>
-              <li>
+              <li className="navLinks">
                 <Link
                   to="/contact"
                   className="block py-2 px-3 hover:text-black"
@@ -128,7 +128,7 @@ function NAv() {
            md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
            text-lg
             dark:border-gray-700">
-            <li>
+            <li className="navLinks">
               <Link
                 to="/"
                 className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500 md:hover:text-zinc-900"
@@ -137,7 +137,7 @@ function NAv() {
                 Home
               </Link>
             </li>
-            <li>
+            <li className="navLinks">
               <Link
                 to="/about"
                 className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -166,7 +166,7 @@ function NAv() {
 
 
             </ul>
-            <li>
+            <li className="navLinks">
               <Link
                 to="/portfolio"
                 className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -174,7 +174,7 @@ function NAv() {
                 Portfolio
               </Link>
             </li>
-            <li>
+            <li className="navLinks">
               <Link
                 to="/career"
                 className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -182,7 +182,7 @@ function NAv() {
                 Career
               </Link>
             </li>
-            <li>
+            <li className="navLinks">
               <Link
                 to="/contact"
                 className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
