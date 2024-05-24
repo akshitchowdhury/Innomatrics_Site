@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/innomatric_logo_only.png";
-import "./NAv.css";
+// import "./NAv.css";
 import { Dropdown } from "flowbite-react";
+import ServiceHover from "./ServiceHover";
 function NAv() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -158,49 +159,12 @@ function NAv() {
                   dark:hover:bg-gray-700 dark:hover:text-white 
                   md:dark:hover:bg-transparent dark:border-gray-700"
               >
-              Services
+              <ServiceHover/>
     </Link>
             </li>
-            <li className="serviceBlock  text-white rounded 
-                 hover:bg-gray-100 md:hover:bg-transparent 
-                 
-                 md:p-0 md:hover:text-zinc-900 dark:text-white
-                  dark:hover:bg-gray-700 dark:hover:text-white 
-                  md:dark:hover:bg-transparent dark:border-gray-700">
-            <Dropdown  className="justify-start items-start py-2
-              hover:text-sm 
-               " inline dismissOnClick={false}>
-      <Dropdown.Item >
-      <Link 
-                to="/appdev">
-      APP DEVELOPMENT
-      </Link></Dropdown.Item>
+            
 
-      <Link
-                to="/webdev">
-      <Dropdown.Item>WEB DEVELOPMENT</Dropdown.Item>
-      </Link>
-      
-      <Link
-                to="/webdesign">
-      <Dropdown.Item>WEBSITE DESIGN</Dropdown.Item>
-      </Link>
 
-      <Link
-                to="/logodesign">
-      <Dropdown.Item>LOGO DESIGN</Dropdown.Item>
-      </Link>
-
-      <Link
-                to="/digitalmarket">
-      <Dropdown.Item>DIGITAL MARKETING</Dropdown.Item>
-      </Link>
-      <Link
-                to="/socialmedia">
-      <Dropdown.Item>SOCIAL MEDIA MARKETING</Dropdown.Item>
-      </Link>
-    </Dropdown>
-            </li>
             </ul>
             <li>
               <Link

@@ -13,7 +13,7 @@ const Conatct = () => {
     
     
     <InquiryAndMapComponent/>
-    <CountRise/>
+    {/* <CountRise/> */}
     </div>
   )
 }

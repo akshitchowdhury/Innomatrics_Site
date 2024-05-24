@@ -3,6 +3,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 
 import c1 from "../../assets/portfolioLogo/MRItow.jpg";
+import test from "../../assets/portfolio/test.png";
 import c2 from "../../assets/portfolioLogo/RoyalKing.jpg";
 import c3 from "../../assets/portfolioLogo/chanconst.jpg";
 import c4 from "../../assets/portfolioLogo/dstudio.jpg";

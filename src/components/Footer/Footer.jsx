@@ -4,15 +4,15 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer className="footer bg-blue-800 h-auto">
+    <footer className="footer bg-blue-900 h-auto">
       <div className="footerBlock1 mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           
 
           <div className="col-span-2 md:col-span-1">
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Quick Links</h2>
-            <ul className="Qlinks text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
+            <ul className="Qlinks text-sm md:text-base text-gray-500 dark:text-gray-400 font-medium">
+              <li className="mb-4  ">
                 <Link to="/" className="navbar-links">Home</Link>
               </li>
               <li className="mb-4">

@@ -90,9 +90,9 @@ const InquiryAndMapComponent = () => {
       >
         {/* Adjust the max-height as per your requirement */}
         <h2
-          className="text-left text-gray-700 font-semibold
+          className="text-left text-black font-bold
         font-sans
-         text-6xl mb-6"
+         text-xl md:text-6xl  mb-6"
         >
           We'd love to hear from you!
         </h2>
@@ -102,7 +102,7 @@ const InquiryAndMapComponent = () => {
         </p>
 
         <hr className="w-full my-6 " style={{backgroundColor: 'black'}}/>
-        <p className="font-bold text-4xl my-6">Office Loaction</p>
+        <p className="font-bold text-xl md:text-4xl my-6">Office Loaction</p>
         <p className="font-medium text-gray-600  text-lg my-4">
           2nd Floor, Akshay Complex, No. 01, 16th Main Rd, near Bharat
           Petroleum, BTM 2nd Stage, Bengaluru, Karnataka 560076
