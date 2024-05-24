@@ -68,7 +68,7 @@ const Footer = () => {
   </ul>
 </div>
 
-          <div className=" col-span-2 md:col-span-1">
+          <div className="  md:col-span-1">
   <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Important Links</h2>
   <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
     <li className="mb-4">
@@ -107,8 +107,8 @@ const Footer = () => {
             <p className="text-white dark:text-gray-400 font-medium mb-4">
             2nd Floor, Akshay Complex, No. 01, 16th Main Rd, near Bharat Petroleum, BTM 2nd Stage, Bengaluru, Karnataka 560076
             </p>
-            <p className="text-white dark:text-gray-400 font-medium">
-              Phone: +91 84316 55799<br/>
+            <p className="text-white dark:text-gray-400 text-sm font-medium">
+              Phone: +91 8431655799<br/>
               Email: hello@innomatricstech.com
             </p>
           </div>
