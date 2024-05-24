@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           
 
-          <div className="col-span-2 md:col-span-1">
+          <div className=" md:col-span-1">
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Quick Links</h2>
             <ul className="Qlinks text-sm md:text-base text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4  ">
@@ -27,7 +27,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-span-2 md:col-span-1">
+          <div className=" md:col-span-1">
   <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">What We Do</h2>
   <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
   <Link to ="/webdesign">
@@ -68,7 +68,7 @@ const Footer = () => {
   </ul>
 </div>
 
-          <div className="col-span-2 md:col-span-1">
+          <div className=" col-span-2 md:col-span-1">
   <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Important Links</h2>
   <ul className="miniServices text-gray-500 dark:text-gray-400 font-medium">
     <li className="mb-4">
@@ -102,7 +102,7 @@ const Footer = () => {
 </div>
 
 
-          <div className="address col-span-2 md:col-span-1 mb-6 md:mb-0 md:mr-4">
+          <div className="address  md:col-span-1 mb-6 md:mb-0 md:mr-4">
             <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Address</h2>
             <p className="text-white dark:text-gray-400 font-medium mb-4">
             2nd Floor, Akshay Complex, No. 01, 16th Main Rd, near Bharat Petroleum, BTM 2nd Stage, Bengaluru, Karnataka 560076
