@@ -9,7 +9,7 @@ import CountRise from '../Home/CountRise/CountRise';
 
 const Conatct = () => {
   return (
-    <div className='contact h-[170vh]  md:h-[100vh]'>
+    <div className='contact h-[195vh]  md:h-[100vh]'>
     
     
     <InquiryAndMapComponent/>

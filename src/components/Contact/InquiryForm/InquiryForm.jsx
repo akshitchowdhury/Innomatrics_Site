@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, Form, Input, Button } from "antd"; // Assuming you're using Ant Design components
 import MapLeaflet from "../MapLeaflet/MapLeaflet"; // Import your MapLeaflet component
 import "./InquiryForm.css";
+import { FaLocationPin, FaLocationPinLock, FaMapLocation, FaMapLocationDot } from "react-icons/fa6";
 const InquiryForm = () => {
   const onFinish = (values) => {
     console.log("Received values:", values);
@@ -90,23 +91,27 @@ const InquiryAndMapComponent = () => {
       >
         {/* Adjust the max-height as per your requirement */}
         <h2
-          className="text-left text-black font-bold
-        font-sans
-         text-xl md:text-6xl  mb-6"
+          className="text-left font-bold text-2xl md:text-4xl my-6"
         >
           We'd love to hear from you!
         </h2>
-        <p className="text-lg font-normal">
+        <p className="font-medium text-gray-600  text-lg my-4">
           Please let us know what you are looking for and we will get in touch
           with you
         </p>
 
         <hr className="w-full my-6 " style={{backgroundColor: 'black'}}/>
-        <p className="font-bold text-xl md:text-4xl my-6">Office Loaction</p>
-        <p className="font-medium text-gray-600  text-lg my-4">
-          2nd Floor, Akshay Complex, No. 01, 16th Main Rd, near Bharat
-          Petroleum, BTM 2nd Stage, Bengaluru, Karnataka 560076
-        </p>
+        
+        <div>
+      <p className="font-bold text-2xl md:text-4xl my-6 flex items-center">
+        <FaLocationPin className="text-orange-500 mr-2" />
+        Office Location
+      </p>
+      <p className="font-medium text-gray-600 text-lg my-4">
+        2nd Floor, Akshay Complex, No. 01, 16th Main Rd, near Bharat
+        Petroleum, BTM 2nd Stage, Bengaluru, Karnataka 560076
+      </p>
+    </div>
       </Card>
 
       <Card

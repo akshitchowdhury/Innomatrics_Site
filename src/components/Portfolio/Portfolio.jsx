@@ -145,14 +145,17 @@ const Portfolio = () => {
       <hr className="text-sky-600 w-[70%] my-7" />
 
       {/* Large and Medium Screens Layout */}
-        <div className="hidden lg:flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 lg:space-x-8">
+        <div className="hidden
+         lg:flex flex-col lg:flex-row justify-between items-center 
+         space-y-8 lg:space-y-0 lg:space-x-8
+         p-12">
   <div className="w-full lg:w-1/3">
-    <ul className="text-lg md:text-xl text-white space-y-4">
+    <ul className="text-lg md:text-xl text-sky-700 space-y-4">
       {data.map((item, index) => (
         <li
           key={index}
           className="cursor-pointer hover:text-orange-500 transition ease-in-out duration-200 hover:scale-105"
-          onClick={() => handleMouseEnter(index)}
+          onMouseEnter={() => handleMouseEnter(index)}
         >
           {item.text}
         </li>
