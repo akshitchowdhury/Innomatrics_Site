@@ -13,25 +13,68 @@ import innovation from "../../assets/mission1.jpg";
 import digiTransform from "../../assets/mission2.jpg";
 import quality from "../../assets/mission3.jpg";
 import growth from "../../assets/mission4.jpg";
+import ClientsCarousel from "../ClientsLogo/ClientsCarousel";
+import c1 from "../../assets/portfolioLogo/MRItow.jpg";
+import test from "../../assets/portfolio/test.png";
+import c2 from "../../assets/portfolioLogo/RoyalKing.jpg";
+import c3 from "../../assets/portfolioLogo/chanconst.jpg";
+import c4 from "../../assets/portfolioLogo/dstudio.jpg";
+import c5 from "../../assets/portfolioLogo/goldkey.jpg";
+import c6 from "../../assets/portfolioLogo/infinitytravels.jpg";
+import c7 from "../../assets/portfolioLogo/ngo.jpg";
+import c8 from "../../assets/portfolioLogo/osprezt.jpg";
+import c9 from "../../assets/portfolioLogo/skb.jpg";
+import c10 from "../../assets/portfolioLogo/thriupathiTours.jpg";
+import c11 from "../../assets/portfolioLogo/vklights.jpg";
 
 const About = () => {
+  const clientLogos = [
+    {
+      image: c1,
+    },
+    {
+      image: c2,
+    },
+    {
+      image: c3,
+    },
+    {
+      image: c4,
+    },
+    {
+      image: c5,
+    },
+    {
+      image: c6,
+    },
+    {
+      image: c7,
+    },
+    {
+      image: c8,
+    },
+    {
+      image: c9,
+    },
+    {
+      image: c10,
+    },
+    {
+      image: c11,
+    },
+  ];
   return (
     <>
       <section className="about-section bg-cover bg-center">
         <div className="container mx-auto px-4 py-20 md:py-40">
-          <div className="flex flex-col items-center justify-center gap-4 text-center">
-            <h1 className="text-4xl font-bold text-sky-600 md:text-5xl">
+          <div className="flex flex-col my-[100px] items-start justify-start gap-4 text-start">
+            <h1 className="text-3xl font-bold text-white md:text-5xl">
               About US - Innomatrics Technologies
             </h1>
             <p className="text-xl font-semibold text-white md:text-2xl">
               Helping businesses thrive with digital and tech solutions.
             </p>
-            <ul className="flex flex-wrap justify-center items-center gap-4 text-gray-300">
-              <li className="hover:text-white">App Development</li>
-              <li className="hover:text-white">Website Design & Development</li>
-              <li className="hover:text-white">SEO</li>
-              {/* Add more services as needed */}
-            </ul>
+            
           </div>
         </div>
       </section>
@@ -59,9 +102,10 @@ const About = () => {
       </div>
 
       {/* Vision */}
-      <div className="bg-sky-700 p-8">
+      <div className="missonVision">
+      <div className="bg-inherit p-8">
         <div className="container mx-auto px-4 py-8">
-          <h2 className="text-4xl text-indigo-400 text-center mb-8">Our Vision</h2>
+          <h2 className="text-4xl text-white text-center mb-8">Our Vision</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden p-6 hover:bg-orange-400 hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
@@ -100,9 +144,9 @@ const About = () => {
       </div>
 
       {/* Mission */}
-      <div className="bg-purple-500 p-8">
+      <div className="bg-inherit p-8">
         <div className="container mx-auto px-4 py-8">
-          <h2 className="text-4xl text-purple-300 text-center mb-8">Our Mission</h2>
+          <h2 className="text-4xl text-white text-center mb-8">Our Mission</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden p-6 hover:bg-fuchsia-400 hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
@@ -139,6 +183,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      </div>
 
       <div className="bg-inherit text-center py-8 lg:py-12">
         <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
@@ -147,23 +192,19 @@ const About = () => {
         <p className="text-base lg:text-lg text-gray-700 mb-8">
           Bringing our clients the best through the power of partnerships
         </p>
-        <p className="text-base lg:text-lg text-gray-700 mb-8">
-          Digital transformation is not a plug and play strategy. It requires
-          providing the best technology and innovation the market has to offer.
-          <br />
-          Infinite understands the importance of bringing this domain and
-          technical expertise to our clients, and has established a robust
-          alliance and partner ecosystem to make it happen.
-          <br />
-          We are proud to have developed deep partnerships with some of today’s
-          leading digital technology companies.
-        </p>
-{/* 
+        
         <h4 className="text-left text-2xl lg:text-2xl font-bold text-gray-800 mb-4">
           OUR CLIENTS
         </h4>
+        <div className="flex gap-5 justify-between py-4 mt-3 
+        w-full max-w-[802px]
+        mx-[15%] md:mx-[25%] 
+         max-md:flex-wrap max-md:max-w-full"> 
+          
+            <ClientsCarousel clientLogos={clientLogos} />
+         </div>
+        
 
-        <div className="clientCard"></div> */}
       </div>
     </>
   );
