@@ -137,20 +137,37 @@ const Portfolio = () => {
   };
 
   return (
-    
-    <div className="  mx-auto py-16 px-4 my-14">
-      <p className="text-sky-600 font-semibold text-2xl md:text-5xl">
+    <>
+    <section className="portfolio-section bg-cover  bg-center">
+        <div className="container mx-auto px-4 py-20 md:py-40">
+          <div className="flex flex-col  items-start justify-start gap-4 text-start">
+            <h1 className="text-3xl font-bold text-white md:text-5xl">
+              Portfolio
+            </h1>
+            
+            <p className="text-xl font-semibold text-white md:text-2xl">
+              Helping businesses thrive with digital and tech solutions.
+            </p>
+            <hr className="text-sky-600 w-[70%] " />
+          </div>
+        </div>
+      </section>
+        <div className="portfolio    ">
+      <p className="text-sky-600
+      py-16 px-4
+       font-semibold text-2xl md:text-5xl">
         Industries we have collaborated with
       </p>
-      <hr className="text-sky-600 w-[70%] my-7" />
 
       {/* Large and Medium Screens Layout */}
-        <div className="hidden
-         lg:flex flex-col lg:flex-row justify-between items-center 
-         space-y-8 lg:space-y-0 lg:space-x-8
-         p-12">
-  <div className="w-full lg:w-1/3">
-    <ul className="text-lg md:text-xl text-sky-700 space-y-4">
+      <div className="hidden largePortfolio lg:flex flex-col lg:flex-row justify-between items-center 
+         space-y-8 lg:space-y-0
+          lg:space-x-8 p-12  bg-opacity-75 backdrop-filter backdrop-blur-lg 
+         shadow-lg border border-white border-opacity-30"
+         >
+  <div className="w-full lg:w-1/3 bg-white bg-opacity-20 p-6 rounded-md shadow-inner backdrop-filter
+   backdrop-blur-sm border border-white border-opacity-30">
+    <ul className="text-lg md:text-xl text-white space-y-4">
       {data.map((item, index) => (
         <li
           key={index}
@@ -163,14 +180,17 @@ const Portfolio = () => {
     </ul>
   </div>
 
-  <div className="w-full lg:w-2/3 flex justify-center lg:justify-start">
+  <div className="w-full lg:w-2/3 flex justify-center 
+  lg:justify-start bg-white bg-opacity-20 p-6 rounded-md shadow-inner 
+  backdrop-filter backdrop-blur-sm border border-white border-opacity-30">
     <img
       src={hoveredItem !== null ? data[hoveredItem].image : indus1}
       alt="Industry"
-      className="w-[120%] h-[400px]  rounded-md shadow-md"
+      className="w-[120%] h-[400px] rounded-md shadow-md"
     />
   </div>
 </div>
+
 
 
       {/* Small Screens Accordion */}
@@ -212,6 +232,8 @@ const Portfolio = () => {
         ))}
       </div>
     </div>
+    </>
+
   );
 };
 
