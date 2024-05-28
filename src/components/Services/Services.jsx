@@ -53,24 +53,19 @@ const Services = () => {
     <>
       <div className="Services">
         <div
-          className="BgDiv relative flex flex-col items-center self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full"
+          className="BgDiv relative flex flex-col items-start self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full"
           style={{ marginTop: "0.2px", height: "60vh" }}
         >
           
-          <div
-            className="relative -mt-4 text-3xl font-extrabold max-md:mr-2.5 max-md:max-w-full"
-            style={{ marginTop: "5%" }}
-          >
-            <p className="text-xl text-gray-800 md:text-2xl">
+          <div className="flex flex-col  items-start justify-start gap-4 text-start">
+            <h1 className="text-3xl font-bold text-white md:text-5xl">
+              Services
+            </h1>
+            
+            {/* <p className="text-xl font-semibold text-zinc-600 md:text-2xl">
               Helping businesses thrive with digital and tech solutions.
-            </p>{" "}
-          </div>
-          <div className="relative text-sm mt-2 text-neutral-600 max-w-[90vw] max-md:text-base">
-            <p className="text-2xl text-white">
-              {" "}
-              We are a full service technology and digital solutions company
-              with over 20 years of experience in industry.
-            </p>
+            </p> */}
+            <hr className="text-sky-600 w-[140%] " />
           </div>
           <div className="relative justify-center mt-4 space-x-2">
             <button className="text-white 
@@ -95,7 +90,7 @@ const Services = () => {
         <div>
           <div className="bg-gray-100 py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="lg:text-center">
+              <div className="lg:text-start">
                 <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
                   Overview
                 </h2>

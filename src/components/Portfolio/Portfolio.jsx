@@ -153,8 +153,8 @@ const Portfolio = () => {
         </div>
       </section>
         <div className="portfolio    ">
-      <p className="text-sky-600
-      py-16 px-4
+      <p className="text-zinc-600
+      py-16 px-4 my-6
        font-semibold text-2xl md:text-5xl">
         Industries we have collaborated with
       </p>
