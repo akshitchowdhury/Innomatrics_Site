@@ -119,6 +119,7 @@
 import React, { useState } from "react";
 import indus1 from "../../assets/brandDesign.jpg";
 import data from "./data";
+import './Portfolio.css'
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
@@ -136,8 +137,9 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="container mx-auto py-16 px-4 my-14">
-      <p className="text-amber-600 font-semibold text-2xl md:text-5xl">
+    
+    <div className="container  mx-auto py-16 px-4 my-14">
+      <p className="text-sky-600 font-semibold text-2xl md:text-5xl">
         Industries we have collaborated with
       </p>
       <hr className="text-sky-600 w-[70%] my-7" />
@@ -145,7 +147,7 @@ const Portfolio = () => {
       {/* Large and Medium Screens Layout */}
         <div className="hidden lg:flex flex-col lg:flex-row justify-between items-center space-y-8 lg:space-y-0 lg:space-x-8">
   <div className="w-full lg:w-1/3">
-    <ul className="text-lg md:text-xl text-sky-600 space-y-4">
+    <ul className="text-lg md:text-xl text-white space-y-4">
       {data.map((item, index) => (
         <li
           key={index}

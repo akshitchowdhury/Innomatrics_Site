@@ -1,14 +1,15 @@
-/* .container{
+.container{
 
     padding: 3%;
-    background-image: url('../../assets/portfolioBg.webp');
-    background-size: contain;
+    background-image: url('../../assets/homeBgif.gif');
+    background-size: cover;
+    width: 100%;
        
-} */
+}
 
-.block2{
+/* .block2{
     
     padding: 3%;
     background-image: url('../../assets/portfolioBg.webp');
     background-attachment: fixed;
-}
+} */

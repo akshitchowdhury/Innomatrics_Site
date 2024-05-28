@@ -1,28 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './NAv.css';
+import './NAv.css'; // Ensure your CSS file is correctly named and imported
 
 const ServiceHover = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
+  let timeoutId;
 
   const handleMouseEnter = () => {
     setDropdownVisible(true);
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
   };
 
   const handleMouseLeave = () => {
-    setDropdownVisible(false);
+    timeoutId = setTimeout(() => {
+      setDropdownVisible(false);
+    }, 200);
   };
+
+  useEffect(() => {
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, []);
 
   return (
     <li
       className="relative serviceBlock text-white rounded
-      
        hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
       onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       style={{
         marginTop: "-1px"
       }} 
-     
     >
       Services
       {isDropdownVisible && (
@@ -31,7 +44,6 @@ const ServiceHover = () => {
           transition-all duration-300 ease-in-out transform 
           hover:scale-105
           dark:bg-gray-800 dark:border-gray-700"
-          onMouseLeave={handleMouseLeave}
         >
           <ul className="dropdownList text-gray-800 dark:text-gray-200
           hover:scale-100 transition ease-in-out duration-300
