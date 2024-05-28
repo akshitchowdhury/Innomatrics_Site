@@ -138,7 +138,7 @@ const Portfolio = () => {
 
   return (
     
-    <div className="container  mx-auto py-16 px-4 my-14">
+    <div className="  mx-auto py-16 px-4 my-14">
       <p className="text-sky-600 font-semibold text-2xl md:text-5xl">
         Industries we have collaborated with
       </p>
