@@ -119,7 +119,7 @@ export default function WebDev() {
       </div>
 
       <div className="mt-16 max-w-[65vw]">
-        <div className="flex flex-col md:flex-row gap-20 -mx-36">
+        <div className="flex flex-col md:flex-row gap-20 -mx-12 md:-mx-36">
           <div className="flex w-full md:w-1/2">
             <img
               loading="lazy"
@@ -140,7 +140,7 @@ export default function WebDev() {
         </div>
       </div>
 
-      <div className="container mx-auto p-6">
+      <div className=" mx-auto p-6">
         <div className="text-center mb-8 my-4">
           <h2 className="text-2xl font-semibold text-gray-800">Services We Offer</h2>
         </div>

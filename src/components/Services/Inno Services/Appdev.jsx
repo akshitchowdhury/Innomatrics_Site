@@ -60,8 +60,9 @@ export default function AppDev() {
   ];
 
   return (
-    <div className="flex flex-col items-center pt-10 pb-20 bg-white shadow-sm">
-      <div className="BgDiv relative flex flex-col items-center self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full">
+    <div className="flex flex-col items-center pt:0 md:pt-10 pb-20 bg-white shadow-sm">
+      <div className="BgDiv relative flex flex-col items-center self-stretch px-20 py-20 font-medium text-center leading-[108%]
+       min-h-[376px] text-zinc-900 max-md:px-5 max-md:max-w-full">
         <img
           loading="lazy"
           src={app}
@@ -116,7 +117,7 @@ export default function AppDev() {
       </div>
 
       <div className="mt-16 max-w-[65vw] ">
-        <div className="flex flex-col md:flex-row gap-20 -mx-36 ">
+        <div className="flex flex-col md:flex-row gap-20 -mx-12 md:-mx-36 ">
           <div className="flex w-full md:w-1/2">
             <img
               loading="lazy"
@@ -126,7 +127,7 @@ export default function AppDev() {
             />
           </div>
 
-          <div className="flex flex-col  w-full md:w-1/2 ">
+          <div className="flex flex-col p-4 px-4 w-full md:w-1/2 ">
             <div className="text-justify mb-8">
               <h1 className="text-3xl font-bold text-gray-800">Our Approach</h1>
               <p className="mt-4 text-gray-600">
@@ -137,7 +138,7 @@ export default function AppDev() {
         </div>
       </div>
 
-      <div className="container mx-auto p-6">
+      <div className=" mx-auto p-6">
         <div className="text-center mb-8 my-4">
           <h2 className="text-2xl font-semibold text-gray-800">Services We Offer</h2>
         </div>
