@@ -68,6 +68,10 @@ const ServiceHover = () => {
             </li>
             <li className="px-4 py-2 hover:bg-sky-500 
             transition ease-in-out duration-300dark:hover:bg-gray-700">
+              <Link to="/logodesign">Brand/Logo Design</Link>
+            </li>
+            <li className="px-4 py-2 hover:bg-sky-500 
+            transition ease-in-out duration-300dark:hover:bg-gray-700">
               <Link to="/socialmedia">Social Media Marketing</Link>
             </li>
           </ul>

@@ -2,7 +2,12 @@ import React, { forwardRef } from "react";
 import app from "../../../assets/socialMedia.jpg";
 import app2 from "../../../assets/socialMedia2.jpg";
 import approach from "../../../assets/socialMediaapproach.jpg";
-
+import d1 from "../../../assets/digitalMarketing/d1.avif";
+import d2 from "../../../assets/digitalMarketing/d2.jpg";
+import d3 from "../../../assets/digitalMarketing/d3.avif";
+import d4 from "../../../assets/digitalMarketing/d4.avif";
+import d5 from "../../../assets/digitalMarketing/d5.png";
+import d6 from "../../../assets/digitalMarketing/d6.webp";
 import "./SocialMedia.css";
 
 const ServicesCard = ({image, title, description }) => (
@@ -20,42 +25,42 @@ const SocialMedia= forwardRef((props,ref)=> {
       title: "Social Media Strategy",
       description:
         "We develop a comprehensive social media strategy tailored to your business goals, target audience, and competitive landscape to ensure maximum engagement and ROI.",
-    },
+   image: d1 },
     {
       title: "Content Creation",
       description:
         "Our creative team produces high-quality, visually appealing, and engaging content that resonates with your audience and enhances your brand's social media presence.",
-    },
+        image: d2},
     {
       title: "Platform Management",
       description:
         "We manage your social media accounts across all major platforms, including Facebook, Instagram, Twitter, LinkedIn, and more, to maintain a consistent and active online presence.",
-    },
+        image: d3},
     {
       title: "Community Engagement",
       description:
         "We actively engage with your audience by responding to comments, messages, and reviews to build strong relationships and foster a loyal community around your brand.",
-    },
+        image: d4},
     {
       title: "Social Media Advertising",
       description:
         "Our team creates and manages targeted social media ad campaigns to reach your ideal audience, increase brand awareness, and drive conversions and sales.",
-    },
+        image: d5},
     {
       title: "Analytics and Reporting",
       description:
         "We provide detailed analytics and performance reports to track the effectiveness of your social media campaigns, allowing for data-driven decisions and continuous improvement.",
-    },
-    {
-      title: "Influencer Marketing",
-      description:
-        "We collaborate with influencers and brand ambassadors to amplify your reach, build credibility, and drive engagement through authentic and trusted voices in your industry.",
-    },
-    {
-      title: "Reputation Management",
-      description:
-        "Our team monitors and manages your brand's online reputation, addressing any negative feedback promptly and highlighting positive reviews to maintain a positive public perception.",
-    },
+        image: d6},
+    // {
+    //   title: "Influencer Marketing",
+    //   description:
+    //     "We collaborate with influencers and brand ambassadors to amplify your reach, build credibility, and drive engagement through authentic and trusted voices in your industry.",
+    // },
+    // {
+    //   title: "Reputation Management",
+    //   description:
+    //     "Our team monitors and manages your brand's online reputation, addressing any negative feedback promptly and highlighting positive reviews to maintain a positive public perception.",
+    // },
   ];
   return (
     <div className="flex flex-col items-center pt-10 pb-20 bg-white shadow-sm" ref={ref}>
@@ -165,6 +170,7 @@ const SocialMedia= forwardRef((props,ref)=> {
               key={index}
               title={service.title}
               description={service.description}
+              image={service.image}
             />
           ))}
         </div>
