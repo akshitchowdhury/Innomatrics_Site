@@ -61,29 +61,38 @@ const AppDev= forwardRef((props,ref)=> {
 
   return (
     <div className="flex flex-col items-center pt:0 md:pt-10 pb-20 bg-white shadow-sm" ref={ref}>
-      <div className="BgDiv relative flex flex-col items-center self-stretch px-20 py-20 font-medium text-center leading-[108%]
-       min-h-[376px] text-zinc-900 max-md:px-5 max-md:max-w-full">
-        <img
-          loading="lazy"
-          src={app}
-          className="AppBg object-cover absolute inset-0 size-full"
-        />
-        <div className="relative -mt-4 text-3xl font-extrabold max-md:mr-2.5 max-md:max-w-full">
-          Make your Digital presence matter
+      <div
+        id="appDiv"  className="BgDiv relative flex flex-col items-start self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full"
+          style={{ height: "60vh" }}
+        >
+          
+          <div className="flex flex-col my-12 items-start justify-start gap-4 text-start">
+            <h1 className="text-3xl my-4 font-bold text-white md:text-white md:text-5xl">
+              App Development
+            </h1>
+            
+            
+            <hr className="text-sky-600 w-[140%] " />
+          </div>
+          <div className="relative justify-center -my-10 space-x-2">
+            <button className="text-white 
+              bg-zinc-700 focus:ring-4 
+              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2
+              text-center dark:bg-blue-600 dark:focus:ring-blue-800
+              hover:bg-white hover:text-black hover:transform hover:scale-105
+              hover:shadow-lg transition duration-300 ease-in-out">
+              Start a project together
+            </button>
+            <button className="text-zinc-700 
+              bg-white focus:ring-4 
+              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2
+              text-center dark:bg-blue-600 dark:focus:ring-blue-800
+              hover:bg-zinc-800 hover:text-white hover:transform hover:scale-105
+              hover:shadow-lg transition duration-300 ease-in-out">
+              Read More
+            </button>
+          </div>
         </div>
-        <div className="relative text-sm mt-2 text-neutral-600 max-w-[90vw] max-md:text-base">
-          We are a full service technology and digital solutions company with
-          over 20 years of experience in industry.
-        </div>
-        <div className="relative justify-center mt-4 space-x-2">
-          <button className="px-4 py-1.5 text-xs text-white bg-zinc-900 rounded-sm">
-            Start a project together
-          </button>
-          <button className="px-2 py-1.5 text-xs bg-white border border-zinc-900 rounded-sm">
-            Read More
-          </button>
-        </div>
-      </div>
 
       <div className="mt-16 max-w-[90vw]">
         <div className="flex flex-col md:flex-row gap-5">

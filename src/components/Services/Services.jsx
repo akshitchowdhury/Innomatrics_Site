@@ -54,9 +54,7 @@ const Services = forwardRef((props,ref) => {
               Services
             </h1>
             
-            {/* <p className="text-xl font-semibold text-zinc-600 md:text-2xl">
-              Helping businesses thrive with digital and tech solutions.
-            </p> */}
+            
             <hr className="text-sky-600 w-[140%] " />
           </div>
           <div className="relative justify-center -my-10 space-x-2">
