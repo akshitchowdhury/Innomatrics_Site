@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import app from "../../../assets/webDevelopment.jpg";
 import app2 from "../../../assets/webDevelopment2.jpg";
 import w1 from "../../../assets/webServices/w1.jpg";
@@ -18,7 +18,7 @@ const ServicesCard = ({ title, description, image }) => (
   </div>
 );
 
-export default function WebDev() {
+const WebDev= forwardRef((props,ref)=> {
   const services = [
     {
       title: "Custom Development",
@@ -59,7 +59,7 @@ export default function WebDev() {
   ];
 
   return (
-    <div className="flex flex-col items-center pt-10 pb-20 bg-white shadow-sm">
+    <div className="flex flex-col items-center pt-10 pb-20 bg-white shadow-sm" ref={ref}>
       <div className="BgDiv relative flex flex-col items-center self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full">
         <img
           loading="lazy"
@@ -158,4 +158,6 @@ export default function WebDev() {
       </div>
     </div>
   );
-}
+})
+
+export default WebDev

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-const RefundCancellationPolicy = () => {
+const RefundCancellationPolicy = forwardRef((props,ref) => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8" ref={ref}>
       <h1 className="text-3xl font-bold mb-6">Refund/Cancellation Policy</h1>
       <p className="text-gray-700 mb-4">
         At Innomatrics Technologies, we value our customers and strive to provide the best service possible. We understand that circumstances may arise where you need to cancel your order or request a refund. Please read our Refund/Cancellation Policy carefully to understand your options.
@@ -28,6 +28,6 @@ const RefundCancellationPolicy = () => {
       </p>
     </div>
   );
-};
+})
 
 export default RefundCancellationPolicy;

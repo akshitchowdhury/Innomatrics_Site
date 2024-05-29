@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, forwardRef } from "react";
 import c1 from "../../assets/AppDev.jpg";
 import c2 from "../../assets/webDesign.jpg";
 import c3 from "../../assets/webDevelopment.jpg";
@@ -13,19 +13,11 @@ import app from "../../assets/serviceBg2.jpg";
 
 // import image from '../../assets/image1.jpg'
 
-const Services = () => {
+const Services = forwardRef((props,ref) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMoving, setIsMoving] = useState(true);
 
   const images = [c1, c2, c3, c4, c5, c6];
-  // const images = [
-  //   'https://via.placeholder.com/300x200?text=Image+1',
-  //   'https://via.placeholder.com/300x200?text=Image+2',
-  //   'https://via.placeholder.com/300x200?text=Image+3',
-  //   'https://via.placeholder.com/300x200?text=Image+4',
-  //   'https://via.placeholder.com/300x200?text=Image+5',
-  //   'https://via.placeholder.com/300x200?text=Image+6'
-  // ];
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
@@ -51,14 +43,14 @@ const Services = () => {
 
   return (
     <>
-      <div className="Services">
+      <div className="Services" ref={ref}>
         <div
           className="BgDiv relative flex flex-col items-start self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full"
           style={{ marginTop: "0.2px", height: "60vh" }}
         >
           
-          <div className="flex flex-col  items-start justify-start gap-4 text-start">
-            <h1 className="text-3xl font-bold text-white md:text-5xl">
+          <div className="flex flex-col my-12 items-start justify-start gap-4 text-start">
+            <h1 className="text-3xl font-bold text-zinc-900 md:text-white md:text-5xl">
               Services
             </h1>
             
@@ -67,7 +59,7 @@ const Services = () => {
             </p> */}
             <hr className="text-sky-600 w-[140%] " />
           </div>
-          <div className="relative justify-center mt-4 space-x-2">
+          <div className="relative justify-center -my-10 space-x-2">
             <button className="text-white 
               bg-zinc-700 focus:ring-4 
               focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2
@@ -131,6 +123,6 @@ const Services = () => {
       </div>
     </>
   );
-};
+})
 
 export default Services;

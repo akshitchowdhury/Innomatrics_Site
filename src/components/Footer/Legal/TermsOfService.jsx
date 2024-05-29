@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-const TermsOfService = () => {
+const TermsOfService = forwardRef((props,ref) => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8" ref={ref}>
       <h1 className="text-3xl font-bold mb-6">Terms of Service</h1>
       <p className="text-gray-700 mb-4">
         Welcome to Innomatrics Technologies! These Terms of Service ("Terms") govern your access to and use of our website, services, and products provided by Innomatrics Technologies ("Innomatrics", "we", "our", or "us"). By accessing or using any part of our services, you agree to be bound by these Terms. If you do not agree to all the terms and conditions of this agreement, then you may not access our services.
@@ -53,6 +53,6 @@ const TermsOfService = () => {
       <p className="text-gray-700 mb-4">Last updated: [insert date of last update]</p>
     </div>
   );
-};
+})
 
 export default TermsOfService;

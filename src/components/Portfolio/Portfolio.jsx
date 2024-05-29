@@ -116,13 +116,13 @@
 
 // export default Portfolio;
 
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import indus1 from "../../assets/brandDesign.jpg";
 import data from "./data";
 import './Portfolio.css'
 import { Link } from "react-router-dom";
 
-const Portfolio = () => {
+const Portfolio = forwardRef((props,ref) => {
   const [hoveredItem, setHoveredItem] = useState(null);
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -138,7 +138,7 @@ const Portfolio = () => {
 
   return (
     <>
-    <section className="portfolio-section bg-cover  bg-center">
+    <section className="portfolio-section bg-cover  bg-center" ref={ref}>
         <div className="container mx-auto px-4 py-20 md:py-40">
           <div className="flex flex-col  items-start justify-start gap-4 text-start">
             <h1 className="text-3xl font-bold text-white md:text-5xl">
@@ -171,7 +171,7 @@ const Portfolio = () => {
       {data.map((item, index) => (
         <li
           key={index}
-          className="cursor-pointer hover:text-orange-500 transition ease-in-out duration-200 hover:scale-105"
+          className="cursor-pointer hover:text-sky-400 transition ease-in-out duration-200 hover:scale-105"
           onMouseEnter={() => handleMouseEnter(index)}
         >
           {item.text}
@@ -235,6 +235,6 @@ const Portfolio = () => {
     </>
 
   );
-};
+})
 
 export default Portfolio;

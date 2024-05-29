@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./About.css"; // Import Tailwind styles
 import aboutMe from "../../assets/aboutMe.jpeg";
 import about from "../../assets/about.jpg";
@@ -27,7 +27,7 @@ import c9 from "../../assets/portfolioLogo/skb.jpg";
 import c10 from "../../assets/portfolioLogo/thriupathiTours.jpg";
 import c11 from "../../assets/portfolioLogo/vklights.jpg";
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   const clientLogos = [
     {
       image: c1,
@@ -65,57 +65,48 @@ const About = () => {
   ];
   return (
     <>
-      <section className="about-section bg-cover bg-center">
+      <section className="about-section bg-cover bg-center" ref={ref}>
         <div className="container mx-auto px-4 py-20 md:py-40">
-          <div className="flex flex-col my-[100px] items-start justify-start gap-4 text-start">
+          <div className="flex flex-col my-[50px] md:my-[10px] items-start justify-start gap-4 text-start">
             <h1 className="text-3xl font-bold text-white md:text-5xl">
-              About US - Innomatrics Technologies
+              About US
             </h1>
             <p className="text-xl font-semibold text-white md:text-2xl">
               Helping businesses thrive with digital and tech solutions.
             </p>
+            <hr className="text-sky-600 w-[100%] md:w-[50%] " />
           </div>
         </div>
       </section>
-      <div className="flex flex-col lg:flex-row gap-8 px-4 py-8 lg:px-28 lg:py-16">
-        <div className="aboutText w-full lg:w-1/2 bg-gray-100 rounded-lg shadow-md p-6">
-          <p className="text-xl text-gray-800 font-semibold mb-4">
-            Welcome to Innomatrics Technologies, where innovation meets
-            excellence in the realm of digital solutions.
-          </p>
-          <p className="text-base text-gray-700 mb-4">
-            As a tech-driven consultancy, Innomatrics empowers businesses to
-            excel in the dynamic online landscape. We offer a comprehensive
-            suite of services including website design, web app and mobile app
-            development, SEO, and digital marketing, all aimed at maximizing
-            your online presence and growth.
-          </p>
-          <p className="text-base text-gray-700 mb-4">
-            We understand the unique challenges of the digital sphere and
-            provide tailored solutions to meet your specific needs and
-            objectives. Whether you're a startup or an established enterprise,
-            our team of experts is dedicated to guiding you every step of the
-            way.
-          </p>
-          <p className="text-base text-gray-700 mb-4">
-            With a passion for innovation and a commitment to excellence, we
-            deliver cutting-edge solutions that exceed expectations. We
-            prioritize collaboration, transparency, and results, building
-            lasting partnerships that drive success and growth.
-          </p>
+      
+      <div className="flex flex-col lg:flex-row bg-gray-100 gap-8 px-4 py-8 lg:px-28 lg:py-16 rounded-lg shadow-md">
+  <div className="w-full lg:w-1/2 p-6">
+    <p className="text-xl text-gray-800 text-left md:text-left font-semibold mb-4">
+      Welcome to Innomatrics Technologies, where innovation meets excellence in the realm of digital solutions.
+    </p>
+    <p className="text-base text-gray-700 text-justify md:text-left mb-4">
+      Founded on the belief that technology has the power to revolutionize businesses, Innomatrics Technologies emerged as a brainchild of visionary minds dedicated to driving meaningful change in the digital landscape. Since our inception, we have been on a mission to empower businesses of all sizes to thrive in the digital age.
+    </p>
+    <p className="text-base text-gray-700 text-justify md:text-left mb-4">
+      We understand the unique challenges of the digital sphere and provide tailored solutions to meet your specific needs and objectives. Whether you're a startup or an established enterprise, our team of experts is dedicated to guiding you every step of the way.
+    </p>
+    <p className="text-base text-gray-700 text-justify md:text-left mb-4">
+      With a passion for innovation and a commitment to excellence, we deliver cutting-edge solutions that exceed expectations. We prioritize collaboration, transparency, and results, building lasting partnerships that drive success and growth.
+    </p>
+  </div>
+  <div className="w-full lg:w-1/3 p-3">
+    <img src={aboutMe} alt="About Us" className="w-full rounded-lg" />
+  </div>
+</div>
 
-          
-        </div>
-        <div className="aboutMe bg-gray-100 w-full lg:w-1/2 p-3 rounded-lg shadow-md">
-          <img src={aboutMe} alt="About Us" className="w-full rounded-lg" />
-        </div>
-      </div>
 
       {/* Vision */}
       <div className="missonVision">
         <div className="bg-inherit p-8">
           <div className="container mx-auto px-4 py-8">
-            <h2 className="text-4xl text-white text-center mb-8">Our Vision</h2>
+            <h2 className="text-4xl text-white font-semibold md:text-6xl text-center mb-8">
+              Our Vision
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Card 1 */}
               <div className="bg-white rounded-lg shadow-lg overflow-hidden p-6 hover:bg-orange-400 hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
@@ -194,7 +185,7 @@ const About = () => {
         {/* Mission */}
         <div className="bg-inherit p-8">
           <div className="container mx-auto px-4 py-8">
-            <h2 className="text-4xl text-white text-center mb-8">
+            <h2 className="text-4xl font-semibold md:text-6xl text-white text-center mb-8">
               Our Mission
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -279,13 +270,16 @@ const About = () => {
           Bringing our clients the best through the power of partnerships
         </p>
 
-        <h4 className="text-left text-2xl lg:text-2xl font-bold text-gray-800 mb-4">
+        <h4
+          className="text-center md:text-left text-2xl lg:text-2xl 
+        mx-16 font-bold text-gray-800 mb-4"
+        >
           OUR CLIENTS
         </h4>
         <div
           className="flex gap-5 justify-between py-4 mt-3 
         w-full max-w-[802px]
-        mx-[15%] md:mx-[25%] 
+        mx-[10%] md:mx-[20%] 
          max-md:flex-wrap max-md:max-w-full"
         >
           <ClientsCarousel clientLogos={clientLogos} />
@@ -293,6 +287,6 @@ const About = () => {
       </div>
     </>
   );
-};
+})
 
 export default About;

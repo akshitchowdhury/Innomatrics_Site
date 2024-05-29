@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const PrivacyPolicy = () => {
+const PrivacyPolicy = forwardRef((props,ref) => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8" ref={ref}>
       <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
       <p className="text-gray-700 mb-4">
         We respect your privacy. This privacy policy and agreement (this
@@ -131,6 +131,5 @@ const PrivacyPolicy = () => {
       {/* Add more sections similarly */}
     </div>
   );
-};
-
+})
 export default PrivacyPolicy;

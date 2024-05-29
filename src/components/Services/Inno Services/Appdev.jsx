@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import app from "../../../assets/AppDev.jpg";
 import app2 from "../../../assets/app2.jpg";
 import approach from "../../../assets/approach.jpg";
@@ -19,7 +19,7 @@ const ServicesCard = ({ title, description, image }) => (
   </div>
 );
 
-export default function AppDev() {
+const AppDev= forwardRef((props,ref)=> {
   const services = [
     {
       title: "Strategic Planning",
@@ -60,7 +60,7 @@ export default function AppDev() {
   ];
 
   return (
-    <div className="flex flex-col items-center pt:0 md:pt-10 pb-20 bg-white shadow-sm">
+    <div className="flex flex-col items-center pt:0 md:pt-10 pb-20 bg-white shadow-sm" ref={ref}>
       <div className="BgDiv relative flex flex-col items-center self-stretch px-20 py-20 font-medium text-center leading-[108%]
        min-h-[376px] text-zinc-900 max-md:px-5 max-md:max-w-full">
         <img
@@ -156,4 +156,6 @@ export default function AppDev() {
       </div>
     </div>
   );
-}
+})
+
+export default AppDev

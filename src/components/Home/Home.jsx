@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
@@ -25,7 +25,7 @@ import Join from "./JoinTeam/Join";
 import CountRise from "./CountRise/CountRise";
 import Industry from "./Industry/Industry";
 
-const Home = () => {
+const Home = forwardRef((props,ref) => {
   const clientLogos = [
     {
       image: c1,
@@ -73,7 +73,7 @@ const Home = () => {
   }, []); // Empty dependency array ensures this effect runs only once on mount
   return (
     <>
-      <div className="home flex flex-col">
+      <div className="home flex flex-col" ref={ref}>
       <div className="p-5 md:p-20 flex flex-col md:flex-row gap-5">
       <div className="flex flex-col w-full md:w-2/3">
         <div className="flex flex-col my-auto text-xs leading-4">
@@ -130,6 +130,6 @@ const Home = () => {
 
     </>
   );
-};
+})
 
 export default Home;

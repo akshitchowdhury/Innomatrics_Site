@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import app from "../../../assets/webDesign.jpg";
 import app2 from "../../../assets/webDesign2.jpg";
 import approach from "../../../assets/wDesingApproach.webp";
@@ -11,7 +11,7 @@ const ServicesCard = ({ title, description }) => (
   </div>
 );
 
-export default function WebDesign() {
+const WebDesign =  forwardRef((props,ref) =>{
   const services = [
     {
       title: "Strategic Planning",
@@ -43,7 +43,7 @@ export default function WebDesign() {
     }
   ];
   return (
-    <div className="flex flex-col items-center pt-10 pb-20 bg-white shadow-sm">
+    <div className="flex flex-col items-center pt-10 pb-20 bg-white shadow-sm" ref={ref}>
       <div className="BgDiv relative flex flex-col items-center self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full">
         <img
           loading="lazy"
@@ -148,4 +148,6 @@ export default function WebDesign() {
       {/* Add other sections similarly */}
     </div>
   );
-}
+})
+
+export default WebDesign

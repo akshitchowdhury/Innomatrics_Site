@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-const DataRetentionPolicy = () => {
+const DataRetentionPolicy = forwardRef((props,ref) => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8" ref={ref}>
       <h1 className="text-3xl font-bold mb-6">Data Retention Policy</h1>
       <p className="text-gray-700 mb-4">
         At Innomatrics Technologies, we are committed to protecting your privacy and ensuring the security of your personal data. This Data Retention Policy outlines how we manage and retain data collected through our website and services.
@@ -29,6 +29,6 @@ const DataRetentionPolicy = () => {
       </p>
     </div>
   );
-};
+})
 
 export default DataRetentionPolicy;

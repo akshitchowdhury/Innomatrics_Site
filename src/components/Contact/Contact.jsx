@@ -1,21 +1,18 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './Contact.css'
 import { Link } from 'react-router-dom'
-// import { Bounce } from "react-swift-reveal";
-// import MapLeaflet from './MapLeaflet/MapLeaflet';
 import InquiryAndMapComponent from './InquiryForm/InquiryForm';
-import CountRise from '../Home/CountRise/CountRise';
 
 
-const Conatct = () => {
+const Conatct = forwardRef((props,ref) => {
   return (
-    <div className='contact h-[195vh]  md:h-[100vh]'>
+    <div className='contact h-[195vh]  md:h-[100vh]' ref={ref}>
     
     
     <InquiryAndMapComponent/>
-    {/* <CountRise/> */}
+    
     </div>
   )
-}
+})
 
 export default Conatct
