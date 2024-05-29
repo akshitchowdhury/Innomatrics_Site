@@ -3,9 +3,17 @@ import app from "../../../assets/webDesign.jpg";
 import app2 from "../../../assets/webDesign2.jpg";
 import approach from "../../../assets/wDesingApproach.webp";
 import "./WebDesign.css";
+import w1 from "../../../assets/strategicPlan.jpg";
+import w2 from "../../../assets/webDevServices/customDesign.jpg";
+import w3 from "../../../assets/webDevServices/responsive.jpg";
+import w4 from "../../../assets/webDevServices/cms.avif";
+import w5 from "../../../assets/webDevServices/seo.jpg";
+import w6 from "../../../assets/webDevServices/performance.jpg";
 
-const ServicesCard = ({ title, description }) => (
-  <div className="bg-white shadow-md rounded-lg p-6 m-4 flex-1">
+const ServicesCard = ({ image,title, description }) => (
+  <div className="bg-white shadow-md rounded-lg p-6 m-4 flex-1 hover:scale-105
+  transition ease-in-out duration-300">
+    <img src={image} className="w-full h-32 object-contain mb-4" alt={title} />
     <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
     <p className="text-gray-600">{description}</p>
   </div>
@@ -16,56 +24,64 @@ const WebDesign =  forwardRef((props,ref) =>{
     {
       title: "Strategic Planning",
       description: "We start by understanding your business objectives, target audience, and competition to develop a strategic plan that guides the entire website design and development process."
+      ,image: w1
     },
     {
       title: "Custom Design",
       description: "Our talented team of designers will create a visually stunning and user-friendly website design that reflects your brand identity and engages visitors from the moment they land on your site."
-    },
+      ,image: w2 },
     {
       title: "Responsive Development",
       description: "With mobile usage on the rise, we ensure that your website is fully responsive and optimized for seamless performance across all devices, including smartphones, tablets, and desktops."
-    },
+      ,image: w3 },
     {
       title: "Content Management Systems (CMS)",
       description: "We specialize in building websites on robust and flexible CMS platforms like WordPress, Joomla, and Drupal, empowering you to easily update and manage your site content without any technical expertise."
-    },
-    {
-      title: "E-commerce Solutions",
-      description: "Whether you're launching a new online store or upgrading an existing one, we'll develop a secure and feature-rich e-commerce website that delivers an exceptional shopping experience and drives sales."
-    },
+      ,image: w4},
+    
     {
       title: "Search Engine Optimization (SEO)",
       description: "Our SEO experts will optimize your website for search engines, helping you improve your visibility and rank higher in search results to attract more organic traffic."
-    },
+      ,image: w5},
     {
       title: "Performance Optimization",
       description: "We optimize your website for speed, performance, and security, ensuring that it loads quickly, functions smoothly, and provides a safe browsing experience for your visitors."
-    }
+      ,image: w6}
   ];
   return (
     <div className="flex flex-col items-center pt-10 pb-20 bg-white shadow-sm" ref={ref}>
-      <div className="BgDiv relative flex flex-col items-center self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full">
-        <img
-          loading="lazy"
-          src={app}
-          className="AppBg object-cover absolute inset-0 size-full"
-        />
-        <div className="relative -mt-4 text-3xl font-extrabold max-md:mr-2.5 max-md:max-w-full">
-          Make your Digital presence matter
+      <div
+        id="webDesDiv"  className="BgDiv relative flex flex-col items-start self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full"
+          style={{ height: "60vh" }}
+        >
+          
+          <div className="flex flex-col my-12 items-start justify-start gap-4 text-start">
+            <h1 className="text-3xl my-4 font-bold text-white md:text-white md:text-5xl ">
+              Website Design
+            </h1>
+            
+            
+            <hr className="text-sky-600 w-[140%] " />
+          </div>
+          <div className="relative justify-center -my-10 space-x-2">
+            <button className="text-white 
+              bg-zinc-700 focus:ring-4 
+              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2
+              text-center dark:bg-blue-600 dark:focus:ring-blue-800
+              hover:bg-white hover:text-black hover:transform hover:scale-105
+              hover:shadow-lg transition duration-300 ease-in-out">
+              Start a project together
+            </button>
+            <button className="text-zinc-700 
+              bg-white focus:ring-4 
+              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2
+              text-center dark:bg-blue-600 dark:focus:ring-blue-800
+              hover:bg-zinc-800 hover:text-white hover:transform hover:scale-105
+              hover:shadow-lg transition duration-300 ease-in-out">
+              Read More
+            </button>
+          </div>
         </div>
-        <div className="relative text-sm mt-2 text-neutral-600 max-w-[90vw] max-md:text-base">
-          We are a full service technology and digital solutions company with
-          over 20 years of experience in industry.
-        </div>
-        <div className="relative justify-center mt-4 space-x-2">
-          <button className="px-4 py-1.5 text-xs text-white bg-zinc-900 rounded-sm">
-            Start a project together
-          </button>
-          <button className="px-2 py-1.5 text-xs bg-white border border-zinc-900 rounded-sm">
-            Read More
-          </button>
-        </div>
-      </div>
 
       <div className="mt-16 max-w-[90vw]">
         <div className="flex flex-col md:flex-row gap-5">
@@ -140,6 +156,7 @@ const WebDesign =  forwardRef((props,ref) =>{
               key={index}
               title={service.title}
               description={service.description}
+              image={service.image}
             />
           ))}
         </div>

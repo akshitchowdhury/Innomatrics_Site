@@ -5,8 +5,10 @@ import approach from "../../../assets/socialMediaapproach.jpg";
 
 import "./SocialMedia.css";
 
-const ServicesCard = ({ title, description }) => (
-  <div className="bg-white shadow-md rounded-lg p-6 m-4 flex-1">
+const ServicesCard = ({image, title, description }) => (
+  <div className="bg-white shadow-md rounded-lg p-6 m-4 flex-1 hover:scale-105
+  transition ease-in-out duration-300">
+    <img src={image} className="w-full h-32 object-contain mb-4" alt={title} />
     <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
     <p className="text-gray-600">{description}</p>
   </div>
