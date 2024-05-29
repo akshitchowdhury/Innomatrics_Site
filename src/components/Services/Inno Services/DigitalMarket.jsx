@@ -56,7 +56,7 @@ const SocialMedia = forwardRef((props,ref)=> {
   ];
 
   return (
-    <div className="flex flex-col items-center pt-10 pb-20 bg-white shadow-sm" ref={ref}>
+    <div className="flex flex-col items-center pt:0 md:pt-10 pb-20 bg-white shadow-sm" ref={ref}>
        <div
         id="DigitalDiv"  className="BgDiv relative flex flex-col items-start self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full"
           style={{ height: "60vh" }}

@@ -63,7 +63,7 @@ const SocialMedia= forwardRef((props,ref)=> {
     // },
   ];
   return (
-    <div className="flex flex-col items-center pt-10 pb-20 bg-white shadow-sm" ref={ref}>
+    <div className="flex flex-col items-center pt:0 md:pt-10 pb-20 bg-white shadow-sm" ref={ref}>
       <div
         id="SocialMediaDiv"  className="BgDiv relative flex flex-col items-start self-stretch px-20 py-20 font-medium text-center leading-[108%] min-h-[276px] text-zinc-900 max-md:px-5 max-md:max-w-full"
           style={{ height: "60vh" }}
@@ -164,7 +164,7 @@ const SocialMedia= forwardRef((props,ref)=> {
           </h2>
         </div>
 
-        <div className="grid grid-cols-3 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <ServicesCard
               key={index}
