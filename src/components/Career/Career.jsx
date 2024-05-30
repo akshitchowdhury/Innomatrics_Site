@@ -55,6 +55,20 @@ const CareerComponent = forwardRef((props, ref) => {
 
   return (
     <>
+     <section className="career-section bg-cover  bg-center" ref={ref}>
+        <div className="container mx-auto px-4 py-20 md:py-40">
+          <div className="flex flex-col  items-start justify-start gap-4 text-start">
+            <h1 className="text-3xl font-bold text-white md:text-5xl">
+              Career
+            </h1>
+            
+            <p className="text-xl font-semibold text-gray-100 md:text-2xl">
+              Build a robust career and be a part of our team
+            </p>
+            <hr className="text-sky-600 w-[50%] " />
+          </div>
+        </div>
+      </section>
       <div ref={ref} className="career-container ">
         <div className="career-content">
           <div className="career-image">

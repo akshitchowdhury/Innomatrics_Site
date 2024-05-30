@@ -4,6 +4,13 @@
     padding: 25%;
   } */
   
+  .career-section{
+    height: 60vh; /* Adjust height as needed */
+    background-image: url('../../assets/careerHero.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
   .career-title {
     font-size: 24px;
     font-weight: bold;
@@ -57,7 +64,6 @@
     padding: 5%;
     margin: 0 auto;
     
-    background-image: url('../../assets/careerBg.jpg');
     background-attachment: fixed;
     background-size: cover;
 }

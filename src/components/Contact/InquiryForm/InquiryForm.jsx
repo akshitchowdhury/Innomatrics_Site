@@ -1,78 +1,100 @@
-import React, { useState } from "react";
-import { Card, Form, Input, Button } from "antd"; // Assuming you're using Ant Design components
-import MapLeaflet from "../MapLeaflet/MapLeaflet"; // Import your MapLeaflet component
+import React, { useState, useRef, useEffect } from "react";
+import emailjs from "@emailjs/browser";
+import { Card, Form, Input, Button } from "antd";
 import "./InquiryForm.css";
 import { FaLocationPin, FaLocationPinLock, FaMapLocation, FaMapLocationDot } from "react-icons/fa6";
 const InquiryForm = () => {
-  const onFinish = (values) => {
-    console.log("Received values:", values);
-  };
+  const emailRef = useRef();
+  const nameRef = useRef();
+  const messageRef = useRef();
+  const phoneRef = useRef();
 
-  const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    emailjs.init("yYVBr5BddZiFletl9");
+  }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const serviceId = "service_hz6vh9l";
+    const templateId = "template_15xt8ef";
+    try {
+      setLoading(true);
+      await emailjs.send(serviceId, templateId, {
+        name: nameRef.current.value,
+        email: emailRef.current.value,
+        message: messageRef.current.value,
+        phone: phoneRef.current.value,
+      });
+      alert("Email successfully sent. Please check your inbox.");
+    } catch (error) {
+      console.error("Error sending email:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <Form
-      name="inquiry_form"
-      onFinish={onFinish}
-      onFinishFailed={onFinishFailed}
-      layout="vertical"
-      className="form-title"
-    >
-      <Form.Item
-        label="Name"
+    <form onSubmit={handleSubmit} className="form-title">
+    <div className="form-group">
+      <label htmlFor="name" className="block font-semibold text-gray-700">Name</label>
+      <input
+        type="text"
+        ref={nameRef}
+        id="name"
         name="name"
-        className=" font-semibold text-gray-700"
-        rules={[{ required: true, message: "Please input your name!" }]}
-      >
-        <Input className="enter-name" />
-      </Form.Item>
+        className="form-input"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
 
-      <Form.Item
-        label="Business email Address"
+    <div className="form-group">
+      <label htmlFor="email" className="block font-semibold text-gray-700">Business email Address</label>
+      <input
+        type="email"
+        ref={emailRef}
+        id="email"
         name="email"
-        className=" font-semibold"
-        rules={[
-          { required: true, message: "Please input your email!" },
-          { type: "email", message: "Please enter a valid email address!" },
-        ]}
-      >
-        <Input className="enter-email" />
-      </Form.Item>
+        className="form-input"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
 
-      <Form.Item
-        label="Message"
-        className=" font-semibold"
+    <div className="form-group">
+      <label htmlFor="message" className="block font-semibold text-gray-700">Message</label>
+      <textarea
+        ref={messageRef}
+        id="message"
         name="message"
-        rules={[{ required: true, message: "Please input your message!" }]}
-      >
-        <Input.TextArea className="enter-message" />
-      </Form.Item>
+        className="form-textarea"
+        placeholder="Enter your message"
+        required
+      />
+    </div>
 
-      <Form.Item
-        label="Phone Number"
-        className=" font-semibold"
+    <div className="form-group">
+      <label htmlFor="phone" className="block font-semibold text-gray-700">Phone Number</label>
+      <input
+        type="tel"
+        ref={phoneRef}
+        id="phone"
         name="phone"
-        rules={[
-          { required: true, message: "Please input your phone number!" },
-          {
-            pattern: /^\d{10}$/,
-            message: "Please enter a valid phone number!",
-          },
-        ]}
-      >
-        <Input className="enter-phone" />
-      </Form.Item>
+        className="form-input"
+        placeholder="Enter your phone number"
+        required
+        pattern="[0-9]{10}"
+      />
+    </div>
 
-      <Form.Item>
-        <Button type="primary" className="w-full bg-red-500 h-12" htmlType="submit">
-          <h2 className="text-center p-2 text-white font-semibold text-lg mb-6">Submit</h2>
-        </Button>
-      </Form.Item>
-    </Form>
+    <button type="submit" className="w-full bg-red-500 h-12 text-white font-semibold text-lg mt-6">Submit</button>
+  </form>
   );
 };
+
+
 
 const InquiryAndMapComponent = () => {
   return (
