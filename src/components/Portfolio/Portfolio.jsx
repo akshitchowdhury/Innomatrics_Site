@@ -179,15 +179,23 @@ const Portfolio = forwardRef((props,ref) => {
       ))}
     </ul>
   </div>
-
-  <div className="w-full lg:w-2/3 flex justify-center 
+<div  className="w-full lg:w-2/3 justify-center  
   lg:justify-start bg-white bg-opacity-20 p-6 rounded-md shadow-inner 
   backdrop-filter backdrop-blur-sm border border-white border-opacity-30">
+  <div className=" flex justify-center  flex-row gap-x-64
+  ">
+    
+    <p className="text-white text-2xl my-12">{hoveredItem !== null ? data[hoveredItem].text : ""}</p>
     <img
       src={hoveredItem !== null ? data[hoveredItem].image : indus1}
       alt="Industry"
-      className="w-[120%] h-[400px] rounded-md shadow-md"
+      className="w-[40%] h-[100px] rounded-md shadow-md"
     />
+    
+
+  </div>
+  
+  <p className="text-white text-2xl my-12">{hoveredItem !== null ? data[hoveredItem].desc : ""}</p>
   </div>
 </div>
 
