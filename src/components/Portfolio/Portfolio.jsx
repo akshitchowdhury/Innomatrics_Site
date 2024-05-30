@@ -183,7 +183,7 @@ const Portfolio = forwardRef((props,ref) => {
   lg:justify-start bg-white bg-opacity-20 p-6 rounded-md shadow-inner 
   backdrop-filter backdrop-blur-sm border border-white border-opacity-30">
   <div className=" flex justify-center  flex-row gap-x-64
-  ">
+  "> 
     
     <p className="text-white text-2xl my-12">{hoveredItem !== null ? data[hoveredItem].text : ""}</p>
     <img
