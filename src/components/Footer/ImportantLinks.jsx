@@ -8,7 +8,7 @@ const ImportantLinks = () => {
   const refundRef = useRef(null);
   const dataRef = useRef(null);
 
-  const handleClick = ()=>{
+  const handleClick = (ref)=>{
     ref.current.scrollIntoView({ behavior: 'smooth' });
   }
   return (
