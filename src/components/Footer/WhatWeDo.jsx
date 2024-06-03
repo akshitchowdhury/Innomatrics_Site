@@ -9,7 +9,9 @@ const WhatWeDo = () => {
   const digitalMarktRef = useRef(null)
   const logoDesRef = useRef(null)
 
-
+  const handleClick = (ref)=>{
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  }
   return (
     <div>
       <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">What We Do</h2>
