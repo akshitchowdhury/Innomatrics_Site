@@ -48,16 +48,16 @@ const CountUpAnimation = ({ initialValue, targetValue, text }) => {
   });
 
   return (
-    <div ref={ref} className="flex flex-col items-center">
+    <div ref={ref} className="flex flex-col items-center ">
       <span className="text-4xl md:text-6xl font-bold text-orange-500">{count >= targetValue ? `${targetValue}+` : count}</span>
-      <span className="text-lg md:text-xl text-white mt-2">{text}</span>
+      <span className="text-lg md:text-xl text-zinc-800 mt-2">{text}</span>
     </div>
   );
 };
 
 function CountRise() {
   return (
-    <div className="container mx-auto py-16 px-4">
+    <div className="container -my-16 mx-auto py-24 px-4">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
         Delivering Value for Our Customers
       </h2>

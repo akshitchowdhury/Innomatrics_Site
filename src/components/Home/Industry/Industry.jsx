@@ -20,16 +20,16 @@ const Industry = () => {
   };
 
   return (
-    <div className="container mx-auto py-16 px-4 my-14">
-      <p className="text-white font-semibold text-2xl md:text-5xl">
+    <div className="container mx-auto py-16 px-4 ">
+      <p className="text-zinc-800 font-semibold text-2xl md:text-5xl">
         Industries we have collaborated with
       </p>
-      <hr className="text-white w-[70%] my-7" />
+      <hr className="text-zinc-800 w-[70%] my-7" />
 
       {/* Large and Medium Screens Layout */}
       <div className="hidden lg:flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8">
         <div className="w-full lg:w-1/3">
-          <ul className="text-lg md:text-xl text-white space-y-4">
+          <ul className="text-lg md:text-xl text-zinc-800 space-y-4">
             {data.map((item, index) => (
               <li
                 key={index}
@@ -49,7 +49,7 @@ const Industry = () => {
               ? data[hoveredItem].title
               : "Industry Solutions"}
           </h2>
-          <p className="text-base md:text-lg text-white mb-6">
+          <p className="text-base md:text-lg text-zinc-800 mb-6">
             {hoveredItem !== null
               ? data[hoveredItem].desc
               : "Hover over an industry to see more information."}

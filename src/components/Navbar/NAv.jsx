@@ -89,7 +89,7 @@ function NAv() {
                   Services
                 </Link>
               </li>
-              <li className="navLinks">
+              {/* <li className="navLinks">
                 <Link
                   to="/portfolio"
                   className="block py-2 px-3 hover:text-black"
@@ -97,7 +97,7 @@ function NAv() {
                 >
                   Portfolio
                 </Link>
-              </li>
+              </li> */}
               <li className="navLinks">
                 <Link
                   to="/career"
@@ -150,30 +150,23 @@ function NAv() {
             <ul className="flex flex-row gap-x-0.1">
             <li className="services">
               
-              <Link
-                to="/services"
+              <div
                 className="block py-2 px-3 text-white rounded
                  hover:bg-gray-100 md:hover:bg-transparent 
                  
                  md:p-0 md:hover:text-zinc-900 dark:text-white
                   dark:hover:bg-gray-700 dark:hover:text-white 
-                  md:dark:hover:bg-transparent dark:border-gray-700"
+                  md:dark:hover:bg-transparent dark:border-gray-700
+                  cursor-pointer"
               >
               <ServiceHover/>
-    </Link>
+    </div>
             </li>
             
 
 
             </ul>
-            <li className="navLinks">
-              <Link
-                to="/portfolio"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >
-                Portfolio
-              </Link>
-            </li>
+            
             <li className="navLinks">
               <Link
                 to="/career"

@@ -25,7 +25,7 @@ import Join from "./JoinTeam/Join";
 import CountRise from "./CountRise/CountRise";
 import Industry from "./Industry/Industry";
 
-const Home = forwardRef((props,ref) => {
+const Home = forwardRef((props, ref) => {
   const clientLogos = [
     {
       image: c1,
@@ -74,64 +74,69 @@ const Home = forwardRef((props,ref) => {
   return (
     <>
       <div className="home flex flex-col" ref={ref}>
-      <div className="p-5 md:p-20 flex flex-col md:flex-row gap-5">
-      <div className="flex flex-col w-full md:w-2/3">
-        <div className="flex flex-col my-auto text-xs leading-4">
-          <div className="text-4xl md:text-7xl font-semibold text-white leading-tight md:leading-[79px]">
-            Innomatrics Technologies
+        <div className="p-5 md:p-20 flex flex-col md:flex-row gap-5">
+          <div className="flex flex-col w-full md:w-2/3">
+            <div className="flex flex-col my-auto text-xs leading-4">
+              <div className="text-4xl md:text-7xl font-semibold text-white leading-tight md:leading-[109px]">
+                Innomatrics Technologies
+              </div>
+              <div className="mt-3 text-sm  text-sky-400 flex items-center justify-center md:justify-start">
+                <hr className="w-1/6 md:w-1/12" />
+                <span className="mx-2 md:mx-4 text-base md:text-2xl font-semibold">
+                  Innovate Inspire Integrate
+                </span>
+                <hr className="w-1/6 md:w-1/12" />
+              </div>
+              <Link to="/contact" className="self-center md:self-start">
+                <button
+                  type="button"
+                  className="text-zinc-800 px-6 mt-6 bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm py-4 text-center dark:bg-blue-600 dark:focus:ring-blue-800 hover:bg-white hover:text-black hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
+                >
+                  Get a Quote
+                </button>
+              </Link>
+            </div>
           </div>
-          <div className="mt-3 text-sm text-sky-400 flex items-center justify-center md:justify-start">
-            <hr className="w-1/6 md:w-1/12" />
-            <span className="mx-2 md:mx-4 text-base md:text-lg font-semibold">Innovate Inspire Integrate</span>
-            <hr className="w-1/6 md:w-1/12" />
-          </div>
-          <Link to="/contact" className="self-center md:self-start">
-            <button
-              type="button"
-              className="text-white px-6 mt-6 bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm py-4 text-center dark:bg-blue-600 dark:focus:ring-blue-800 hover:bg-white hover:text-black hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out"
-            >
-              Get a Quote
-            </button>
-          </Link>
         </div>
       </div>
-    </div>
-</div>
-
+      <div className="bg-white">
         <Industry />
-        <div className="p-8 my-28">
-          <h2 className="text-4xl text-white text-center">Our Services</h2>
+      </div>
 
-          <ImageCardContainer />
+      <div className="ServicesMission">
+      <div className="p-8 ">
+        <h2 className="text-4xl text-white text-center">Our Services</h2>
+
+        <ImageCardContainer />
+      </div>
+
+      <div style={{ padding: "4%" }} className="flex flex-col sm:flex-row">
+        <div style={{ flex: 1, marginRight: "2%" }}>
+          <OurVision />
         </div>
-
-        <div style={{ padding: "4%" }} className="flex flex-col sm:flex-row">
-          <div style={{ flex: 1, marginRight: "2%" }}>
-            <OurVision />
-          </div>
-          <div style={{ flex: 1 }}>
-            <OurMission />
-          </div>
+        <div style={{ flex: 1 }}>
+          <OurMission />
         </div>
-
+      </div>
+</div>
+      <div className="bg-white">
         <Join />
 
         <CountRise />
-        <div className="flex flex-col items-center px-20 mt-7 w-full max-md:px-5 max-md:max-w-full">
-          <div className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
-            Our Clients
-          </div>
-          <div className="mt-1.5 text-lg leading-4 text-center text-zinc-300 max-md:max-w-full">
-            We have been working with some of the best players in the industry
-          </div>
-          <div className="flex gap-5 justify-between py-4 mt-3 w-full max-w-[802px] max-md:flex-wrap max-md:max-w-full">
-            <ClientsCarousel clientLogos={clientLogos} />
-          </div>
+      </div>
+      <div className="ServicesMission flex flex-col items-center px-20 w-full max-md:px-5 max-md:max-w-full">
+        <div className="text-3xl md:text-4xl font-bold text-center my-12 text-white mb-12">
+          Our Clients
         </div>
-      
-
+        <div className="mt-1.5 text-lg leading-4 text-center text-white max-md:max-w-full">
+          We have been working with some of the best players in the industry
+        </div>
+        <div className="flex gap-5 justify-between py-4 mt-3 w-full max-w-[802px] max-md:flex-wrap max-md:max-w-full">
+          <ClientsCarousel clientLogos={clientLogos} />
+        </div>
+      </div>
     </>
   );
-})
+});
 
 export default Home;
