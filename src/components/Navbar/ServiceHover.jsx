@@ -10,7 +10,7 @@ const ServiceHover = () => {
     setDropdownVisible(true);
     if (timeoutId) {
       clearTimeout(timeoutId);
-    }
+    } 
   };
 
   const handleMouseLeave = () => {

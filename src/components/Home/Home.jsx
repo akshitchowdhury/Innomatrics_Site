@@ -15,7 +15,7 @@ import c9 from "../../assets/portfolioLogo/skb.jpg";
 import c10 from "../../assets/portfolioLogo/thriupathiTours.jpg";
 import c11 from "../../assets/portfolioLogo/vklights.jpg";
 
-import { Carousel } from "flowbite-react";
+// import { Carousel } from "flowbite-react";
 import ImageCardContainer from "../Services/Carousel/ImageCardContainer";
 import OurVision from "./Our Vision/OurVision";
 import OurMission from "./Our Mission/OurMission";

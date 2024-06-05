@@ -6,7 +6,7 @@ import c4 from "../../assets/digitalMarkt.webp";
 import c5 from "../../assets/brandDesign.jpg";
 import c6 from "../../assets/socialMedia.jpg";
 import "./Services.css";
-import { Carousel } from "flowbite-react";
+// import { Carousel } from "flowbite-react";
 import ImageCardContainer from "./Carousel/ImageCardContainer";
 import { Link } from "react-router-dom";
 import app from "../../assets/serviceBg2.jpg";
@@ -106,7 +106,7 @@ const Services = forwardRef((props,ref) => {
 
         {/* <h4 className="text-2xl sm:text-4xl md:text-2xl lg:text-2xl xl:text-3xl text-start font-bold text-orange-500">Services We Offer</h4> */}
 
-        <div className="carosuelBox object-cover w-full h- h-56 sm:h-64 xl:h-80 2xl:h-96">
+        {/* <div className="carosuelBox object-cover w-full h- h-56 sm:h-64 xl:h-80 2xl:h-96">
           <Carousel className="carosuel w-full h-full">
             <img src={c1} alt="..." className="object-contain w-full h-full" />
             <img src={c2} alt="..." className="object-contain w-full h-full" />
@@ -115,7 +115,7 @@ const Services = forwardRef((props,ref) => {
             <img src={c5} alt="..." className="object-contain w-full h-full" />
             <img src={c6} alt="..." className="object-contain w-full h-full" />
           </Carousel>
-        </div>
+        </div> */}
 
         <ImageCardContainer />
       </div>

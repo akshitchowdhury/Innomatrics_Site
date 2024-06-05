@@ -12,13 +12,13 @@ const InquiryForm = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    emailjs.init("yYVBr5BddZiFletl9");
+    emailjs.init("iQsjiARc7-03nKSZz");
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const serviceId = "service_hz6vh9l";
-    const templateId = "template_15xt8ef";
+    const serviceId = "service_mch4m6h";
+    const templateId = "template_t7wlj2d";
     try {
       setLoading(true);
       await emailjs.send(serviceId, templateId, {
@@ -64,18 +64,6 @@ const InquiryForm = () => {
     </div>
 
     <div className="form-group">
-      <label htmlFor="message" className="block font-semibold text-gray-700">Message</label>
-      <textarea
-        ref={messageRef}
-        id="message"
-        name="message"
-        className="form-textarea"
-        placeholder="Enter your message"
-        required
-      />
-    </div>
-
-    <div className="form-group">
       <label htmlFor="phone" className="block font-semibold text-gray-700">Phone Number</label>
       <input
         type="tel"
@@ -88,6 +76,20 @@ const InquiryForm = () => {
         pattern="[0-9]{10}"
       />
     </div>
+
+    <div className="form-group">
+      <label htmlFor="message" className="block font-semibold text-gray-700">Message</label>
+      <textarea
+        ref={messageRef}
+        id="message"
+        name="message"
+        className="form-textarea"
+        placeholder="Enter your message"
+        required
+      />
+    </div>
+
+   
 
     <button type="submit" className="w-full bg-red-500 h-12 text-white font-semibold text-lg mt-6">Submit</button>
   </form>
