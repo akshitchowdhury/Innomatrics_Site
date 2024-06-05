@@ -80,7 +80,7 @@ const Home = forwardRef((props, ref) => {
               <div className="text-4xl md:text-7xl font-semibold text-white leading-tight md:leading-[109px]">
                 Innomatrics Technologies
               </div>
-              <div className="mt-3 text-sm  text-sky-400 flex items-center justify-center md:justify-start">
+              <div className="mt-3 text-sm  text-white flex items-center justify-center md:justify-start">
                 <hr className="w-1/6 md:w-1/12" />
                 <span className="mx-2 md:mx-4 text-base md:text-2xl font-semibold">
                   Innovate Inspire Integrate
