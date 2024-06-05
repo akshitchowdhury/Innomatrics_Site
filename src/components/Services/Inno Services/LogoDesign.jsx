@@ -54,14 +54,14 @@ const LogoDesign = forwardRef((props, ref) => {
           <h1 className="text-3xl my-4 font-bold text-white md:text-5xl">Logo Design Services</h1>
           <hr className="text-sky-600 w-[140%]" />
         </div>
-        <div className="relative justify-center -my-10 space-x-2">
+        {/* <div className="relative justify-center -my-10 space-x-2">
           <button className="text-white bg-zinc-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center hover:bg-white hover:text-black hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
             Start a project together
           </button>
           <button className="text-zinc-700 bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center hover:bg-zinc-800 hover:text-white hover:transform hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
             Read More
           </button>
-        </div>
+        </div> */}
       </div>
 
       <div className="mt-16 max-w-[90vw]">
