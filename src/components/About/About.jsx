@@ -78,27 +78,45 @@ const About = forwardRef((props, ref) => {
           </div>
         </div>
       </section>
-      
-      <div className="flex flex-col lg:flex-row bg-gray-100 gap-8 px-4 py-8 lg:px-28 lg:py-16 rounded-lg shadow-md">
-  <div className="w-full lg:w-1/2 p-6">
-    <p className="text-xl text-gray-800 text-left md:text-left font-semibold mb-4">
-      Welcome to Innomatrics Technologies, where innovation meets excellence in the realm of digital solutions.
-    </p>
-    <p className="text-base text-gray-700 text-justify md:text-left mb-4">
-      Founded on the belief that technology has the power to revolutionize businesses, Innomatrics Technologies emerged as a brainchild of visionary minds dedicated to driving meaningful change in the digital landscape. Since our inception, we have been on a mission to empower businesses of all sizes to thrive in the digital age.
-    </p>
-    <p className="text-base text-gray-700 text-justify md:text-left mb-4">
-      We understand the unique challenges of the digital sphere and provide tailored solutions to meet your specific needs and objectives. Whether you're a startup or an established enterprise, our team of experts is dedicated to guiding you every step of the way.
-    </p>
-    <p className="text-base text-gray-700 text-justify md:text-left mb-4">
-      With a passion for innovation and a commitment to excellence, we deliver cutting-edge solutions that exceed expectations. We prioritize collaboration, transparency, and results, building lasting partnerships that drive success and growth.
-    </p>
-  </div>
-  <div className="w-full lg:w-1/3 p-3">
-    <img src={aboutMe} alt="About Us" className="w-full rounded-lg" />
-  </div>
-</div>
 
+      <div
+        className="flex flex-col lg:flex-row bg-gray-100 gap-x-10
+       px-4 py-8 lg:px-28 lg:py-16 rounded-lg shadow-md"
+      >
+        <div className="w-full lg:w-[100%] p-6">
+          <p className="text-xl text-gray-800 text-left md:text-left font-semibold mb-4">
+            Welcome to Innomatrics Technologies, where innovation meets
+            excellence in the realm of digital solutions.
+          </p>
+          <p className="text-base text-gray-700 text-justify md:text-left mb-4">
+            Founded on the belief that technology has the power to revolutionize
+            businesses, Innomatrics Technologies emerged as a brainchild of
+            visionary minds dedicated to driving meaningful change in the
+            digital landscape. Since our inception, we have been on a mission to
+            empower businesses of all sizes to thrive in the digital age.
+          </p>
+          <p className="text-base text-gray-700 text-justify md:text-left mb-4">
+            We understand the unique challenges of the digital sphere and
+            provide tailored solutions to meet your specific needs and
+            objectives. Whether you're a startup or an established enterprise,
+            our team of experts is dedicated to guiding you every step of the
+            way.
+          </p>
+          <p className="text-base text-gray-700 text-justify md:text-left mb-4">
+            With a passion for innovation and a commitment to excellence, we
+            deliver cutting-edge solutions that exceed expectations. We
+            prioritize collaboration, transparency, and results, building
+            lasting partnerships that drive success and growth.
+          </p>
+        </div>
+        <div className="w-full lg:w-full p-3">
+          <img
+            src={aboutMe}
+            alt="About Us"
+            className="w-[500px] h-[500px] rounded-lg"
+          />
+        </div>
+      </div>
 
       {/* Vision */}
       <div className="missonVision">
@@ -262,6 +280,49 @@ const About = forwardRef((props, ref) => {
         </div>
       </div>
 
+      <div
+        className="flex flex-col lg:flex-row bg-gray-100 gap-x-10
+       px-4 py-8 lg:px-28 lg:py-16 rounded-lg shadow-md"
+      >
+        <div className="w-full lg:w-[100%] p-6">
+          <p className="text-xl text-orange-500 text-left md:text-left font-semibold mb-4">
+            DIVERSITY, EQUITY & INCLUSION
+          </p>
+          <p className="text-base text-gray-700 text-justify md:text-left mb-4">
+            At Innomatrics Technologies, we firmly believe that diversity,
+            equity, and inclusion serve as vital catalysts for fostering
+            collaboration and nurturing creativity. As a functionally operating
+            company, we acknowledge the paramount importance of amplifying every
+            voice and recognize the myriad ways in which diverse teams propel
+            innovation.
+          </p>
+          <p className="text-base text-gray-700 text-justify md:text-left mb-4">
+            Our mission is to cultivate a supportive and inclusive workplace
+            environment where the exchange of diverse ideas, perspectives, and
+            experiences isn't just accepted but actively encouraged. By
+            empowering our workforce to embrace their authentic selves, we pave
+            the way for collective growth and prosperity. We're proud to
+            announce that our dedication to this cause has been acknowledged by
+            the Top Employer Institute, recognizing Innomatrics Technologies as
+            a Top Employer in India!
+          </p>
+          <p className="text-base text-gray-700 text-justify md:text-left mb-4">
+            Integrity is fundamental to who we are. That’s why we are committed
+            to treating everyone – from our customers to our colleagues – with
+            dignity and respect, providing equal growth opportunities to our
+            employees, and making space for continuous, honest, and transparent
+            communication about diversity and inclusion.
+          </p>
+        </div>
+        <div className="w-full lg:w-full p-3">
+          <img
+            src={aboutMe}
+            alt="About Us"
+            className="w-[500px] h-[500px] rounded-lg"
+          />
+        </div>
+      </div>
+
       <div className="bg-inherit text-center py-8 lg:py-12">
         <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
           ALLIANCES & PARTNERS
@@ -287,6 +348,6 @@ const About = forwardRef((props, ref) => {
       </div>
     </>
   );
-})
+});
 
 export default About;

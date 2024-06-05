@@ -38,7 +38,7 @@ const Industry = () => {
               <FontAwesomeIcon icon={item.icon} className="text-sky-600"/>
               <li
                 
-                className=""
+                className="text-lg font-semibold"
                 onMouseEnter={() => handleMouseEnter(index)}
                 // onMouseLeave={handleMouseLeave}
               >
