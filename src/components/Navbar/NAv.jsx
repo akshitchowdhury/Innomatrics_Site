@@ -77,7 +77,7 @@ function NAv() {
                   className="block py-2 px-3 hover:text-black"
                   onClick={toggleMenu}
                 >
-                  About
+                  About Us
                 </Link>
               </li>
               <li >
@@ -104,7 +104,7 @@ function NAv() {
                   className="block py-2 px-3 hover:text-black"
                   onClick={toggleMenu}
                 >
-                  Career
+                  Careers
                 </Link>
               </li>
               <li className="navLinks">
@@ -143,7 +143,7 @@ function NAv() {
                 className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 aria-current="page"
               >
-                About
+                About Us
               </Link>
             </li>
             
@@ -172,7 +172,7 @@ function NAv() {
                 to="/career"
                 className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 md:hover:text-zinc-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Career
+                Careers
               </Link>
             </li>
             <li className="navLinks">
