@@ -3,6 +3,7 @@ import React, { forwardRef, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Caree.css";
 import careerImage from "../../assets/career.jpg"; // Import your career image
+import InfoBlock from "./Info Block/InfoBlock";
 
 const CareerComponent = forwardRef((props, ref) => {
   const emailRef = useRef();
@@ -55,8 +56,9 @@ const CareerComponent = forwardRef((props, ref) => {
 
   return (
     <>
+    
      <section className="career-section bg-cover  bg-center" ref={ref}>
-        <div className="container mx-auto px-4 py-20 md:py-40">
+        <div className="container mx-auto px-4 py-20 md:py-32">
           <div className="flex flex-col  items-start justify-start gap-4 text-start">
             <h1 className="text-3xl font-bold text-white md:text-5xl">
               Career
@@ -69,7 +71,8 @@ const CareerComponent = forwardRef((props, ref) => {
           </div>
         </div>
       </section>
-      <div ref={ref} className="career-container ">
+      <InfoBlock/>
+      <div ref={ref} className="bg-gray-200 ; career-container ">
         <div className="career-content">
           <div className="career-image">
             <img src={careerImage} alt="Career" />
