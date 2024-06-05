@@ -63,7 +63,7 @@ function CountRise() {
       </h2>
       <div className="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0">
         <div className="flex flex-col items-center">
-          <CountUpAnimation initialValue={0} targetValue={150}  text="Lives Impacted" />
+          <CountUpAnimation initialValue={0} targetValue={150}  text="Projects Delivered" />
         </div>
         <div className="w-px h-24 bg-orange-500 hidden md:block"></div>
         <div className="flex flex-col items-center">
@@ -71,7 +71,7 @@ function CountRise() {
         </div>
         <div className="w-px h-24 bg-orange-500 hidden md:block"></div>
         <div className="flex flex-col items-center">
-          <CountUpAnimation initialValue={0} targetValue={20} text="Delivery Centers" />
+          <CountUpAnimation initialValue={0} targetValue={5} text="Years of Expereince" />
         </div>
       </div>
     </div>

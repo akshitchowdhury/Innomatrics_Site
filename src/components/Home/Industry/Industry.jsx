@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import indus1 from "../../../assets/brandDesign.jpg";
 import data from "./data";
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChild, faEnvelope, faPaw, faPhone, faSuitcaseMedical, } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram, faLinkedin, faWhatsapp,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 const Industry = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,19 +33,25 @@ const Industry = () => {
         <div className="w-full lg:w-1/3">
           <ul className="text-lg md:text-xl text-zinc-800 space-y-4">
             {data.map((item, index) => (
+              <>
+              <div key={index} className= "flex flex-row gap-x-8 cursor-pointer hover:text-orange-500 transition ease-in-out duration-200 hover:scale-105">
+              <FontAwesomeIcon icon={item.icon} className="text-sky-600"/>
               <li
-                key={index}
-                className="cursor-pointer hover:text-orange-500 transition ease-in-out duration-200 hover:scale-105"
+                
+                className=""
                 onMouseEnter={() => handleMouseEnter(index)}
                 // onMouseLeave={handleMouseLeave}
               >
                 {item.title}
               </li>
+              </div>
+              </>
             ))}
           </ul>
         </div>
 
         <div className="w-full lg:w-1/3 text-center lg:text-left">
+        
           <h2 className="text-3xl md:text-4xl font-bold text-orange-500 mb-4">
             {hoveredItem !== null
               ? data[hoveredItem].title

@@ -9,7 +9,7 @@ const Join = () => {
         <div className="mt-2 text-sm md:text-4xl font-semibold text-zinc-800 w-full md:w-3/4">
           <p>Leaders Innovators Thinkers Problem Solvers</p>
         </div>
-        <button className="bg-orange-600 rounded-md w-1/2 md:w-1/3 h-12 my-2 text-zinc-800 font-semibold hover:bg-black hover:text-white transition ease-in-out duration-300">
+        <button className="bg-orange-600 rounded-md w-1/2 md:w-1/3 h-12 my-12 text-zinc-800 font-semibold hover:bg-black hover:text-white transition ease-in-out duration-300">
           Work With Us
         </button>
       </div>
