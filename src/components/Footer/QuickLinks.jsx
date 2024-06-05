@@ -20,9 +20,9 @@ const QuickLinks = () => {
               <li className="mb-4">
                 <Link to="/about" onClick={() => handleClick(aboutUsRef)} className="navbar-links">About Us</Link>
               </li>
-              <li className="mb-4">
+              {/* <li className="mb-4">
                 <Link to="/services" onClick={() => handleClick(servicesRef)} className="navbar-links">Services</Link>
-              </li>
+              </li> */}
               <li className="mb-4">
                 <Link to="/portfolio" onClick={() => handleClick(portfolioRef)} className="navbar-links">Portfolio</Link>
               </li>
