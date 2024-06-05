@@ -80,9 +80,9 @@ const Home = forwardRef((props,ref) => {
           <div className="text-4xl md:text-7xl font-semibold text-white leading-tight md:leading-[79px]">
             Innomatrics Technologies
           </div>
-          <div className="mt-3 text-sm text-sky-500 flex items-center justify-center md:justify-start">
+          <div className="mt-3 text-sm text-sky-400 flex items-center justify-center md:justify-start">
             <hr className="w-1/6 md:w-1/12" />
-            <span className="mx-2 md:mx-4">Innovate Inspire Integrate</span>
+            <span className="mx-2 md:mx-4 text-base md:text-lg font-semibold">Innovate Inspire Integrate</span>
             <hr className="w-1/6 md:w-1/12" />
           </div>
           <Link to="/contact" className="self-center md:self-start">
@@ -96,6 +96,8 @@ const Home = forwardRef((props,ref) => {
         </div>
       </div>
     </div>
+</div>
+
         <Industry />
         <div className="p-8 my-28">
           <h2 className="text-4xl text-white text-center">Our Services</h2>
@@ -126,7 +128,7 @@ const Home = forwardRef((props,ref) => {
             <ClientsCarousel clientLogos={clientLogos} />
           </div>
         </div>
-      </div>
+      
 
     </>
   );
