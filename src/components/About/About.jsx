@@ -26,7 +26,7 @@ import c8 from "../../assets/portfolioLogo/osprezt.jpg";
 import c9 from "../../assets/portfolioLogo/skb.jpg";
 import c10 from "../../assets/portfolioLogo/thriupathiTours.jpg";
 import c11 from "../../assets/portfolioLogo/vklights.jpg";
-
+import aboutCorporate from '../../assets/aboutCorporate.jpg'
 const About = forwardRef((props, ref) => {
   const clientLogos = [
     {
@@ -316,9 +316,9 @@ const About = forwardRef((props, ref) => {
         </div>
         <div className="w-full lg:w-full p-3">
           <img
-            src={aboutMe}
+            src={aboutCorporate}
             alt="About Us"
-            className="w-[500px] h-[500px] rounded-lg"
+            className="md:w-[700px] md:h-[400px] rounded-lg"
           />
         </div>
       </div>

@@ -10,38 +10,38 @@ import { faFacebook, faInstagram, faLinkedin, faWhatsapp,faLinkedinIn } from '@f
 const data = [
 
     {
-        title : "HEALTHCARE",
+        title : "Healthcare",
         desc: "Seamlessly delivering end-to-end digital health experiences",
         image: healthcare,
         icon: faSuitcaseMedical
     },
     {
-        title : "BANKING, FINANCIAL SERVICES & INSURANCE",
+        title : "Banking, Financial Services & Insurance",
         desc: "Driving transformation with our banking, financial services, insurance, and payments experts",
         image: banking,
         icon: faBank
     },
     {
-        title : "NGO ORGANISATIONS",
+        title : "NGO Organizations",
         desc: "Empowering communities and driving impactful change through dedicated efforts",
         image: ngo,
         icon: faBuildingNgo
     },
     {
-        title : "TOURS AND TRAVELS",
+        title : "Tours And Travels",
         desc: "Embark on unforgettable journeys with tailored experiences and exceptional hospitality",
         image: tours,
         icon: faCar
     },
     {
-        title : "CONSTRUCTION FIRMS",
+        title : "Construction Firms",
         desc: "Building the future with innovative and sustainable solutions",
         image: construction,
         icon: faBuilding
         
     },
     {
-        title : "SECURITY",
+        title : "Security",
         desc: "Ensuring safety and peace of mind with cutting-edge protection services",
         image: security,
         icon: faLock
