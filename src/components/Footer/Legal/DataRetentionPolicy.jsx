@@ -25,7 +25,7 @@ const DataRetentionPolicy = forwardRef((props,ref) => {
       </p>
       <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
       <p className="text-gray-700 mb-4">
-        If you have any questions or concerns about our Data Retention Policy, please contact us at [insert contact email].
+        If you have any questions or concerns about our Data Retention Policy, please contact us at hello@innomatricstech.com.
       </p>
     </div>
   );

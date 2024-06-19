@@ -20,7 +20,7 @@ const ContentDisclaimer = forwardRef((props,ref) => {
         Every effort is made to keep the website up and running smoothly. However, our company takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.
       </p>
       <p className="text-gray-700 mb-4">
-        If you have any concerns about the accuracy or reliability of the information on this website, please contact us at [insert contact email].
+        If you have any concerns about the accuracy or reliability of the information on this website, please contact us at hello@innomatricstech.com.
       </p>
     </div>
   );

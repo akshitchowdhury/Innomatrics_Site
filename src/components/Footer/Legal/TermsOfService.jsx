@@ -39,18 +39,18 @@ const TermsOfService = forwardRef((props,ref) => {
       <p className="text-gray-700 mb-4">
         In no event shall Innomatrics Technologies, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.
       </p>
-      <h2 className="text-2xl font-semibold mb-4">9. Governing Law</h2>
+      {/* <h2 className="text-2xl font-semibold mb-4">9. Governing Law</h2>
       <p className="text-gray-700 mb-4">
         These Terms shall be governed by and construed in accordance with the laws of [insert applicable jurisdiction], without regard to its conflict of law provisions.
-      </p>
-      <h2 className="text-2xl font-semibold mb-4">10. Changes to Terms</h2>
+      </p> */}
+      <h2 className="text-2xl font-semibold mb-4">9. Changes to Terms</h2>
       <p className="text-gray-700 mb-4">
         We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
       </p>
       <p className="text-gray-700 mb-4">
         If you have any questions about these Terms, please contact us at hello@innomatricstech.com
       </p>
-      <p className="text-gray-700 mb-4">Last updated: [insert date of last update]</p>
+      <p className="text-gray-700 mb-4">Last updated: 19-06-2024</p>
     </div>
   );
 })

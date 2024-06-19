@@ -9,7 +9,7 @@ const RefundCancellationPolicy = forwardRef((props,ref) => {
       </p>
       <h2 className="text-2xl font-semibold mb-4">Order Cancellation</h2>
       <p className="text-gray-700 mb-4">
-        You may cancel your order within 24 hours of placing it for a full refund. To cancel your order, please contact our customer support team at [insert contact email] with your order details. Orders canceled after 24 hours may be subject to a cancellation fee.
+        You may cancel your order within 24 hours of placing it for a full refund. To cancel your order, please contact our customer support team at hello@innomatricstech.com with your order details. Orders canceled after 24 hours may be subject to a cancellation fee.
       </p>
       <h2 className="text-2xl font-semibold mb-4">Refund Policy</h2>
       <p className="text-gray-700 mb-4">
@@ -24,7 +24,7 @@ const RefundCancellationPolicy = forwardRef((props,ref) => {
         Our refund/cancellation policy may vary for certain products or services. Please refer to the specific product/service terms and conditions for more information.
       </p>
       <p className="text-gray-700 mb-4">
-        If you have any questions or concerns about our Refund/Cancellation Policy, please contact us at [insert contact email].
+        If you have any questions or concerns about our Refund/Cancellation Policy, please contact us at hello@innomatricstech.com.
       </p>
     </div>
   );
